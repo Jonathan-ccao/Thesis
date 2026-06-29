@@ -1,0 +1,92 @@
+% =====================================================================
+%  UNSW Honours Thesis — main file
+% =====================================================================
+\documentclass[12pt,a4paper,oneside]{report}
+
+% ---------- Page geometry (UNSW: min 25 mm margins; 30 mm allows binding) ----
+\usepackage[a4paper,margin=30mm]{geometry}
+
+
+% ---------- Fonts: Times-like serif body, Helvetica-like sans headings -------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}   % Times-like serif (body + math)
+\usepackage{helvet}     % Helvetica-like sans (used in logo / optionally headings)
+
+% ---------- Line spacing -----------------------------------------------------
+\usepackage{setspace}
+\onehalfspacing         % UNSW Thesis Format Guide: use 1.15 or 1.5 line spacing.
+                        % For 1.15, replace with: \setstretch{1.15}
+
+% ---------- Core technical packages ------------------------------------------
+\usepackage{graphicx}                 % figures
+\usepackage{booktabs}                 % professional tables
+\usepackage{caption}                  % caption control
+\usepackage[version=4]{mhchem}        % chemical formulae:  \ce{NaCl}
+\usepackage{siunitx}                  % units:  \SI{15}{\bar}
+\usepackage{amsmath,amssymb}          % maths
+
+% ---------- Citations --------------------------------------------------------
+% This template uses natbib + BibTeX, which works on every TeX install
+% (including this one) and switches style by changing ONE line below.
+%   Author-date (APA / Harvard family):  plainnat, apalike
+%   Numbered (IEEE):                      load IEEEtran + \bibliographystyle{IEEEtran}
+\usepackage[round,authoryear]{natbib} % author-date in-text: (Lin, 2021)
+% For IEEE numbered style instead, comment the line above and use:
+%   \usepackage[numbers,square]{natbib}
+
+% ---------- Hyperlinks (load late) -------------------------------------------
+\usepackage[hidelinks]{hyperref}
+
+% =====================================================================
+% =====================================================================
+
+
+\input{frontmatter/unswlogo}   % defines \unswlogo
+% =====================================================================
+
+\begin{document}
+
+% ---------- Title page -------------------------------------------------------
+\input{frontmatter/titlepage}
+
+% ---------- Front matter (roman page numbers) --------------------------------
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+% Order follows the UNSW Thesis Format Guide:
+% title -> table of contents -> acknowledgements -> lists -> body.
+% (Originality statement is in GRIS, not the body — see declaration.tex.)
+
+\tableofcontents
+
+\input{frontmatter/declaration}      % commented out by default (see file)
+\input{frontmatter/abstract}         % standard practice; also in GRIS for HDR
+\input{frontmatter/acknowledgements}
+
+\listoffigures
+\listoftables
+\input{frontmatter/abbreviations}    % delete this line if not needed
+
+% ---------- Main matter (arabic page numbers) --------------------------------
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{chapters/01_introduction}
+\input{chapters/02_methods}
+\input{chapters/03_results}
+\input{chapters/04_conclusion}
+
+% ---------- Bibliography -----------------------------------------------------
+% Change the style name to switch citation format:
+%   plainnat / apalike  -> APA / Harvard family (author-date)
+%   IEEEtran            -> IEEE (numbered) [needs \usepackage numbers option above]
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+% ---------- Appendices (optional) --------------------------------------------
+\appendix
+% \input{chapters/appendix_a}
+
+\end{document}
