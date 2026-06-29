@@ -1,3 +1,7 @@
+% git add -A
+% git commit -m ""
+% git push
+
 % =====================================================================
 %  UNSW Honours Thesis — main file
 % =====================================================================
@@ -25,6 +29,7 @@
 \usepackage[version=4]{mhchem}        % chemical formulae:  \ce{NaCl}
 \usepackage{siunitx}                  % units:  \SI{15}{\bar}
 \usepackage{amsmath,amssymb}          % maths
+\usepackage{lipsum}                   % dummy text for testing
 
 % ---------- Citations --------------------------------------------------------
 % This template uses natbib + BibTeX, which works on every TeX install
@@ -60,8 +65,8 @@
 
 \tableofcontents
 
-\input{frontmatter/declaration}      % commented out by default (see file)
-\input{frontmatter/abstract}         % standard practice; also in GRIS for HDR
+\input{frontmatter/declaration}  
+\input{frontmatter/abstract} 
 \input{frontmatter/acknowledgements}
 
 \listoffigures
@@ -74,19 +79,17 @@
 \setcounter{page}{1}
 
 \input{chapters/01_introduction}
-\input{chapters/02_methods}
-\input{chapters/03_results}
-\input{chapters/04_conclusion}
+\input{chapters/02_literature_review.tex}
+\input{chapters/03_methods}
+\input{chapters/04_results_and_discussion}
+\input{chapters/05_conclusion_and_future_work}
 
 % ---------- Bibliography -----------------------------------------------------
-% Change the style name to switch citation format:
-%   plainnat / apalike  -> APA / Harvard family (author-date)
-%   IEEEtran            -> IEEE (numbered) [needs \usepackage numbers option above]
 \bibliographystyle{plainnat}
 \bibliography{references}
 
 % ---------- Appendices (optional) --------------------------------------------
 \appendix
-% \input{chapters/appendix_a}
+\input{chapters/Appendix/00_appendix_a}
 
 \end{document}

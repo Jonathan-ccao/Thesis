@@ -1,0 +1,107 @@
+\chapter{Materials and Methods}
+\label{ch:methods}
+
+\section{Materials}
+Membranes, monomers, cleaning chemicals and salts used, with grades and suppliers.
+
+\begin{itemize}
+  \item Membranes A and C — end-of-life RO elements (MemBrane Works; one first-pass, one second-pass).
+  \item Monomers — \emph{m}-phenylenediamine (MPD), trimesoyl chloride (TMC), \emph{n}-hexane.
+  \item Cleaning chemicals — \ce{NaOH}, EDTA, citric acid, \ce{HCl}.
+  \item Test salt — \ce{NaCl}.
+\end{itemize}
+
+
+\section{Experimental design}
+Two membranes across three cleaning arms give six conditions, with coupons cut into pieces as replicates.
+
+\begin{itemize}
+  \item Arm 1 — no clean (IP directly).
+  \item Arm 2 — standard clean.
+  \item Arm 3 — extensive clean (extended time).
+  \item Each coupon cut into 2 pieces for replicates.
+  \item Replicated all membranes and arms x2
+\end{itemize}
+
+% TODO: insert design schematic / condition table
+
+
+\section{Cleaning protocols}
+Sequential base then acid clean; Arm 3 uses extended duration at matched chemistry.
+
+\begin{itemize}
+  \item Base clean — 0.1--0.2\% \ce{NaOH} + 0.8--1\% EDTA.
+  \item Rinse / flush.
+  \item Acid clean — \ce{HCl} to pH 1--2.
+  \item Arm 3 — same chemistry, extended cleaning time.
+\end{itemize}
+
+
+\section{In-situ interfacial polymerisation}
+Polyamide is regenerated in place by sequential MPD and TMC dosing through the rig, then heat cured.
+
+\begin{itemize}
+  \item MPD (1.5\,wt\%) — 3\,min, waste-first flush.
+  \item TMC (0.2\,wt\% in \emph{n}-hexane) — 60\,s.
+  \item Heat cure — compressed air via \SI{98}{\celsius} bath ($\approx$\SI{60}{\celsius} at membrane), 5\,min.
+  \item Mark coupon orientation.
+\end{itemize}
+
+
+\section{High-pressure crossflow rig and compaction}
+Crossflow rig used for compaction and performance testing prior to characterisation.
+
+\begin{itemize}
+  \item Compaction — 30\,min at \SI{15}{bar}.
+\end{itemize}
+
+% TODO: insert rig diagram
+
+
+\section{Performance characterisation}
+Permeability and salt rejection measured on each piece after compaction.
+
+\subsection{Pure water permeability}
+PWP from time-to-volume at known pressure.
+
+\begin{equation}
+  A = \frac{V}{A_m \, t \, \Delta P},
+  \label{eq:pwp-methods}
+\end{equation}
+
+\noindent with $A_m = \SI{0.0139}{\square\metre}$; record $\Delta P$ and temperature.
+
+\subsection{NaCl rejection}
+Rejection from feed and permeate conductivities.
+
+\begin{equation}
+  R = \left(1 - \frac{\kappa_p}{\kappa_f}\right) \times 100\%,
+  \label{eq:rejection-methods}
+\end{equation}
+
+\noindent with $\kappa_p$, $\kappa_f$ the permeate and feed conductivities; note feed concentration.
+
+
+\section{Membrane autopsy}
+Surface and chemical analyses on selected pieces to characterise the regenerated layer.
+
+\begin{itemize}
+  \item Analyses — FTIR, XPS, SEM-EDS (to confirm).
+  \item Coupon-selection criteria — representative of each condition.
+\end{itemize}
+
+
+\section{Safety and waste handling}
+Key hazards and disposal routes for the chemicals and procedures used.
+
+\begin{itemize}
+  \item Hexane — respirator; never heat with hexane present.
+  \item TMC — store under parafilm in glass.
+  \item Acid / base — appropriate PPE and handling.
+  \item Waste — route per laboratory protocol.
+\end{itemize}
+
+
+\section{Deviations from protocol}
+Where execution differed from the Lab Manual; cross-referenced to the Tracker deviation log.
+

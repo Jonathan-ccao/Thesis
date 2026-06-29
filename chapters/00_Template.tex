@@ -1,5 +1,21 @@
-\chapter{Materials and Methods}
-\label{ch:methods}
+This chapter sets the context for the thesis Membraneee. Cite sources like
+this~\citep{example2021}, or in-text like \citet{example2021}. Cross-reference
+chapters with \texttt{\textbackslash autoref}: see
+Chapter~\ref{ch:methods}.
+
+
+\section{Background}
+
+Reverse osmosis (RO) is the dominant desalination technology worldwide.
+
+\section{Aims and objectives}
+
+\begin{enumerate}
+  \item Regenerate a polyamide active layer on end-of-life RO membranes.
+  \item Characterise pure water permeability (PWP) and salt rejection.
+\end{enumerate}
+
+
 
 \section{Interfacial polymerisation}
 
@@ -47,7 +63,7 @@ Units are typeset with \texttt{siunitx}: a feed pressure of
   \label{tab:performance}
   \begin{tabular}{lcc}
     \toprule
-    Sample & PWP (\si{\litre\per\square\metre\per\hour\per\bar}) & Rejection (\%) \\
+    Sample & PWP (\si{\litre\per\square\metre\per\hour\per\bar}) & Rejection (\si{\percent}) \\
     \midrule
     Virgin       & 3.8 & 98.7 \\
     End-of-life   & 9.1 & 41.2 \\
@@ -57,3 +73,18 @@ Units are typeset with \texttt{siunitx}: a feed pressure of
 \end{table}
 
 Refer to tables and equations by number: Table~\ref{tab:performance} and Equation~\eqref{eq:rejection}.
+
+
+\label{ch:results}
+
+Present and interpret your findings here. A figure is included with
+\texttt{\textbackslash includegraphics}; place image files in \texttt{figures/}.
+
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=0.7\textwidth]{figures/your_plot.pdf}
+%   \caption{Caption describing the figure.}
+%   \label{fig:example}
+% \end{figure}
+
+See Equation~\eqref{eq:pwp} for how permeability was computed.
