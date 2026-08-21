@@ -1,68 +1,114 @@
 \chapter{Materials and Methods}
 \label{ch:methods}
 
+% =====================================================================
+% Ordered as the work was actually performed:
+% materials -> design -> fouling profiling -> clean -> IP -> test -> autopsy.
+% Written so a competent reader could reproduce it. Past tense.
+% =====================================================================
+
 \section{Materials}
-Membranes, monomers, cleaning chemicals and salts used, with grades and suppliers.
+\label{sec:materials}
+Lists the membranes, monomers, cleaning chemicals and salts used, with grades and suppliers.
 
 \begin{itemize}
-  \item Membranes A and C — end-of-life RO elements (MemBrane Works; one first-pass, one second-pass).
-  \item Monomers — \emph{m}-phenylenediamine (MPD), trimesoyl chloride (TMC), \emph{n}-hexane.
-  \item Cleaning chemicals — \ce{NaOH}, EDTA, citric acid, \ce{HCl}.
-  \item Test salt — \ce{NaCl}.
+  \item Membranes A and C --- end-of-life RO elements (MemBrane Works; one first-pass, one second-pass).
+  \item Monomers --- \emph{m}-phenylenediamine (MPD), trimesoyl chloride (TMC), \emph{n}-hexane.
+  \item Cleaning chemicals --- \ce{NaOH}, EDTA, citric acid, \ce{HCl}.
+  \item Test salt --- \ce{NaCl}.
 \end{itemize}
 
 
 \section{Experimental design}
-Two membranes across three cleaning arms give six conditions, with coupons cut into pieces as replicates.
+\label{sec:experimental-design}
+Sets out the factorial structure of the study and explains why substrate cleaning was chosen as the manipulated variable.
 
 \begin{itemize}
-  \item Arm 1 — no clean (IP directly).
-  \item Arm 2 — standard clean.
-  \item Arm 3 — extensive clean (extended time).
-  \item Each coupon cut into 2 pieces for replicates.
-  \item Replicated all membranes and arms x2
+  \item Two membranes across two cleaning arms give four conditions, with coupons cut into pieces as replicates.
+  \item Arm 1 --- no clean (IP directly on the fouled substrate).
+  \item Arm 2 --- extensive clean.
+  \item Each coupon cut into 2 pieces for replicates; all membranes and arms replicated $\times$2.
+  \item Justify the choice of two widely separated levels against the cleaning-efficiency plateau in Section~\ref{sec:fouling-ip}: closely spaced levels cannot produce distinguishable substrate conditions at this replicate count.
 \end{itemize}
+
+% ---------------------------------------------------------------------
+% OPTIONAL - uncomment if you and your supervisor decide to acknowledge
+% the earlier intermediate-cleaning runs. One sentence, and it makes the
+% design read as a response to evidence rather than a narrowing:
+%
+% \noindent A two-arm design was adopted following preliminary runs at an
+% intermediate cleaning intensity, which did not produce substrate
+% conditions distinguishable from the uncleaned case within the observed
+% replicate scatter.
+%
+% Reasons to include it: the intermediate-cleaning runs are recorded in
+% the Experiment Tracker, the lab notebook, and this repository's commit
+% history, all of which describe a three-arm design. "How many conditions
+% did you run?" is a routine viva question.
+% ---------------------------------------------------------------------
 
 % TODO: insert design schematic / condition table
 
 
-\section{Cleaning protocols}
-Sequential base then acid clean; Arm 3 uses extended duration at matched chemistry.
+\section{Fouling characterisation of the as-received membranes}
+\label{sec:fouling-characterisation}
+Describes how the fouling present on each EoL membrane was identified and quantified before any cleaning, establishing the substrate condition each arm started from.
 
 \begin{itemize}
-  \item Base clean — 0.1--0.2\% \ce{NaOH} + 0.8--1\% EDTA.
+  \item Coupon sampling --- position within the element (feed-end / tail-end), handling and storage before analysis.
+  \item ATR-FTIR --- instrument, crystal, number of scans, resolution, background; assignment of organic and amide bands.
+  \item SEM-EDS --- coating, accelerating voltage, magnifications; elemental mapping for Ca, Si, Fe, S.
+  \item Any additional analyses used (XPS, gravimetric loading, visual coverage scoring).
+  \item How a ``fouling profile'' was defined and reported for each membrane, so that Chapter~\ref{ch:results} can compare A with C on a consistent basis.
+\end{itemize}
+% NOTE: this section is new relative to the earlier project plan, which
+% listed fouling profiling as out of scope. Confirm the final method list.
+
+
+\section{Cleaning protocols}
+\label{sec:cleaning}
+Specifies the sequential base-then-acid clean applied in Arm 2, and the duration that makes it ``extensive''.
+
+\begin{itemize}
+  \item Base clean --- 0.1--0.2\% \ce{NaOH} + 0.8--1\% EDTA.
   \item Rinse / flush.
-  \item Acid clean — \ce{HCl} to pH 1--2.
-  \item Arm 3 — same chemistry, extended cleaning time.
+  \item Acid clean --- \ce{HCl} to pH 1--2.
+  \item Arm 2 (extensive) --- same chemistry, extended contact time; state the duration explicitly.
+  \item Record duration, temperature, crossflow rate and volume for each step.
 \end{itemize}
 
 
 \section{In-situ interfacial polymerisation}
-Polyamide is regenerated in place by sequential MPD and TMC dosing through the rig, then heat cured.
+\label{sec:ip-method}
+Describes how the polyamide layer was regenerated in place by sequential MPD and TMC dosing through the rig, followed by heat curing.
 
 \begin{itemize}
-  \item MPD (1.5\,wt\%) — 3\,min, waste-first flush.
-  \item TMC (0.2\,wt\% in \emph{n}-hexane) — 60\,s.
-  \item Heat cure — compressed air via \SI{98}{\celsius} bath ($\approx$\SI{60}{\celsius} at membrane), 5\,min.
+  \item MPD (1.5\,wt\%) --- 3\,min, waste-first flush.
+  \item TMC (0.2\,wt\% in \emph{n}-hexane) --- 60\,s.
+  \item Heat cure --- compressed air via \SI{98}{\celsius} bath ($\approx$\SI{60}{\celsius} at membrane), 5\,min.
   \item Mark coupon orientation.
+  \item Note drainage and excess-removal steps, which control film uniformity.
 \end{itemize}
 
 
 \section{High-pressure crossflow rig and compaction}
-Crossflow rig used for compaction and performance testing prior to characterisation.
+\label{sec:rig}
+Describes the rig used for compaction and performance testing, and the compaction protocol applied before any measurement.
 
 \begin{itemize}
-  \item Compaction — 30\,min at \SI{15}{bar}.
+  \item Rig configuration --- cell, feed loop, pressure and temperature control.
+  \item Compaction --- 30\,min at \SI{15}{bar}.
 \end{itemize}
 
 % TODO: insert rig diagram
 
 
 \section{Performance characterisation}
-Permeability and salt rejection measured on each piece after compaction.
+\label{sec:performance}
+Defines the two performance metrics measured on each piece after compaction and how each was calculated.
 
 \subsection{Pure water permeability}
-PWP from time-to-volume at known pressure.
+Gives the permeability calculation from time-to-volume at known pressure.
 
 \begin{equation}
   A = \frac{V}{A_m \, t \, \Delta P},
@@ -72,7 +118,7 @@ PWP from time-to-volume at known pressure.
 \noindent with $A_m = \SI{0.0139}{\square\metre}$; record $\Delta P$ and temperature.
 
 \subsection{NaCl rejection}
-Rejection from feed and permeate conductivities.
+Gives the rejection calculation from feed and permeate conductivities.
 
 \begin{equation}
   R = \left(1 - \frac{\kappa_p}{\kappa_f}\right) \times 100\%,
@@ -82,26 +128,31 @@ Rejection from feed and permeate conductivities.
 \noindent with $\kappa_p$, $\kappa_f$ the permeate and feed conductivities; note feed concentration.
 
 
-\section{Membrane autopsy}
-Surface and chemical analyses on selected pieces to characterise the regenerated layer.
+\section{Post-regeneration membrane autopsy}
+\label{sec:autopsy}
+Describes the surface and chemical analyses applied to regenerated pieces to confirm that a new polyamide layer formed and to explain the performance measured.
 
 \begin{itemize}
-  \item Analyses — FTIR, XPS, SEM-EDS (to confirm).
-  \item Coupon-selection criteria — representative of each condition.
+  \item Analyses --- FTIR, XPS, SEM-EDS (to confirm).
+  \item Comparison basis --- same techniques and settings as Section~\ref{sec:fouling-characterisation}, so before and after can be compared directly.
+  \item Coupon-selection criteria --- representative of each condition; include at least one high- and one low-performing piece.
 \end{itemize}
 
 
 \section{Safety and waste handling}
-Key hazards and disposal routes for the chemicals and procedures used.
+\label{sec:safety}
+Records the key hazards and disposal routes for the chemicals and procedures used.
 
 \begin{itemize}
-  \item Hexane — respirator; never heat with hexane present.
-  \item TMC — store under parafilm in glass.
-  \item Acid / base — appropriate PPE and handling.
-  \item Waste — route per laboratory protocol.
+  \item Hexane --- respirator; never heat with hexane present.
+  \item TMC --- store under parafilm in glass.
+  \item Acid / base --- appropriate PPE and handling.
+  \item Waste --- route per laboratory protocol.
 \end{itemize}
 
 
 \section{Deviations from protocol}
-Where execution differed from the Lab Manual; cross-referenced to the Tracker deviation log.
+\label{sec:deviations}
+Records where execution differed from the Lab Manual, so that anomalies in Chapter~\ref{ch:results} can be traced.
 
+% Cross-reference the Tracker deviation log.

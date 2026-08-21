@@ -1,41 +1,134 @@
 \chapter{Results and Discussion}
-\label{ch:Results and Discussion}
+\label{ch:results}
+% Label changed from "ch:Results and Discussion" (spaces in labels are
+% legal but fragile). Update any old \ref{} that used the previous name.
 
-\section{Cleaning Outcomes}
-- Visual / Observational effects of each arm before IP
+% =====================================================================
+% Organised by theme, not by lab date. Each block:
+% present data -> interpret -> connect to Chapter 2.
+% Sequence mirrors the causal chain: what was on the membrane ->
+% what cleaning did -> what IP produced -> why.
+% =====================================================================
 
-\section{Pure Water Permeability (PWP)}
-PWP across arms and membranes; use figure + table, compare new vs EoL Baselines
-- X axis = each membrane/condition (4238A no clean, clean etc), two bars each (IP vs No IP)
-- Y axis = average permeability (LMH/bar) with error bars from trial spread. 
-Should show IP densifies membrane and drops permeability.
-- 4238C drops from 0.92 to 0.52 LMH/bar after IP.
+\section{Fouling profiles of the as-received membranes}
+\label{sec:res-fouling}
+Reports what was actually on membranes A and C before any treatment, since every later result is conditioned on this starting state.
 
-\section{Salt Rejection}
-Rejection across arms and membranes; use figure + table, compare new vs EoL Baselines
-Y axis = average rejection (\%). IP should recover rejection on degraded memrbanes. 
-
-
-\section{Permebility vs Rejection tradeoff}
-Important: Where do regenerated coupons land vs commerical RO membranes
-X = permeability (LMH/bar), Y = rejection (\%). Show that regenerated coupons are in the same ballpark as commercial RO membranes.
+\begin{itemize}
+  \item FTIR and SEM-EDS evidence per membrane; dominant foulant classes and their elemental signatures.
+  \item Coverage and heterogeneity across the coupon; note any position dependence.
+  \item Contrast A versus C and relate to first- versus second-pass duty.
+  \item Interpret against the foulant classes in Section~\ref{sec:fouling-ip} --- which mechanisms in that section are expected to be active here.
+\end{itemize}
 
 
-\section{Effect of cleaning intensity on IP performance}
-Arm 1 vs 2 vs 3, does more cleaning help, hurt or not matter?
-Bar chart for no clean and clean can demonstrate what cleaning does before IP.
+\section{Cleaning outcomes}
+\label{sec:res-cleaning}
+Shows what the extensive clean actually removed, establishing the two substrate conditions that IP was performed on.
+
+\begin{itemize}
+  \item Visual and observational effects of the clean, against the uncleaned control.
+  \item Where available, post-clean FTIR/SEM-EDS versus the as-received baseline in Section~\ref{sec:res-fouling}.
+  \item Assess whether the extensive clean visibly removed the fouling layer, or left the residuals predicted in Section~\ref{sec:fouling-ip}.
+\end{itemize}
+
+
+\section{Pure water permeability}
+\label{sec:res-pwp}
+Presents PWP across arms and membranes, before and after IP, to show the densification the new polyamide layer produces.
+
+\begin{itemize}
+  \item Figure --- $x$ = membrane/condition (e.g.\ 4238A no clean, clean); two bars each (IP versus no IP); $y$ = average permeability (LMH/bar) with error bars from trial spread.
+  \item Expected trend --- IP densifies the surface and reduces permeability.
+  \item Observed example --- 4238C falls from 0.92 to 0.52\,LMH/bar after IP.
+  \item Compare against new-membrane and EoL baselines.
+\end{itemize}
+
+
+\section{Salt rejection}
+\label{sec:res-rejection}
+Presents NaCl rejection across arms and membranes, which is the direct test of whether selectivity was restored.
+
+\begin{itemize}
+  \item Figure --- $y$ = average rejection (\%), same grouping as Section~\ref{sec:res-pwp}.
+  \item Expected trend --- IP recovers rejection on degraded membranes.
+  \item Treat replicate scatter as data, not noise: high variance is a predicted signature of defect-driven films (Section~\ref{sec:fouling-ip}).
+\end{itemize}
+
+
+\section{Permeability--rejection trade-off}
+\label{sec:res-tradeoff}
+Places the regenerated coupons on the permeability--rejection plane against commercial RO, which is the headline result of the thesis.
+
+\begin{itemize}
+  \item Figure --- $x$ = permeability (LMH/bar), $y$ = rejection (\%).
+  \item Overlay reference points: new commercial RO, the EoL membranes before treatment, transformed NF/UF from the literature.
+  \item State plainly whether regenerated coupons land in the commercial RO region.
+\end{itemize}
+
+
+\section{Effect of cleaning on regeneration}
+\label{sec:res-cleaning-effect}
+Answers the central question of the thesis: whether the substrate must be cleaned before IP for regeneration to work at all.
+
+\begin{itemize}
+  \item Arm 1 (no clean) versus Arm 2 (extensive clean), for both membranes.
+  \item Test the necessity argument from Section~\ref{sec:substrate-prep}: an uncleaned substrate should yield a defective film --- high permeability, low rejection, wide replicate scatter.
+  \item Test the sufficiency question separately: does the cleaned arm reach commercial RO territory, or only improve on the uncleaned one? These are different claims and the distinction matters.
+  \item Distinguish a real effect from replicate scatter; state the limits of what this replicate count can support.
+  \item If the cleaned arm does \emph{not} deliver the expected permeability drop and rejection gain, that is a reportable result --- interpret it against the five mechanisms in Section~\ref{sec:fouling-ip} rather than treating it as a failed experiment.
+\end{itemize}
+
+
+\section{Membrane A versus membrane C}
+\label{sec:res-a-vs-c}
+Attributes the differences between the two membranes to their fouling profiles and service history rather than to the regeneration protocol.
+
+\begin{itemize}
+  \item Differences in response attributable to first- versus second-pass origin.
+  \item Link back to the fouling profiles in Section~\ref{sec:res-fouling}: does fouling type predict regeneration outcome better than cleaning does?
+\end{itemize}
+
 
 \section{Autopsy findings}
-Surface chemistry/morphology supporting performance story
+\label{sec:res-autopsy}
+Presents the surface chemistry and morphology of regenerated coupons as physical evidence for the performance story above.
+
+\begin{itemize}
+  \item FTIR/XPS confirmation that a polyamide layer formed; amide band recovery.
+  \item SEM morphology --- ridge-and-valley structure, coverage, visible defects or delamination.
+  \item Pair a high-performing and a low-performing coupon and explain the difference mechanistically.
+\end{itemize}
+
 
 \section{Discussion synthesis}
-Reconcile results with literature, discuss limitation, what worked, mechanisms etc
+\label{sec:res-synthesis}
+Reconciles the results with Chapter~\ref{ch:literature_review}, stating what worked, what did not, and which mechanism best explains the data.
 
-\section{Limitations and Sources of Error}
-Replicate count, rig variability, measurement uncertainty, coupon cutting, IP variability, cleaning variability, etc
+\begin{itemize}
+  \item Which of the fouling-interference mechanisms in Section~\ref{sec:fouling-ip} the data supports, and which it rules out.
+  \item Position the results against reported regeneration performance (Section~\ref{sec:uplifting}).
+  \item Answer each research gap from Section~\ref{sec:research-gap} explicitly.
+  \item Note anything genuinely unexpected and resist over-explaining it.
+\end{itemize}
 
-\section{EDIT: Tables}
-Summary performance table:
-- rows = each membrane/condition, columns = change in flux, area, average flux, average PWP (w/wo IP), average rejection (w/wo IP), change in rejection, etc.
 
-Raw trial data table in appendix with every trail's volume, time, flux etc
+\section{Limitations and sources of error}
+\label{sec:res-limitations}
+States the constraints on how far these results can be generalised, and where the largest uncertainties sit.
+
+\begin{itemize}
+  \item Replicate count, coupon cutting, rig variability, measurement uncertainty.
+  \item IP variability and cleaning variability between runs.
+  \item Compaction duration; single feed chemistry; coupon rather than module scale.
+\end{itemize}
+
+
+\section{Summary tables}
+\label{sec:res-tables}
+Consolidates the numerical results into a single reference table, with the raw data deferred to the appendix.
+
+\begin{itemize}
+  \item Summary performance table --- rows: each membrane/condition; columns: average flux, average PWP (with/without IP), change in permeability, average rejection (with/without IP), change in rejection.
+  \item Raw trial data (every trial's volume, time, flux, conductivity) in Appendix~A.
+\end{itemize}

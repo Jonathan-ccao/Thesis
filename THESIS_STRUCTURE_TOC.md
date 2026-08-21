@@ -1,140 +1,148 @@
-# Thesis Structure — Table of Contents (Writing Plan)
+# Thesis Structure — Table of Contents & Word Budget
 
 **Thesis:** *Uplifting End-of-Life RO Membranes via Polyamide Regeneration*
 **Author:** Jonathan Cao · UNSW Chemical Engineering Honours
 **Supervisor:** Prof. Pierre Le-Clech · Co-supervisor: John Ogbe
-**Purpose of this file:** A section-by-section skeleton to write into manually. Tick boxes as you draft. Each bullet is a *prompt for one paragraph or short block* — not a heading to copy verbatim. Target lengths are rough guides for an experimental Honours thesis (~50–70 pp body).
 
 Status key: `[ ]` not started · `[~]` drafting · `[x]` done
 
 ---
 
-## Front Matter
-- [ ] Title page *(already scaffolded in LaTeX)*
-- [ ] Abstract — 250–300 words: problem, what you did, key result, what it means *(write LAST)*
-- [ ] Acknowledgements
-- [ ] Table of Contents *(auto)*
-- [ ] List of Figures / List of Tables *(auto)*
-- [ ] List of Abbreviations — RO, EoL, TFC, PA, PSF, IP, MPD, TMC, PWP, NaCl rejection, LRV, TMP
+## Word budget
+
+Target **20,000 words** — midpoint of the 15,000–25,000 bracket, and consistent with a 50–70 pp body. Planning figure: **350 words per page** (12pt Times, A4, 30 mm margins, 1.5 spacing). Check this against your own pages once you have three or four written.
+
+| Chapter | Bracket | Chosen | Words | ≈ Pages |
+|---|---|---|---|---|
+| 1 Introduction | 3–10% | 7% | 1,400 | 4 |
+| 2 Literature Review | 8–30% | **21%** | **4,150** | **12** |
+| 3 Methods | 8–20% | 14% | 2,800 | 8 |
+| 4 Results & Discussion | 15–60% | 42% | 8,400 | 24 |
+| 5 Conclusions | 1% | 2% | 400 | 1 |
+| References | 2% | 2% | 400 | — |
+| | | | **17,550** | **49** |
+
+Discussion sits at 0% because it is folded into Chapter 4 — that is what lets Results run at 42%. The total leaves ~2,400 words of headroom; spend it in Chapter 4 as the data warrants, not in Chapter 2.
+
+**Chapter 2 is at the upper-middle of its bracket**, justified because the fouling→IP argument is the novelty. It is a ceiling, not a target.
+
+### Two things that buy the most words back
+
+1. **Tables, not prose.** The prior-work comparison (§2.6.1) and the EoL routes comparison (§2.5) are tables in the current scaffold. A six-row table does in ~150 words what 800 words of prose does worse. The prior-work table earns its place twice over because a "substrate condition: fouled / pristine" column makes your gap visible at a glance.
+2. **Delete the explainer sentences before submission.** The one-liner under each heading is scaffolding — roughly 450 words across Chapter 2 alone.
 
 ---
 
-## Chapter 1 — Introduction  *(~4–6 pp)*
-A funnel: broad water context → membrane waste problem → the specific gap → your aim. Keep it short and punchy; the depth lives in Ch. 2.
+## Chapter 1 — Introduction *(1,400 w · ~4 pp)*
+Funnel: water context → membrane waste → the gap → the aim.
 
-- [ ] **1.1 Background & motivation** — water scarcity, RO as the dominant desal technology, the resulting EoL membrane waste stream
-- [ ] **1.2 Problem statement** — EoL membranes are landfilled/incinerated; downcycling (RO→NF→UF) wastes the asset; regeneration is under-explored
-- [ ] **1.3 Project aim** — *one sentence*: evaluate whether EoL RO membranes (A and C) can be uplifted by depositing a new polyamide layer via in-situ IP, and how cleaning intensity beforehand affects the result
-- [ ] **1.4 Objectives** — numbered list (clean → in-situ IP → PWP + NaCl rejection across 3 arms × 2 membranes; autopsy selected coupons)
-- [ ] **1.5 Scope & limitations** — in scope vs out of scope (no fouling profiling, no IP/cleaning optimisation, no LCA); pull straight from Project Plan Rev 2 §2
-- [ ] **1.6 Thesis outline** — one short paragraph mapping the chapters
+- [ ] **1.1 Background & motivation** *(prose exists)* — 400 w
+- [ ] **1.2 Problem statement** — 250 w · ⚠️ *see note below on merging this into 1.1*
+- [ ] **1.3 Research aim** — one sentence, unjustified, no citations — 100 w
+- [ ] **1.4 Objectives** — 5 numbered — 150 w
+- [ ] **1.5 Scope & limitations** — 300 w · ⚠️ fouling profiling now IN scope
+- [ ] **1.6 Thesis outline** — 200 w
 
----
-
-## Chapter 2 — Literature Review  *(~18–25 pp — the heart of the report)*
-Sequenced in the **background → importance → current methods → limitations → new method → detail** flow you asked for. Your existing draft maps onto this cleanly; the mapping is noted per section.
-
-### 2.1 Background — the EoL RO membrane problem *(your "Global Context" section)*
-- [ ] **2.1.1** Global installed RO capacity & membrane replacement rates
-- [ ] **2.1.2** Estimated annual EoL waste volumes
-- [ ] **2.1.3** Current disposal practices — landfill / incineration / recycling
-
-### 2.2 Why it matters — environmental & economic stakes *(the "Why important" beat)*
-- [ ] **2.2.1** Environmental concerns — polymer persistence, landfill burden
-- [ ] **2.2.2** Economic stakes — cost per element, replacement cycle (frames why recovery is worth it)
-- [ ] **2.2.3** Sustainability framing — value lost when a high-grade asset is downcycled or dumped
-
-### 2.3 Membrane fundamentals *(needed before you can discuss degradation/regeneration)*
-- [ ] **2.3.1** TFC architecture & layer functions — polyester (strength), PSF (porous support), polyamide (rejection)
-- [ ] **2.3.2** Polyamide selective-layer chemistry — IP reaction, MPD + TMC monomers, mechanism, crosslink density, thickness, roughness, hydrophilicity
-- [ ] **2.3.3** Role of the PSF substrate — pore-size distribution; why substrate condition decides whether regeneration is even possible
-
-### 2.4 Degradation mechanisms — why membranes reach EoL *(sets up what regeneration must overcome)*
-- [ ] **2.4.1** Chemical degradation — chlorination of polyamide, hydrolysis/oxidation → ↑permeability, ↓rejection
-- [ ] **2.4.2** Mechanical & operational ageing — compaction, pressure damage (delamination, support collapse)
-- [ ] **2.4.3** Fouling & surface modification — organic, scaling, biofouling; fouling triggers cleaning that accelerates degradation
-- [ ] **2.4.4** Net impact on performance — flux, salt rejection, LRV, TMP
-
-### 2.5 Current EoL management methods *(the "Current methods" beat)*
-- [ ] **2.5.1** Direct reuse — secondary desalination, industrial filtration
-- [ ] **2.5.2** Mechanical recycling — module dismantling, polymer recovery; mixed-material / low-value problem
-- [ ] **2.5.3** Chemical downcycling — RO→NF→UF via controlled oxidation (NaOCl, KMnO₄)
-
-### 2.6 Limitations of current methods *(the "Limitations" beat — make the gap explicit)*
-- [ ] **2.6.1** Downcycling discards rejection capability — one-way, value-destroying
-- [ ] **2.6.2** Recycling economics are weak; reuse is short-lived
-- [ ] **2.6.3** → Motivates *restoring* RO performance rather than degrading to a lower grade
-
-### 2.7 Polyamide regeneration / membrane uplifting *(broad overview of the new method)*
-- [ ] **2.7.1** Concept — rebuild rather than degrade the selective layer; recover RO performance, extend lifetime
-- [ ] **2.7.2** Prior work — Garcia-Pacheco, Ogbe et al., and others (position your work against them)
-
-### 2.8 Regeneration in detail *(more depth on the new method — the techniques you actually use)*
-- [ ] **2.8.1** Polyamide removal techniques — oxidative, solvent dissolution, enzymatic; challenge: don't damage the PSF
-- [ ] **2.8.2** Rebuilding PA via interfacial polymerisation — controlling film formation, substrate surface chemistry, pore size, wetting, monomer diffusion
-- [ ] **2.8.3** Substrate influence on regeneration — PSF pore size, roughness, hydrophilicity, oxidation damage
-- [ ] **2.8.4** *(optional)* Techno-economic / sustainability outlook — keep brief; it's out of your experimental scope
-
-### 2.9 Research gaps & how this thesis responds
-- [ ] State the specific unanswered questions (esp. effect of pre-IP cleaning intensity), then link each to an objective from §1.4
+> **Open question you raised:** whether to keep a headed "Problem statement" at all. The case for merging it into 1.1 is that the problem lands harder in prose that builds to it. Keep the **Aim** and **Objectives** headings regardless — those are navigation, and an examiner will flip to find them.
 
 ---
 
-## Chapter 3 — Materials & Methods  *(~10–14 pp — write this EARLY, while procedures are fresh)*
-Pull from the Lab Manual, Project Plan Rev 2 §3–4, and the Experiment Tracker. Write so a competent reader could reproduce it. Past tense, passive where natural.
+## Chapter 2 — Literature Review *(4,150 w · ~12 pp)*
 
-- [ ] **3.1 Materials** — membranes A & C (MemBrane Works, first/second pass); MPD, TMC, n-hexane, NaOH, EDTA, citric acid, HCl, NaCl; grades & suppliers
-- [ ] **3.2 Experimental design** — 2 membranes × 3 arms = 6 conditions; arm definitions (1 no-clean, 2 standard clean, 3 extensive clean); coupon → cut into 2–3 pieces = replicates; *include a design schematic/table*
-- [ ] **3.3 Cleaning protocols** — base (0.1% NaOH + 0.8–1% EDTA) → rinse → acid (2% citric acid + HCl to pH 1–2); durations/temperature; Arm 3 = extended time
-- [ ] **3.4 In-situ interfacial polymerisation** — MPD 1.5 wt% (3 min, waste-first flush) → TMC 0.2 wt% in hexane (60 s) → heat cure (compressed air via 98 °C bath, ~60 °C at membrane, 5 min); coupon orientation marking
-- [ ] **3.5 High-pressure crossflow rig & compaction** — rig description + diagram; compaction 30 min at 15 bar
-- [ ] **3.6 Performance characterisation**
-  - [ ] 3.6.1 Pure water permeability — PWP = V/(A·t·ΔP); A = 0.0139 m²; record ΔP & temperature
-  - [ ] 3.6.2 NaCl rejection — R = 1 − (κ_p/κ_f); feed concentration; conductivity method
-- [ ] **3.7 Membrane autopsy** — analyses (FTIR/XPS/SEM-EDS — confirm) and coupon-selection criteria
-- [ ] **3.8 Safety & waste handling** — hexane (respirator, no heating with hexane present), TMC storage, acid/base handling, waste routes
-- [ ] **3.9 Deviations from protocol** — note where execution differed (cross-ref Tracker deviation log)
+**Design change (Aug 2026):** three cleaning arms collapsed to two — no clean vs extensive clean. §2.4.3, §3.2, §4.6 and the Ch. 1 objectives all reflect the binary design. An optional one-sentence acknowledgement of the earlier intermediate-cleaning runs sits commented out in §3.2 of `03_methods.tex`; see the note there before deciding.
+
+**Restructured Aug 2026** — collapsed from 8 sections / 30 subsections to 7 / 15. At 4,150 words the old structure gave each subsection ~140 words, which reads as a checklist rather than an argument.
+
+### 2.1 The end-of-life RO membrane problem — **350 w**
+- [ ] One continuous section, no subsections. Scale of the waste stream *(prose exists)*, then one paragraph on disposal routes, environmental persistence and the value objection.
+  > Do not expand into LCA, waste policy, or disposal regulation. Establishing the concern is enough.
+
+### 2.2 Thin-film composite RO membranes — **650 w**
+- [ ] **2.2.1** Architecture and layer functions — 150 w *(prose exists)* · a labelled cross-section figure replaces ~200 words
+- [ ] **2.2.2** Polyamide formation by interfacial polymerisation — 250 w
+- [ ] **2.2.3** The PSF substrate and its control over film formation — 250 w
+  > 2.2.3 is the pivot of the chapter. Do not compress further.
+
+### 2.3 Ageing and fouling of RO membranes — **550 w**
+- [ ] **2.3.1** Chemical and mechanical degradation — 275 w *(merged from three former subsections)*
+- [ ] **2.3.2** Fouling classes and the fouling–cleaning cycle — 275 w · four foulant classes at roughly a sentence each
+  > The EoL performance signature (PWP, rejection, LRV, TMP) goes in the Ch. 4 baseline table, not in prose here.
+
+### 2.4 Fouling as a constraint on regeneration — **1,150 w** ← *largest section, protected*
+- [ ] **2.4.1** What cleaning removes and what it leaves behind — 300 w · *justifies the two levels*
+- [ ] **2.4.2** Residual foulants as a barrier to IP — 400 w · **the most important block in the chapter**; five mechanisms, then the expected experimental signatures
+- [ ] **2.4.3** Substrate preparation as a precondition for regeneration — 250 w · *your specific question, now binary: is cleaning necessary, and is a standard clean sufficient?*
+- [ ] **2.4.4** Characterising fouling profiles — 200 w, or 120 w plus a small table
+
+### 2.5 End-of-life management routes — **450 w** ← *largest single cut, was 3–4 pp*
+- [ ] **Comparison table** — reuse / mechanical / solvent / downcycling × principle, product, performance, limitation
+- [ ] **2.5.1** Reuse and material recovery — 120 w for both
+- [ ] **2.5.2** Chemical downcycling to NF and UF — 200 w · *framing 1: competing endpoint*
+- [ ] **2.5.3** Why current routes are insufficient — 130 w · the pivot
+
+### 2.6 Polyamide regeneration — **750 w** ← *protected; merged from former §2.6 + §2.7*
+- [ ] **2.6.1** Concept and prior work — 250 w *(one sentence of prose exists)* + **the prior-work table**
+- [ ] **2.6.2** Stripping PA without destroying the substrate — 250 w · *framing 2: same chemistry as §2.5.2, now as a process step*
+- [ ] **2.6.3** Re-forming PA on a recovered substrate — 250 w
+  > **Cut entirely:** the sustainability / techno-economic outlook. Out of experimental scope — one line in Ch. 5 instead.
+
+### 2.7 Research gaps and how this thesis responds — **250 w**
+- [ ] Gap 1 — regeneration demonstrated on pristine substrates; real fouling uncharacterised
+- [ ] Gap 2 — cleaning treated as fixed pre-treatment; whether it is necessary at all, or sufficient, is unestablished
+- [ ] Gap 3 — fouling profile and outcome rarely measured on the same membrane
+- [ ] Map each to a numbered objective from §1.4. No new literature.
 
 ---
 
-## Chapter 4 — Results & Discussion  *(~12–18 pp — combined is usual for Honours)*
-Organise by *theme/metric*, not by chronological lab day. Each block: present data → interpret → connect to literature.
+## Chapter 3 — Materials & Methods *(2,800 w · ~8 pp)*
+Ordered as the work was performed. ~280 w per section.
 
-- [ ] **4.1 Cleaning outcomes** — visual/observational effect of each arm before IP
-- [ ] **4.2 Pure water permeability** — PWP across arms & membranes; figure (bar/scatter) + table; compare vs new-membrane / EoL baselines
-- [ ] **4.3 Salt rejection** — R across arms & membranes; figure + table
-- [ ] **4.4 Permeability–rejection trade-off** — the key plot; where do regenerated coupons land vs commercial RO?
-- [ ] **4.5 Effect of cleaning intensity** — Arm 1 vs 2 vs 3: does more cleaning help, hurt, or not matter? *(your central question)*
-- [ ] **4.6 Membrane A vs C** — differences attributable to first- vs second-pass origin
-- [ ] **4.7 Autopsy findings** — surface chemistry/morphology supporting the performance story
-- [ ] **4.8 Discussion synthesis** — reconcile results with Ch. 2; what worked, what surprised you, mechanisms
-- [ ] **4.9 Limitations & sources of error** — replicate count, compaction time, rig variability, measurement uncertainty
+- [ ] **3.1 Materials** · **3.2 Experimental design** — **2 membranes × 2 arms = 4 conditions** (no clean / extensive clean); justify the wide level separation against §2.4.1
+- [ ] **3.3 Fouling characterisation of as-received membranes** — **NEW**
+- [ ] **3.4 Cleaning protocols** · **3.5 In-situ IP** · **3.6 Rig and compaction**
+- [ ] **3.7 Performance characterisation** (3.7.1 PWP, 3.7.2 rejection)
+- [ ] **3.8 Post-regeneration autopsy** — same techniques as 3.3 so before/after compare directly
+- [ ] **3.9 Safety** · **3.10 Deviations from protocol**
 
 ---
 
-## Chapter 5 — Conclusions & Future Work  *(~3–4 pp)*
-- [ ] **5.1 Conclusions** — answer the aim directly; restate the 2–3 headline findings (no new data)
-- [ ] **5.2 Recommendations / future work** — IP & cleaning optimisation, more replicates, longer compaction, LCA/techno-economics, scale-up, the open questions you didn't close
+## Chapter 4 — Results & Discussion *(8,400 w · ~24 pp)*
+The largest chapter by design. Sequence follows the causal chain, not the lab calendar. ~760 w per section.
+
+- [ ] **4.1 Fouling profiles of as-received membranes** — **NEW**; everything later is conditioned on this
+- [ ] **4.2 Cleaning outcomes** — did the extensive clean visibly strip the fouling layer, or leave the predicted residuals?
+- [ ] **4.3 PWP** — 4238C 0.92 → 0.52 LMH/bar
+- [ ] **4.4 Salt rejection** — treat replicate scatter as data
+- [ ] **4.5 Permeability–rejection trade-off** — the headline plot
+- [ ] **4.6 Effect of cleaning** — Arm 1 (no clean) vs Arm 2 (extensive); necessity and sufficiency are separate claims
+- [ ] **4.7 Membrane A vs C** — does fouling profile predict outcome better than cleaning?
+- [ ] **4.8 Autopsy findings** — pair a high- and a low-performing coupon
+- [ ] **4.9 Discussion synthesis** — answer each gap from §2.7 explicitly
+- [ ] **4.10 Limitations** · **4.11 Summary tables**
+
+---
+
+## Chapter 5 — Conclusions & Future Work *(400 w · ~1 pp)*
+- [ ] **5.1 Conclusions** — answer §1.3 directly; no new data
+- [ ] **5.2 Future work** — ordered by how much each would change the conclusion; include the techno-economic line cut from §2.6
 
 ---
 
 ## Back Matter
-- [ ] **References** — EndNote/BibTeX; keep `references.bib` current as you cite
-- [ ] **Appendix A** — full Experiment Tracker data / raw PWP timings & conductivities
-- [ ] **Appendix B** — Lab Manual SOP (or cross-reference)
-- [ ] **Appendix C** — risk assessment / safety data
-- [ ] **Appendix D** — additional figures, calibration, autopsy spectra
+- [ ] References · Appendix A raw data · B SOP · C risk assessment · D calibration and spectra
 
 ---
 
-## Suggested writing order (not document order)
-1. **Ch. 3 Methods** — easiest; do it now while the lab work is live.
-2. **Ch. 2 Literature Review** — you already have the skeleton; flesh it out in parallel with lab weeks.
-3. **Ch. 4 Results** — as data lands (rig work done ~7 Aug).
-4. **Ch. 1 Introduction** — once the story is clear.
-5. **Ch. 5 Conclusions**, then the **Abstract** last.
+## Writing order
+1. **Ch. 3 Methods** — including new §3.3, while procedures are fresh
+2. **Ch. 2 §2.4** — longest lead time; needs new reading
+3. **Ch. 2 §2.6** — regeneration
+4. **Ch. 2 §2.1–2.3, §2.5** — largely assembly
+5. **Ch. 4**, then **Ch. 1**, then **Ch. 5**, then the **Abstract**
 
 ## Notes
-- This maps onto the existing LaTeX scaffold: `01_introduction → Ch.1`, add `02_literature.tex` for Ch.2, `02_methods → Ch.3`, `03_results → Ch.4`, `04_conclusion → Ch.5`.
-- Keep figures numbered per chapter; every figure/table must be referenced in text before it appears.
-- Resolve before/while writing Methods: NaCl feed concentration, autopsy analyses, coupon dimensions, Arm 3 durations (see `open-questions.md`).
+- **Citations:** `\citep{}` throughout. The old `(\cite{})` produced double parentheses under natbib author-year.
+- **Labels:** every section has one. `ch:Results and Discussion` → `ch:results`; `ch:conclusion_and_future_work` → `ch:conclusion`; `sec:regeneration-detail` → `sec:cleaning-intensity`.
+- **Biggest reading gap:** `references.bib` has 9 entries and almost nothing on fouling mechanisms or cleaning efficiency. `Molinaa2018` is the only one touching fouling characterisation on EoL elements. §2.4 is 28% of the chapter and has the thinnest source base.
+- Every figure/table referenced in text before it appears.
+- Still to resolve: NaCl feed concentration, final autopsy technique list, coupon dimensions, extensive-clean duration.
