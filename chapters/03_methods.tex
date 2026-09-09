@@ -31,21 +31,7 @@ Sets out the factorial structure of the study and explains why substrate cleanin
   \item Justify the choice of two widely separated levels against the cleaning-efficiency plateau in Section~\ref{sec:fouling-ip}: closely spaced levels cannot produce distinguishable substrate conditions at this replicate count.
 \end{itemize}
 
-% ---------------------------------------------------------------------
-% OPTIONAL - uncomment if you and your supervisor decide to acknowledge
-% the earlier intermediate-cleaning runs. One sentence, and it makes the
-% design read as a response to evidence rather than a narrowing:
-%
-% \noindent A two-arm design was adopted following preliminary runs at an
-% intermediate cleaning intensity, which did not produce substrate
-% conditions distinguishable from the uncleaned case within the observed
-% replicate scatter.
-%
-% Reasons to include it: the intermediate-cleaning runs are recorded in
-% the Experiment Tracker, the lab notebook, and this repository's commit
-% history, all of which describe a three-arm design. "How many conditions
-% did you run?" is a routine viva question.
-% ---------------------------------------------------------------------
+
 
 % TODO: insert design schematic / condition table
 
@@ -69,13 +55,47 @@ Describes how the fouling present on each EoL membrane was identified and quanti
 \label{sec:cleaning}
 Specifies the sequential base-then-acid clean applied in Arm 2, and the duration that makes it ``extensive''.
 
+As membranes in RO elements become fouled with mineral scale, biological matter, and insoluble organic constituents, the deposit can build up and cause losses in permeate flow and salt rejection. Eventually, fouling can become irreversible and may not restore membrane performance despite standard cleaning. 
+
+In order to minimise the impact that fouling deposits have on the new PA layer formed, extensive cleaning was conducted on the membrane samples well beyond commercial conditions. This aims to remove as much of the fouling as possible without doing extreme damage to the existing PA layer. 
+
+The membranes were subjected to a two step chemical cleaning process. The clean involves an alkaline (caustic) solution followed by an acid one, consistent with standard industrial cleaning sequence for composite polyamide RO membranes \citep{Lenntech2011}. The alkaline targets organic and biological foulants, as carboxylic functional groups deprotonate at elevated pH, increasing the foulant solubility \citep{Ang2006}. EDTA acts as the chelating agent. The acid step then dissolves the inorganic scale and metal oxides on the surface \citep{Lenntech2011}.
+
+
+All cleaning was performed ex-situ by soaking at room temperature (approximately \SI{22}{\celsius}), above the minimum effective cleaning temperature of \SI{20}{\celsius} \citep{Lenntech2011}. Membrane sheets were cleaned separately, cut into rectangles of around \qty{99}{\square\centi\metre} and placed in 1.5L of cleaning solution made of Milli-Q water. As membranes tested are EoL elements carrying consolidated fouling layers, modifications were made to the standard protocol including:
 \begin{itemize}
-  \item Base clean --- 0.1--0.2\% \ce{NaOH} + 0.8--1\% EDTA.
-  \item Rinse / flush.
-  \item Acid clean --- \ce{HCl} to pH 1--2.
-  \item Arm 2 (extensive) --- same chemistry, extended contact time; state the duration explicitly.
-  \item Record duration, temperature, crossflow rate and volume for each step.
+  \item Extended contact time: Each chemical step was run for 24 hours rather than 1 hour for routine cleaning. \cite{DuPont2026} recommends an overnight soak of 10-15 hours for difficult fouling. Extending to 24 hours ensures that the chemical cleaning agents are not a limiting factor in foulant removal. 
+  \item Continuous agitation: Solutions were stirred with a magnetic stirrer at 100 RPM throughout the soak. Industrially, recirculation throughout the membrane element is used, however a low speed stirring also provides better mass transfer throughout the solution.
 \end{itemize}
+
+\subsection{Alkaline (caustic) clean with chelant}
+\begin{enumerate}
+  \item The RO membrane sheet is cut into rectangles of \qty{99}{\centi\metre} by\qty{99}{\centi\metre}.
+  \ 1.5 L of Milli-Q water was measured out in a 3L glass beaker. NaOH pellets were weighed and dissolved in a portion of this water with manual stirring until fully dissolved. NaOH mass per 1.5L was 3.50g, which is approximately 0.23\% w/v.
+  \item Na-EDTA was weighed and dissolved into the same solution, around 15g per 1.5L, which is 1.0\% w/v consistent with 1\% specified by \cite{DuPont2026} and 0.8\% given by \cite{Lenntech2011}.
+  \item The pH of the combined solution was measured with a calibrated pH meter. Measured values across baches ranges from around 11.14 to 11.58 pH. This sits around pH 11 reported by \cite{Ang2006} to optimise deprotonation of foulant carboxylic groups, within the 10-11.5 pH window given by \cite{Lenntech2011} and witin the 1-13 pH tolerence of polyamide membranes at $\le$ \SI{25}{\celsius} \citep{DuPont2026}. The NaOH dose is above the 0.1\% w/v figure from both sources as the additional caustic is consumed by the disodium EDTA salt. 
+  \item Membrane sheet was fully submerged in the 1.5L alkaline solution. The beaker was covered with aluinium foil and stirred with a magnetic stirrer at 100 rpm without heating for 24 hours at room temperature. 
+\end{enumerate}
+
+\subsection{Indermediate Rinse}
+\begin{enumerate}[resume]
+  \item Following the alkaline soak, the membrane was rinsed continuously with RO water for 10 mins to remove residual cleaning solution. This should prevent remaining alkaline solution from reacting and neutralising the acid solution on contact. 
+\end{enumerate}
+
+\subsection{Acid clean}
+\begin{enumerate}[resume]
+  \item 15 mL of 32\% w/w hydrochloric acid was added to 1.5L of Milli-Q water and mixed. 
+  \item Solution pH was measured with a calibrated pH meter and read as 1.4 pH, within the 1-2 pH range specified by \cite{DuPont2026} and consistent with the 1.5 HCl dosed acid clean used industrially \citep{zwaneveld2026personal}
+  \item The membrane sheet was fully submerged in the 1.5L of acid solution. Vessel was covered with aluminium foil and stirred at 100 rpm without heating, for 24 hours at room temprature. 
+\end{enumerate}
+
+\subsection{Final Rinse}
+\begin{enumerate}[resume]
+  \item The membrane was rinsed thoroughly and continuously with RO membrane until free of cleaning agents. 
+\end{enumerate}
+
+
+
 
 
 \section{In-situ interfacial polymerisation}
