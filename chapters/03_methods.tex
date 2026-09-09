@@ -7,16 +7,11 @@
 % Written so a competent reader could reproduce it. Past tense.
 % =====================================================================
 
-\section{Materials}
+\section{Chemicals and Materials}
 \label{sec:materials}
 Lists the membranes, monomers, cleaning chemicals and salts used, with grades and suppliers.
+Industrial EoL RO membranes (Insert labels here) were recovered from both a domestic desalination plant and a mine site. **Confirm**. N-hexane, along with monomers m-phenylenediamine (MPD, \ce{C6H4-1,3-(NH2)2}, 100\% purity) and 1,3,5-benzenetricarbonyl trichloride (TMC, \ce{C9H3Cl3O3}, $\le98\%$ purity) were purchased from Sigma-Aldrich. The chemicals HCl, NaOH, EDTA were purchased from and used as cleaning agents. Sodium chloride (NaCl) solutions at 2000ppm were prepared for solute rejection performance test. Milli-q water was used throughout and all chemical were of analytical grade.
 
-\begin{itemize}
-  \item Membranes A and C --- end-of-life RO elements (MemBrane Works; one first-pass, one second-pass).
-  \item Monomers --- \emph{m}-phenylenediamine (MPD), trimesoyl chloride (TMC), \emph{n}-hexane.
-  \item Cleaning chemicals --- \ce{NaOH}, EDTA, citric acid, \ce{HCl}.
-  \item Test salt --- \ce{NaCl}.
-\end{itemize}
 
 
 \section{Experimental design}
@@ -100,57 +95,50 @@ All cleaning was performed ex-situ by soaking at room temperature (approximately
 
 \section{In-situ interfacial polymerisation}
 \label{sec:ip-method}
-Describes how the polyamide layer was regenerated in place by sequential MPD and TMC dosing through the rig, followed by heat curing.
 
-\begin{itemize}
-  \item MPD (1.5\,wt\%) --- 3\,min, waste-first flush.
-  \item TMC (0.2\,wt\% in \emph{n}-hexane) --- 60\,s.
-  \item Heat cure --- compressed air via \SI{98}{\celsius} bath ($\approx$\SI{60}{\celsius} at membrane), 5\,min.
-  \item Mark coupon orientation.
-  \item Note drainage and excess-removal steps, which control film uniformity.
-\end{itemize}
+In-situ IP was performed in a custom flat-sheet crossflow system using a dry
+acrylic membrane cell (\qtyproduct{280 x 125 x 50}{\milli\metre}) that exposed the active
+surface of the membrane sheet. A peristaltic pump circulated solution at
+\qty{1.5}{\litre\per\minute} to maintain consistent mass transfer, with the
+cell outlet returning liquid to the feed tank. For curing, the liquid feed was
+replaced with heated air: compressed air passed through a stainless steel coil
+submerged in a temperature-controlled water bath, and a downstream temperature
+sensor verified that air reached the cell at the target curing temperature.
+Regulating both air temperature and flow rate to the cell enabled controlled
+and uniform curing of the PA layer.
 
-
-\section{High-pressure crossflow rig and compaction}
-\label{sec:rig}
-Describes the rig used for compaction and performance testing, and the compaction protocol applied before any measurement.
-
-\begin{itemize}
-  \item Rig configuration --- cell, feed loop, pressure and temperature control.
-  \item Compaction --- 30\,min at \SI{15}{bar}.
-\end{itemize}
-
-% TODO: insert rig diagram
+EoL RO membranes were mounted in the acrylic cell and an aqueous MPD phase
+(\qty{3.75}{\gram} in \qty{250}{\milli\litre}) was circulated at
+\qty{1.5}{\litre\per\minute} for \qty{3}{\minute}. The membrane was then removed
+from the cell and dried, before the organic TMC/hexane phase
+(\qty{330}{\micro\litre} in \qty{250}{\milli\litre}) was circulated for
+\qty{1}{\minute}. Curing followed at \qty{60}{\degreeCelsius} and
+\qty{10}{\litre\per\minute} for \qty{5}{\minute}.
 
 
-\section{Performance characterisation}
-\label{sec:performance}
-Defines the two performance metrics measured on each piece after compaction and how each was calculated.
+\section{Membrane Performance test using High-pressure crossflow rig and compaction}
+\label{sec:rig performance}
 
-\subsection{Pure water permeability}
-Gives the permeability calculation from time-to-volume at known pressure.
+Membrane performance was evaluated using two metrics: pure water permeability and salt rejection. These were conducted using a crossflow rig holding two flat-sheet membrane with effective area of \qty{0.0139}{\metre\squared}. Conductivity was measured using a *** probe and permeate flow rate was measured using the mass of permeate converted to volume. Pressure was monitured via CIMPLYCITY software. Membranes were compacted at 15 bars for 60 mins before testing. Tests were conducted at \qty{25}{\degreeCelsius} and 10 bar retentate pressure. Each membrane coupon was tested 3 times, with averages and standard deviations reported. Salt rejection and PWP were measured using 2,000 ppm NaCl at pH 7 $\pm$ 0.2 and \qty{25}{\degreeCelsius} until 15mLs of permeate was collected. Pressure and flow during this was maintained at around 14-16 bar and 1 L/min. Flux was recorded after 10 min stabilization. PWP and salt rejection were calculated from feed and permeate conductivities using equation 1 and 2 where $A_m$ is the membrane area, $\Delta V/\Delta t$ is the collected volume per time, and $C_p$ and $C_f$ are permeate and feed concentrations respectively.
 
 \begin{equation}
-  A = \frac{V}{A_m \, t \, \Delta P},
+  P = \frac{\Delta V}{A_m \cdot \Delta t},
   \label{eq:pwp-methods}
 \end{equation}
 
-\noindent with $A_m = \SI{0.0139}{\square\metre}$; record $\Delta P$ and temperature.
-
-\subsection{NaCl rejection}
-Gives the rejection calculation from feed and permeate conductivities.
-
 \begin{equation}
-  R = \left(1 - \frac{\kappa_p}{\kappa_f}\right) \times 100\%,
+  R = \left(1 - \frac{C_p}{C_f}\right) \times 100\%,
   \label{eq:rejection-methods}
 \end{equation}
 
-\noindent with $\kappa_p$, $\kappa_f$ the permeate and feed conductivities; note feed concentration.
+\noindent with $A_m = \SI{0.0139}{\square\metre}$.
 
 
 \section{Post-regeneration membrane autopsy}
 \label{sec:autopsy}
 Describes the surface and chemical analyses applied to regenerated pieces to confirm that a new polyamide layer formed and to explain the performance measured.
+
+Prior to analysis, membrane sample were dried at \qty{25}{\degreeCelsius} for 10h to eliminate moisture. 
 
 \begin{itemize}
   \item Analyses --- FTIR, XPS, SEM-EDS (to confirm).
