@@ -1,35 +1,27 @@
 \chapter{Materials and Methods}
 \label{ch:methods}
 
-% =====================================================================
-% Ordered as the work was actually performed:
-% materials -> design -> fouling profiling -> clean -> IP -> test -> autopsy.
-% Written so a competent reader could reproduce it. Past tense.
-% =====================================================================
-
 \section{Chemicals and Materials}
 \label{sec:materials}
-Lists the membranes, monomers, cleaning chemicals and salts used, with grades and suppliers.
-Industrial EoL RO membranes (Insert labels here) were recovered from both a domestic desalination plant and a mine site. **Confirm**. N-hexane, along with monomers m-phenylenediamine (MPD, \ce{C6H4-1,3-(NH2)2}, 100\% purity) and 1,3,5-benzenetricarbonyl trichloride (TMC, \ce{C9H3Cl3O3}, $\le98\%$ purity) were purchased from Sigma-Aldrich. The chemicals HCl, NaOH, EDTA were purchased from and used as cleaning agents. Sodium chloride (NaCl) solutions at 2000ppm were prepared for solute rejection performance test. Milli-q water was used throughout and all chemical were of analytical grade.
+\flag{Industrial EoL RO membranes (Insert labels here) were recovered from both a domestic desalination plant and a mine site}. N-hexane, along with monomers m-phenylenediamine (MPD, \ce{C6H4-1,3-(NH2)2}, 100\% purity) and 1,3,5-benzenetricarbonyl trichloride (TMC, \ce{C9H3Cl3O3}, $\le98\%$ purity) were purchased from Sigma-Aldrich. The chemicals HCl, NaOH, EDTA were purchased from and used as cleaning agents. Sodium chloride (NaCl) solutions at 2000ppm were prepared for solute rejection performance test. Milli-q water was used throughout and all chemical were of analytical grade.
 
 
 
 \section{Experimental design}
 \label{sec:experimental-design}
-Sets out the factorial structure of the study and explains why substrate cleaning was chosen as the manipulated variable.
 
-\begin{itemize}
-  \item Two membranes across two cleaning arms give four conditions, with coupons cut into pieces as replicates.
-  \item Arm 1 --- no clean (IP directly on the fouled substrate).
-  \item Arm 2 --- extensive clean.
-  \item Each coupon cut into 2 pieces for replicates; all membranes and arms replicated $\times$2.
-  \item Justify the choice of two widely separated levels against the cleaning-efficiency plateau in Section~\ref{sec:fouling-ip}: closely spaced levels cannot produce distinguishable substrate conditions at this replicate count.
-\end{itemize}
+Two sets of end-of-life (EoL) membranes were sourced for this study: one from a mine site and one from a desalination plant. Each of the two membranes was tested both with and without cleaning, giving four combinations in total. For each membrane, a coupon of the as-received EoL membrane was first tested to establish baseline performance. The membrane was then processed, where the membrane was cleaned using the protocol described in Section~\ref{sec:cleaning}, and a coupon was taken for testing before IP was performed. The regenerated coupons were compacted and tested again. Each coupon was cut into two pieces to serve as replicates.
 
 
+\flag{Substrate cleaning was chosen as the manipulated variable because the condition of the substrate at the point of IP determines how well the new polyamide layer forms, and cleaning is the step in a regeneration process that is easiest to control. The two levels were set at the extremes on purpose, not at intermediate intensities. As discussed in Section~\ref{sec:fouling-ip}, cleaning efficiency levels off beyond a moderate degree of cleaning, so closely spaced levels would leave substrates with similar amounts of residual fouling. With the available number of replicates, differences that small could not be told apart from coupon-to-coupon variation. Using two widely separated levels gives the largest contrast in substrate condition and the best chance of detecting an effect of cleaning on IP.}
 
-% TODO: insert design schematic / condition table
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/IP_Setup_Diagram.jpg}
+  \caption{Schematic of the interfacial polymerisation setup.}
+  \label{fig:ip-setup}
+\end{figure}
 
 \section{Fouling characterisation of the as-received membranes}
 \label{sec:fouling-characterisation}
@@ -42,28 +34,17 @@ Describes how the fouling present on each EoL membrane was identified and quanti
   \item Any additional analyses used (XPS, gravimetric loading, visual coverage scoring).
   \item How a ``fouling profile'' was defined and reported for each membrane, so that Chapter~\ref{ch:results} can compare A with C on a consistent basis.
 \end{itemize}
-% NOTE: this section is new relative to the earlier project plan, which
-% listed fouling profiling as out of scope. Confirm the final method list.
 
 
 \section{Cleaning protocols}
 \label{sec:cleaning}
-Specifies the sequential base-then-acid clean applied in Arm 2, and the duration that makes it ``extensive''.
-
-As membranes in RO elements become fouled with mineral scale, biological matter, and insoluble organic constituents, the deposit can build up and cause losses in permeate flow and salt rejection. Eventually, fouling can become irreversible and may not restore membrane performance despite standard cleaning. 
-
-In order to minimise the impact that fouling deposits have on the new PA layer formed, extensive cleaning was conducted on the membrane samples well beyond commercial conditions. This aims to remove as much of the fouling as possible without doing extreme damage to the existing PA layer. 
-
-The membranes were subjected to a two step chemical cleaning process. The clean involves an alkaline (caustic) solution followed by an acid one, consistent with standard industrial cleaning sequence for composite polyamide RO membranes \citep{Lenntech2011}. The alkaline targets organic and biological foulants, as carboxylic functional groups deprotonate at elevated pH, increasing the foulant solubility \citep{Ang2006}. EDTA acts as the chelating agent. The acid step then dissolves the inorganic scale and metal oxides on the surface \citep{Lenntech2011}.
-
-
 All cleaning was performed ex-situ by soaking at room temperature (approximately \SI{22}{\celsius}), above the minimum effective cleaning temperature of \SI{20}{\celsius} \citep{Lenntech2011}. Membrane sheets were cleaned separately, cut into rectangles of around \qty{99}{\square\centi\metre} and placed in 1.5L of cleaning solution made of Milli-Q water. As membranes tested are EoL elements carrying consolidated fouling layers, modifications were made to the standard protocol including:
 \begin{itemize}
   \item Extended contact time: Each chemical step was run for 24 hours rather than 1 hour for routine cleaning. \cite{DuPont2026} recommends an overnight soak of 10-15 hours for difficult fouling. Extending to 24 hours ensures that the chemical cleaning agents are not a limiting factor in foulant removal. 
   \item Continuous agitation: Solutions were stirred with a magnetic stirrer at 100 RPM throughout the soak. Industrially, recirculation throughout the membrane element is used, however a low speed stirring also provides better mass transfer throughout the solution.
 \end{itemize}
 
-\subsection{Alkaline (caustic) clean with chelant}
+\subsection*{Alkaline (caustic) clean with chelant}
 \begin{enumerate}
   \item The RO membrane sheet is cut into rectangles of \qty{99}{\centi\metre} by\qty{99}{\centi\metre}.
   \ 1.5 L of Milli-Q water was measured out in a 3L glass beaker. NaOH pellets were weighed and dissolved in a portion of this water with manual stirring until fully dissolved. NaOH mass per 1.5L was 3.50g, which is approximately 0.23\% w/v.
@@ -72,95 +53,85 @@ All cleaning was performed ex-situ by soaking at room temperature (approximately
   \item Membrane sheet was fully submerged in the 1.5L alkaline solution. The beaker was covered with aluinium foil and stirred with a magnetic stirrer at 100 rpm without heating for 24 hours at room temperature. 
 \end{enumerate}
 
-\subsection{Indermediate Rinse}
+\subsection*{Indermediate Rinse}
 \begin{enumerate}[resume]
   \item Following the alkaline soak, the membrane was rinsed continuously with RO water for 10 mins to remove residual cleaning solution. This should prevent remaining alkaline solution from reacting and neutralising the acid solution on contact. 
 \end{enumerate}
 
-\subsection{Acid clean}
+\subsection*{Acid clean}
 \begin{enumerate}[resume]
   \item 15 mL of 32\% w/w hydrochloric acid was added to 1.5L of Milli-Q water and mixed. 
   \item Solution pH was measured with a calibrated pH meter and read as 1.4 pH, within the 1-2 pH range specified by \cite{DuPont2026} and consistent with the 1.5 HCl dosed acid clean used industrially \citep{zwaneveld2026personal}
   \item The membrane sheet was fully submerged in the 1.5L of acid solution. Vessel was covered with aluminium foil and stirred at 100 rpm without heating, for 24 hours at room temprature. 
 \end{enumerate}
 
-\subsection{Final Rinse}
+\subsection*{Final Rinse}
 \begin{enumerate}[resume]
   \item The membrane was rinsed thoroughly and continuously with RO membrane until free of cleaning agents. 
 \end{enumerate}
 
 
 
-
-
 \section{In-situ interfacial polymerisation}
 \label{sec:ip-method}
 
-In-situ IP was performed in a custom flat-sheet crossflow system using a dry
-acrylic membrane cell (\qtyproduct{280 x 125 x 50}{\milli\metre}) that exposed the active
-surface of the membrane sheet. A peristaltic pump circulated solution at
-\qty{1.5}{\litre\per\minute} to maintain consistent mass transfer, with the
-cell outlet returning liquid to the feed tank. For curing, the liquid feed was
-replaced with heated air: compressed air passed through a stainless steel coil
-submerged in a temperature-controlled water bath, and a downstream temperature
-sensor verified that air reached the cell at the target curing temperature.
-Regulating both air temperature and flow rate to the cell enabled controlled
-and uniform curing of the PA layer.
+In-situ IP was performed in a custom flat-sheet crossflow system using a dry acrylic membrane cell (\qtyproduct{280 x 125 x 50}{\milli\metre}) that exposed the active surface of the membrane sheet. A peristaltic pump circulated solution at \qty{1.5}{\litre\per\minute} to maintain consistent mass transfer, with the cell outlet returning liquid to the feed tank. For curing, the liquid feed was replaced with heated air: compressed air passed through a stainless steel coil submerged in a temperature-controlled water bath, and a downstream temperature sensor verified that air reached the cell at the target curing temperature. Regulating both air temperature and flow rate to the cell enabled controlled and uniform curing of the PA layer.
 
-EoL RO membranes were mounted in the acrylic cell and an aqueous MPD phase
-(\qty{3.75}{\gram} in \qty{250}{\milli\litre}) was circulated at
-\qty{1.5}{\litre\per\minute} for \qty{3}{\minute}. The membrane was then removed
-from the cell and dried, before the organic TMC/hexane phase
-(\qty{330}{\micro\litre} in \qty{250}{\milli\litre}) was circulated for
-\qty{1}{\minute}. Curing followed at \qty{60}{\degreeCelsius} and
-\qty{10}{\litre\per\minute} for \qty{5}{\minute}.
+EoL RO membranes were mounted in the acrylic cell and an aqueous MPD phase (\qty{3.75}{\gram} in \qty{250}{\milli\litre}) was circulated at \qty{1.5}{\litre\per\minute} for \qty{3}{\minute}. The membrane was then removed
+from the cell and dried, before the organic TMC/hexane phase(\qty{330}{\micro\litre} in \qty{250}{\milli\litre}) was circulated for \qty{1}{\minute}. Curing followed at \qty{60}{\degreeCelsius} and \qty{10}{\litre\per\minute} for \qty{5}{\minute}.
 
 
 \section{Membrane Performance test using High-pressure crossflow rig and compaction}
 \label{sec:rig performance}
+Membrane performance was evaluated in terms of pure water permeability (PWP) and salt rejection, using a high-pressure crossflow rig that holds two flat-sheet membranes in parallel cells, each with an effective area of \qty{0.0139}{\metre\squared}. Applied pressure was logged through CIMPLICITY software. Feed temperature was held at \qty{25}{\degreeCelsius}
 
-Membrane performance was evaluated using two metrics: pure water permeability and salt rejection. These were conducted using a crossflow rig holding two flat-sheet membrane with effective area of \qty{0.0139}{\metre\squared}. Conductivity was measured using a *** probe and permeate flow rate was measured using the mass of permeate converted to volume. Pressure was monitured via CIMPLYCITY software. Membranes were compacted at 15 bars for 60 mins before testing. Tests were conducted at \qty{25}{\degreeCelsius} and 10 bar retentate pressure. Each membrane coupon was tested 3 times, with averages and standard deviations reported. Salt rejection and PWP were measured using 2,000 ppm NaCl at pH 7 $\pm$ 0.2 and \qty{25}{\degreeCelsius} until 15mLs of permeate was collected. Pressure and flow during this was maintained at around 14-16 bar and 1 L/min. Flux was recorded after 10 min stabilization. PWP and salt rejection were calculated from feed and permeate conductivities using equation 1 and 2 where $A_m$ is the membrane area, $\Delta V/\Delta t$ is the collected volume per time, and $C_p$ and $C_f$ are permeate and feed concentrations respectively.
+Permeate was collected in a pre-weighted container over a timed interval and weighed on an analytical balance. Volume was then obtained from mass assuming a water density of \qty{0.997}{\gram\per\milli\litre} at \qty{25}{\degreeCelsius}. Collection began after \qty{10}{\minute} stabilisation period. 
+
+\subsection{Compaction}
+Before testing, each coupon was compacted with pure water at \qty{15}{\bar} for at least \qty{30}{\minute}. This reduces the flux decline caused by compression of porous support so measurements taken reflect a stable membrane structure. After this period, flux was generally observed to be stable with $<5\%$ change over the experiment timeframe. 
+
+\subsection{Pure Water Permeability}
+PWP was measured with deionised ater so no osmotic pressure opposes the flow. Water flux was calculated as
+\begin{equation}
+  J_w = \frac{\Delta V}{A_m\,\Delta t}
+  \label{eq:water-flux-methods}
+\end{equation}
+Here $\Delta V/\Delta t$ is the permeate volume collected per unit time.  $A_m$ is the effective membrane area of $\SI{0.0139}{\square\metre}$. PWP is then obtained by normalising the flux by the transmembrane pressure $\Delta P$: 
 
 \begin{equation}
-  P = \frac{\Delta V}{A_m \cdot \Delta t},
+  A = \frac{J_w}{\Delta P},
   \label{eq:pwp-methods}
 \end{equation}
+
+Flux is reported in L\,m$^{-2}$\,h$^{-1}$ (LMH) and PWP in LMH\,bar$^{-1}$. Each coupon had PWP measured in triplicate.
+
+
+\subsection{Salt Rejection}
+Salt rejection was measured with a \qty{2000}{ppm} NaCl feed at pH~$7.0 \pm 0.2$ and \qty{25}{\degreeCelsius}. This corresponds to a feed conductivity of approximately \qty{3.7}{} to \qty{4.0}{\milli\siemens\per\centi\metre}. \flag{Feed and permeate conductivities were measured with a TODO conductivity probe (TODO: Find model)}. Feed conductivity was taken as the mean of three to four readings from feed tank. Observed rejection was calculated as
 
 \begin{equation}
   R = \left(1 - \frac{C_p}{C_f}\right) \times 100\%,
   \label{eq:rejection-methods}
 \end{equation}
 
-\noindent with $A_m = \SI{0.0139}{\square\metre}$.
+Here $C_p$ and $C_f$ is the permeate and bulk feed concentration. Conductivity is assumed to be proportional to the NaCl aconcentration so conductivities were used directly in place of concentration. Permeate volume is small compared to feed tank (3L) so recovery is negligible and feed tank concentration was taken as the bulk feed concentration. Three repeated readings were taken from each permeate samples and the average was calculated. 
+
+\subsection{Salt Permeability and Selectivity}
+Observed rejection depends on water flux as well as on the membrane (Section-\ref{sec:Performance-Characterisation}). The apparent solute transport parameter, $B$, was then calculated for each coupon from the salt-test flux and rejection:
+\begin{equation}
+  B = J_w\,\frac{1 - R}{R}
+  \label{eq:b-methods}
+\end{equation}
+
+
 
 
 \section{Post-regeneration membrane autopsy}
 \label{sec:autopsy}
 Describes the surface and chemical analyses applied to regenerated pieces to confirm that a new polyamide layer formed and to explain the performance measured.
 
-Prior to analysis, membrane sample were dried at \qty{25}{\degreeCelsius} for 10h to eliminate moisture. 
+Prior to analysis, membrane sample were dried at \qty{25}{\degreeCelsius} for 10h to eliminate moisture. TODO: Confirm
 
 \begin{itemize}
-  \item Analyses --- FTIR, XPS, SEM-EDS (to confirm).
-  \item Comparison basis --- same techniques and settings as Section~\ref{sec:fouling-characterisation}, so before and after can be compared directly.
-  \item Coupon-selection criteria --- representative of each condition; include at least one high- and one low-performing piece.
+  \item Post regeneration: Analyses --- FTIR, SEM.
 \end{itemize}
-
-
-\section{Safety and waste handling}
-\label{sec:safety}
-Records the key hazards and disposal routes for the chemicals and procedures used.
-
-\begin{itemize}
-  \item Hexane --- respirator; never heat with hexane present.
-  \item TMC --- store under parafilm in glass.
-  \item Acid / base --- appropriate PPE and handling.
-  \item Waste --- route per laboratory protocol.
-\end{itemize}
-
-
-\section{Deviations from protocol}
-\label{sec:deviations}
-Records where execution differed from the Lab Manual, so that anomalies in Chapter~\ref{ch:results} can be traced.
-
-% Cross-reference the Tracker deviation log.

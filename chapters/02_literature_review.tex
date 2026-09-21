@@ -2,11 +2,6 @@
 \label{ch:literature_review}
 
 % =====================================================================
-% WORD BUDGET: ~4,150 words total (~12 pp at 350 w/p).
-% This is 21% of a 20,000-word thesis - the upper-middle of the
-% 8-30% bracket, justified because the fouling->IP argument is the
-% novelty. It is a CEILING, not a target to reach.
-%
 %   2.1 EoL problem .................  350   (1.0 pp)
 %   2.2 TFC membranes ...............  650   (1.9 pp)
 %   2.3 Ageing and fouling ..........  550   (1.6 pp)
@@ -14,13 +9,6 @@
 %   2.5 EoL management routes .......  450   (1.3 pp)
 %   2.6 Polyamide regeneration ......  750   (2.1 pp)  <- protected
 %   2.7 Research gaps ...............  250   (0.7 pp)
-%
-% TWO BIGGEST WORD SAVERS:
-%   1. Tables, not prose. The prior-work comparison (2.6.1) and the
-%      EoL routes comparison (2.5) are tables. A 6-row table does in
-%      ~150 words what 800 words of prose does worse.
-%   2. Delete the one-sentence explainer under each heading before
-%      submission. They are scaffolding, not content (~450 words).
 % =====================================================================
 
 This chapter establishes why end-of-life (EoL) reverse osmosis (RO) membranes are worth recovering rather than discarding, then narrows to the two things that determine whether polyamide regeneration can work in practice: the condition of the polysulfone substrate it is built on, and the fouling layer that must be removed before a new film can form.
@@ -30,73 +18,88 @@ This chapter establishes why end-of-life (EoL) reverse osmosis (RO) membranes ar
 % =====================================================================
 \section{The end-of-life RO membrane problem}
 \label{sec:eol-problem}
-% BUDGET: 350 words (~1 pp). No subsections - one continuous section.
-Establishes that EoL RO membranes are a large and growing waste stream with no satisfactory destination, in enough detail to justify the thesis and no further.
 
-RO has emerged as the dominant desalination technology in desalination plants operational worldwide, and as of 2019, 15,906 desalination plants worldwide collectively produce around 95 million $\mathrm{m^3}$ of water per day \citep{Jones2019}. Despite attempts to improve service life, in most desalination applications, RO membranes typically remain in service for five to nine years \citep{Ding_2026, Lawler2015}. It is estimated that 5--20\% of membranes are replaced annually \citep{BerattoRamos2024, imdea2018transfomem, Guclu2022}, translating to a huge amount of polymeric waste. Increased global RO development and increasing water demands drives more membrane usage and waste. The lack of a viable recycling infrastructure makes EoL membranes a fast growing solid waste issue associated with water treatment.
+Reverse osmosis (RO) has emerged as the dominant desalination technology in desalination plants operational worldwide, and as of 2019, 15,906 desalination plants worldwide collectively produce around 95 million $\mathrm{m^3}$ of water per day \citep{Jones2019}. Despite attempts to improve service life, in most desalination applications, RO membranes typically remain in service for five to nine years \citep{Ding_2026, Lawler2015}. It is estimated that 5--20\% of membranes are replaced annually \citep{BerattoRamos2024, imdea2018transfomem, Guclu2022}, translating to a huge amount of polymeric waste. Increased global RO development and increasing water demands drives more membrane usage and waste. The lack of a viable recycling infrastructure makes EoL membranes a fast growing solid waste issue associated with water treatment.
 
-% ONE further paragraph (~150 words) covering, in prose:
-%   - landfill and incineration as the dominant routes
-%   - persistence of PET/PSF/PA composites; emissions from incineration
-%   - the value objection: a TFC element is a high-grade engineered
-%     asset, and both disposal and downcycling destroy its selectivity
-%   - close on the framing: the question is not cleaner disposal but
-%     whether the membrane's function can be restored
-% DO NOT expand into LCA, waste policy, or a survey of disposal
-% regulations. Establishing the concern is enough.
+Existing waste disposal techniques employed for EoL membranes currently mainly include landfill and incineration \citep{Khanzada2024}. Because the module is almost entirely polymeric (polyester, polysulfone, polyamide and polypropylene), it is classified as an intert municipal solid waste and the material only degrades approximately 1--5\% over 100 years \citep{Lawler2015}. In land-constrained countries such as Japan and Singapore, incineration is used instead \citep{Lawler2015}. Incineration reduces the waste volume and partly recovers the thermal energy, but the combustion of the polymers can release a range of harmful gasses including NO$_x$ and SO$_2$. Incineration produces a higher CO$_2$-equivalent emission than any reuse or recycling route \citep{Lawler2015}.
 
+Both routes discard the element completely while it still holds recoverable value. An EoL membrane element maintains most of its PET and polysulfone support structural integrity \citep{Molinaa2018}. Directly reusing an EoL membrane offsets around 33\% of the environmental impact of manufacturing a replacement \citep{Lawler2015}. The alternative to disposal do not recover the value of a working RO membrane and permanently removes the high selectivity. This chapter aims to question whether the functionality of EoL RO membranes can be restored by replacing the polyamide layer on the recovered support, recovering the value of PET and PSF, while uplifting it's selectivity \citep{Ogbe2025,Ogbe2026}
 
 % =====================================================================
 \section{Thin-film composite RO membranes}
 \label{sec:tfc-anatomy}
-% BUDGET: 650 words (~1.9 pp), split ~150 / 250 / 250.
-Introduces the layered structure of a TFC membrane and the reaction that forms its selective layer, since regeneration is that same reaction run on a used substrate.
+\flag{
+Thin-film composite (TFC) RO membranes represent over 95\% of installed RO capacity globally \citep{Geise2010}. They comprise of three layers (Figure- \flag{Find TFC cross section})
+\begin{itemize}
+    \item \textbf{PET non-woven backing} (\textasciitilde120--150\,$\mu$m) \citep{LejarazuLarranaga2022}: provides tensile strength and withstands hydraulic pressure; the most porous, lowest resistance layer, and the largest mass fraction of the sheet \citep{Lawler2015}. It contributes to strength only.
+    \item \textbf{Polysulfone (PSf) layer} (\textasciitilde40--150\,$\mu$m) \citep{LejarazuLarranaga2022}:  Supports the PA layer without adding excess hydraulic resistance \citep{Petersen1993} and is the surface of which PA is formed on.
+    \item \textbf{Polyamide (PA) selective layer} (\textasciitilde0.2\,$\mu$m) \citep{LejarazuLarranaga2022}: Assembled via interfacial polymerisation of organic diamines and carboxylic acid monomers, typically using water as non-organic solvent and hexane as immiscible organic solvent. PA is responsible for the membrane's salt rejection and selectivity. 
+\end{itemize}
+}
 
-Thin-film composite (TFC) RO membranes represent over 95\% of installed RO capacity globally \citep{Geise2010}. These TFC membranes contain a dense selective layer and a porous support layer. This architecture is fundamental to understanding membrane performance and evaluating EoL management techniques.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/tfc_cross_section.jpg}
+  \caption{Cross-section of a TFC RO membrane. Adapted from \citep{TFC_Composite_fig2020}}
+  \label{fig:tfc-cross-section}
+\end{figure}
 
-\subsection{Architecture and layer functions}
-Assigns each of the three layers a job, so that regeneration can be defined precisely as replacing one of them.
+Because the selectivity is largly concentrated at the PA layer and PA layer is the main site of chemical attack and fouling, regeneration aims to target the PA layer while preserving the PSf and PET beneath it. 
 
-Commercial TFC RO membranes are structured as three layers: a non-woven polyester (PET) support, a microporous polysulfone (PSF) support and an ultra-thin aromatic polyamide (PA) selective layer \citep{Lawler2015, Molinaa2018}.
 
-% ~100 more words: PET = strength only; PSF = compression resistance
-% plus the surface the PA forms on; PA = ~100-200 nm, essentially all
-% rejection. State that regeneration targets PA only and preserves
-% PSF/PET. A labelled cross-section figure replaces ~200 words here.
-% TODO: insert TFC cross-section figure.
+\subsection{Polyamide Formation by Interfacial Polymerisation}
+\label{sec:lit-ip}
 
-\subsection{Polyamide formation by interfacial polymerisation}
-Explains the MPD/TMC reaction and which film properties it fixes, because those properties are what regeneration must reproduce.
+The PA layer is formed by interfacial polymerisation (IP) \citep{Petersen1993, Nunes2020}. An aqueous solution of m-phenylenediamine (MPD) is passed over the PSf support, then reacted with trimesoyl chloride (TMC), an immiscible organic solvent. The two monomers form a crosslinked aromatic PA network on the PSf surface \citep{Petersen1993}. As reaction time increase,
 
-% ~250 words. Cover, compactly:
-%   - aqueous MPD meets organic-phase TMC at an immiscible interface;
-%     reaction-limited, self-terminating growth
-%   - properties set at formation: crosslink density, thickness,
-%     ridge-and-valley roughness, hydrophilicity, surface charge
-%   - crosslink density and thickness govern the permeability/rejection
-%     trade-off
-%   - the point that matters later: the reaction happens AT the
-%     substrate surface, so anything on that surface changes the film
+\begin{comment}
+The PA layer is formed by interfacial polymerisation (IP)
+\citep{Petersen1993, Nunes2020}. The PSf support is loaded with an
+aqueous solution of m-phenylenediamine (MPD) and then contacted with
+trimesoyl chloride (TMC) in an immiscible organic solvent; the two
+monomers react where the phases meet, forming a crosslinked aromatic PA
+network on the PSf surface \citep{Petersen1993}.
+Film growth slows as the film builds: MPD diffuses rapidly across the
+interface in the first 10--60\,s, but as the film thickens MPD
+transport becomes restricted while TMC continues to diffuse, favouring
+linear rather than crosslinked amide structure and yielding diminishing
+rejection gains beyond about 60\,s \citep{Ogbe2026}.
+ 
+The properties that determine separation performance are fixed at this
+step. Film thickness and crosslink density govern the trade-off between
+permeability and rejection \citep{Singh2006, PrakashRao2003}. Crosslink
+density reflects the ratio of hydrolysed carboxylic acid groups to
+crosslinked amide groups, and is sensitive to reaction time, humidity
+and temperature \citep{PrakashRao2003}. Monomer concentration acts in the
+same direction: raising MPD from 1.5 to 2.0\,wt\% increased NaCl rejection
+from 96.8\% to 99.4\% but lowered pure water permeability from 6.3 to
+1.4\,L\,m$^{-2}$\,h$^{-1}$\,bar$^{-1}$, with XPS O/N ratios falling from
+1.21 to 1.09 across 1.0--2.0\,wt\% MPD, consistent with a denser network
+\citep{Ogbe2026}.
+\flag{CHECK - the old review called 6.3$\rightarrow$1.4 a ``40\% decline''.
+It is a \textasciitilde78\% decline. Check the source figure.}
+\flag{NEW - ridge-and-valley roughness, hydrophilicity and surface charge
+as properties set during IP are not covered in the old review.}
+ 
+What matters for the rest of this chapter is where the reaction takes
+place. The MPD reservoir sits in the PSf, and the film forms at the PSf
+surface \citep{Petersen1993, Singh2006}. Any change to that surface
+therefore changes the film that forms on it.
+\end{comment}
 
-\subsection{The polysulfone substrate and its control over film formation}
-Argues that substrate condition, not monomer chemistry, decides whether a usable PA film can be re-formed on a used membrane.
+\subsection{The Polysulfone Substrate and Effect on Film Formation}
+\label{sec:substrate}
 
-% ~250 words. Pore size and surface porosity -> MPD reservoir volume
-% and monomer diffusion; wetting and MPD retention -> patchy or
-% defective films; roughness and surface chemistry -> adhesion and
-% delamination risk.
-% End with the substrate criteria that Sections 2.4 and 2.6 refer back
-% to. This is the pivot of the whole chapter - do not compress further.
 
 
 % =====================================================================
 \section{Ageing and fouling of RO membranes}
 \label{sec:degradation}
 % BUDGET: 550 words (~1.6 pp), split ~275 / 275.
-Sets out why membranes are retired, so that the condition of the substrate a regeneration process inherits can be described rather than assumed.
 
 \subsection{Chemical and mechanical degradation}
 Covers oxidative attack and physical ageing together, distinguishing what regeneration can undo from what it cannot.
+
 
 % ~275 words. Merged from three former subsections - keep it tight:
 %   - N-chlorination, Orton rearrangement, amide hydrolysis; loss of
@@ -297,6 +300,29 @@ Covers how IP is executed in situ and how substrate properties propagate into th
 %     purpose-cast PSF, not recovered substrate
 % CUT ENTIRELY: the sustainability / techno-economic outlook. It is out
 % of experimental scope. One line in Chapter 5 future work instead.
+
+
+% =====================================================================
+\section{Membrane Performance Characterisation}
+\label{sec:Performance-Characterisation}
+Water and salt transport through the PA layer is commonly described by the solution-diffusion model **Site** (Lonsdale 1965?). In this model, each species dissolves into the membrane and diffuses across under its own chemical potential gradiant, and as such water and salt crosses the membrane by independant mechanisms. This underpins the performance metrics used in this thesis. 
+
+\subsection{Water flux and Water Permeability}
+The water flux, $J_w$ is the volumetric permeate flow per unit membrane area and is proportional to the effective pressure driving force:
+\begin{equation}
+  J_w = \frac{P_w}{l}\,(\Delta P - \Delta\pi) = A\,(\Delta P - \Delta\pi)
+    \label{eq:water-flux}
+\end{equation}
+Where $\Delta P$ is the applied transmembrane pressure, and $\Delta\pi$ is the osmotic pressure difference between the feed and permeate at membrane surface. The group $P_w/l$ is the pure water permeability constant $A$. Flux in this thesis is reported as L\,m$^{-2}$\,h$^{-1}$ (LMH) and $A$ in LMH\,bar$^{-1}$. With a pure water
+feed, $\Delta\pi = 0$, and $A$ is obtained directly as the pure water
+permeability (PWP).
+
+\subsection{Solute flux and solute permeability}
+The solute flux is driven by the concentration difference across barrier layer (PA):
+\begin{equation}
+  J_s = \frac{P_s}{l}\,(c'_W - c'') = B\,(c'_W - c'')
+  \label{eq:salt-flux}
+\end{equation}
 
 
 % =====================================================================
