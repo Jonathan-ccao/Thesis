@@ -9,6 +9,9 @@
 
 % ---------- Page geometry (UNSW: min 25 mm margins; 30 mm allows binding) ----
 \usepackage[a4paper,margin=30mm]{geometry}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=3em
 
 
 % ---------- Fonts: Times-like serif body, Helvetica-like sans headings -------
@@ -51,6 +54,8 @@
 }
 
 \newcommand{\flag}[1]{\textcolor{red}{\textbf{[FLAG:} #1\textbf{]}}}
+% Set range units globally to print only at the end
+\sisetup{range-units=single} 
 
 % =====================================================================
 % =====================================================================
@@ -67,10 +72,6 @@
 \pagenumbering{roman}
 \setcounter{page}{1}
 
-% Order follows the UNSW Thesis Format Guide:
-% title -> table of contents -> acknowledgements -> lists -> body.
-% (Originality statement is in GRIS, not the body — see declaration.tex.)
-
 \tableofcontents
 
 \input{frontmatter/declaration}  
@@ -79,7 +80,7 @@
 
 \listoffigures
 \listoftables
-\input{frontmatter/abbreviations}    % delete this line if not needed
+\input{frontmatter/abbreviations} 
 
 % ---------- Main matter (arabic page numbers) --------------------------------
 \cleardoublepage

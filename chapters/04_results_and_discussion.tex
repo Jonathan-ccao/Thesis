@@ -4,92 +4,300 @@
 
 \section{Fouling profiles of the as-received membranes}
 \label{sec:res-fouling}
-Reports what was actually on membranes A and C before any treatment, since every later result is conditioned on this starting state.
+This section reports the condition of the two EoL membrane elements before any treatment, as determined by the Membrane Works autopsies conducted \citep{MembraneWorks2025Desal,MembraneWorks2026Mine}. Both elements were lightly fouled. 4238C mainly showed damage to the active layer with loss of separation performance while 4297B has light particle and biological fouling, but the polyamide layer was mostly intact. 
 
+\subsection{Desal-site element (4238C)}
+
+\paragraph{Deposits.} 
+The 4238C membrane was visually clean, with a slight yellow colour. Wiping and scraping the surface removed a small amount of brown deposit. The end caps, brine seal and permeate tube were clean, and there was no damage on the permeate side \citep{MembraneWorks2025Desal}. 
+
+SEM-EDS found three types of deposits:
 \begin{itemize}
-  \item FTIR and SEM-EDS evidence per membrane; dominant foulant classes and their elemental signatures.
-  \item Coverage and heterogeneity across the coupon; note any position dependence.
-  \item Contrast A versus C and relate to first- versus second-pass duty.
-  \item Interpret against the foulant classes in Section~\ref{sec:fouling-ip} --- which mechanisms in that section are expected to be active here.
+  \item Iron oxide was found in patches. Some regions showed up to 30.9\% Fe with small amounts of C, S, Al and Si. 
+  \item Biological materials. Regions contain up to 14.3\% of nitrogen content. These also contained adsorbed inorganic salts.
+  \item Sodium chloride crystals (45.4\% Na, 38.7\% Cl).
+\end{itemize}
+Areas without any deposits comprised mainly of C, O and S, which comes from the polysulfone support layer. 
+
+The ATR-FTIR spectra of 4238C, and the brand new 4238D were very similar, and no significant chemical difference between the new and used membranes were detected \citep{MembraneWorks2025Desal}. 
+
+\paragraph{Active layer condition}
+The main problem with 4238C was damage to the active layer, not fouling. SEM showed holes in the active layer across the surface, and energy dispersive spectroscopy (EDS) couldn't identify a cause. Similar but smaller holes were also observed on the unused 4238D.
+
+The dye test also supports this. Of the four desalination site membranes tested, 4238C let the most dye through, with dense spots and streaks of dye visible across its permeate side (Figures~\ref{fig:dye_test_full} and~\ref{fig:dye_test_magnified}). Its permeate conductivity during the dye test was \qty{113}{\micro\siemens\per\centi\metre}, compared with around \qtyrange{20}{30}{\micro\siemens\per\centi\metre} for the others. More dye also stuck to the feed side of 4238C, which can indicate fouling or surface damage (Figure~\ref{fig:dye_test_full}).
+
+\input{chapters/dye_test_figures}
+
+Standard performance testing by \cite{MembraneWorks2025Desal} on a single 8" element showed the effect of the membrane damage. The test used a feed salt concentration of \qty{1500}{mg/L} at a pressure of \qty{10}{bar}. The 4238C EoL membrane had a flux of \qty{71.9}{LMH}, about twice the expected \qty{37.3}{LMH}, and a salt rejection of \qty{97.3}{\percent}, below the expected \qty{99.46}{\percent}. High flux combined with low rejection indicates that the active layer may be chemically or physically damaged.
+
+The surface properties of 4238C had also changed compared to the new 4238D, even though FTIR showed no chemical difference:
+\begin{itemize}
+  \item the isoelectric point increased from pH~3.1 to 3.6;
+  \item the zeta potential at pH~7 became less negative, from \qty{-42}{mV}
+        to \qty{-16}{mV};
+  \item the water contact angle decreased from \qty{58.5}{\degree} to
+        \qty{34.5}{\degree}, meaning the surface became more hydrophilic.
 \end{itemize}
 
+The lower contact angle could be attributed to organic or biological material adsorbed onto the surface, and the loss of negative charge is similar to what has been reported for membranes cleaned repeatedly with caustic \cite{MembraneWorks2025Desal}. The pH~10 feed to the second pass may have had a similar effect. A less negative surface repels borate ions less strongly, which is consistent with the falling boron rejection reported by the plant.
 
+
+\subsection{Mine-site element (4297B)}
+\paragraph{Deposits.}
+The mine-site feed water is high in calcium and sulfates. Using water chemistry modelling, calcium sulphate (gypsum) and silica were the main scaling risk in the feed for this membrane \citep{MembraneWorks2026Mine}. The 4297B membrane had a light brown fouling layer across the surface. Both end caps had spots of brown fouling but no debris, and brine spacer was clean. 
+
+Although there was significant visible fouling on the membrane, fouling analysis by extraction was conducted and showed that the amount of extractable foulant was low. Around \qty{237.5}{mg.m^{-2}} with similar composition across the element: 
+
+\begin{itemize}
+  \item calcium: \qtyrange{91}{92}{mg.m^{-2}};
+  \item carbon: \qtyrange{69}{75}{mg.m^{-2}};
+  \item magnesium: \qtyrange{30}{31}{mg.m^{-2}};
+  \item sulfur, likely as sulfate: \qtyrange{26}{27}{mg.m^{-2}};
+  \item silicon: \qtyrange{10}{11}{mg.m^{-2}};
+  \item iron: \qty{1}{mg.m^{-2}} or less.
+\end{itemize}
+
+SEM-EDS showed particles scattered across the surface of the membrane. Analysis detected iron oxide (37.3 \% Fe and 50.7\% O, with small amounts of Al, S and Si (2.8, 2.38, 1.81\% respectively)) in some regions, as well as silica (29.6\% Si and 65.8\% O) in others. A low level of nitrogen (5.4 \%) was also seen across the surface, indicating a small amount of biofouling. 
+
+While Iron was visible in the SEM-EDS, almost non was recovered by extraction, suggesting that iron oxide was not easily dissolved by acid or caustic. This is discussed further in Section~\ref{sec:res-cleaning}
+
+4297B also showed more signs of biological fouling than 4238C. Astra Blue staining showed brown fouling under the brine spacer, attributed to extracellular polymeric substance. The bacterial growth count was \qtyrange{5800}{7800}{CFU/mL} classifying as moderate growth \citep{MembraneWorks2026Mine}.
+
+\paragraph{Active-layer condition.}
+A swab of the permeate tube showed slight fouling and the back of the membrane was stained brown. Under the optical microscope, the foulant appeared to have penetrated into the support layers. SEM also showed indentations in the surface where the scale had previously been. 
+
+The polyamide layer of 4297B showed minor chlorine damage, with a negative Fujiwara test (which determines polyamide RO membrane exposure to oxidising halogens). XPS detected \qty{0.2}{\percent} organic chlorine, indicating some low level chlorine damage is present. Incorrect sodium metabisulfite (SMBS) dosing can react with iron on the membrane and catalyse SMBS degradation and cause oxidative damage \citep{MembraneWorks2025Desal}.
+
+Performance of the 4297B membrane was not tested by Membrane Works, and the reported drop to around \qty{85}{\percent} rejection was measured for the whole RO train. The autopsy report concluded that the fouling and damage did not fully explain this drop. 
+
+
+
+
+\subsection{Comparison of both EoL membranes}
+\flag{ AI GENERATED SUMMARY TABLE-- CHECK}
+\begin{table}[htbp]
+  \centering
+  \small
+  \caption{Fouling profiles of the as-received elements, compiled from
+  \cite{MembraneWorks2025Desal,MembraneWorks2026Mine}.}
+  \label{tab:fouling-profiles}
+  \begin{tabular}{p{3.2cm}p{5.4cm}p{5.4cm}}
+    \toprule
+    & 4238C (desal) & 4297B (mine) \\
+    \midrule
+    Service & \qty{4.5}{y}; 2nd pass, feed pH~$\approx$10
+            & \qty{2.75}{y}; single stage, high-sulfate feed \\
+    Visual deposit & Slight yellowness; slight brown deposit on wiping
+                   & Light brown layer; back-side staining \\
+    Dominant deposits (SEM-EDS) & Fe/Al oxide; N-rich biological particles;
+                                  NaCl crystals
+                                & Fe oxide; silica (sand); trace biofouling \\
+    Extractable loading & --- & \qtyrange{237}{238}{mg.m^{-2}} (Ca, C, Mg, S) \\
+    Biological activity & N-rich particles only
+                        & Astra Blue positive; 5,800~CFU\,mL$^{-1}$ \\
+    Physical damage & Holes (SEM); most dye passage of set
+                    & Indentations from removed scale \\
+    Chemical change & FTIR unchanged; IEP 3.1\,$\to$\,3.6;
+                      $\zeta_{\mathrm{pH\,7}}$ \qty{-42}{}\,$\to$\,\qty{-16}{mV};
+                      contact angle \qty{58.5}{}\,$\to$\,\qty{34.5}{\degree}
+                    & Fujiwara negative; \qty{0.2}{\percent} organic Cl;
+                      N retained (XPS) \\
+    As-received performance & \qty{71.9}{LMH}, \qty{97.3}{\percent}
+                              (expected \qty{37.3}{LMH}, \qty{99.46}{\percent})
+                            & --- \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Both membranes were lightly fouled, and both had significant iron oxide and biological material on the surface. The main difference between the two is that 4238C had damage to the active layer, where holes were seen in SEM and had a higher dye passage. This membrane had double the expected flux and lower rejection. 4297B on the other hand had much more deposits, such as calcium, magnesium and sulfate in the extracts, silica, iron oxide that was difficult to remove by conventional cleaning methods, and a biological film. The polyamide layer showed minor chlorine damage and indentation from scaling. 
+
+Different tests were run on each membrane depending on the reported issue and diagnostic methods. Only visual inspection and SEM-EDS was done on both. 
+
+\subsection{Implications for regeneration}
+\flag{link points to section \ref{sec:fouling-ip}}
+
+The two membrane are expected to respond differently to a new IP layer. 
+
+For 4238C, the surface is mostly clear of foulants and deposits, but the new polyamide layer has to cover existing holes in the active layer. The change in surface charge and hydrophilicity can also affect how the surface takes up the aqueous monomer as compared with traditional IP methods.
+
+For 4297B, the deposits are more likely to affect IP. Iron oxide and silica particles here did not appear in the extraction sample from caustic soda and acid, but do appear on SEM-EDS analysis, suggesting the compounds arn't easily broken down by acid and base cleans. The biological film can also change the surface that the new layer forms on. As a result, it is likely that despite extensive cleaning of membranes, these foulants still remain right up till the IP process of uplifting.
+
+%-------------------––––Next Section-----------------%
+\section{Performance of the as-recieved membranes}
+\label{sec:res-baseline}
+Uncleaned coupons without IP were tested on the crossflow rig to give a baseline for each membrane (Table~\ref{tab:baseline}). Later results are compared against these values.
+
+  \begin{table}[htbp]
+  \centering
+  \caption{Performance of the as-received membranes (no clean, no IP).
+  Mean $\pm$ SD.}
+  \label{tab:baseline}
+    \begin{tabular}{lcccc}
+    \toprule
+    Membrane & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) & NaCl rejection (\%) & $n$ \\
+    \midrule
+    4238C (desal) & $3.21 \pm 0.32$ & $0.21 \pm 0.01$ & $76.6 \pm 3.2$ & 4 / 4 \\
+    4297B (mine)  & $5.24 \pm 1.00$ & $0.33 \pm 0.06$ & $81.9 \pm 8.5$ & 4 / 4 \\
+    \bottomrule
+  \end{tabular}
+  \par\smallskip
+  \footnotesize $n$ = number of cell measurements for Flux \& PWP / Rejection.
+  Flux and PWP at \qtyrange{14}{16}{bar}; rejection with $\sim$\qty{2000}{mg.L^{-1}} NaCl
+  (\qtyrange{3800}{4000}{\micro S.cm^{-1}}).
+  \end{table}
+
+\subsection{Comparison with element test}
+For 4238C, the values are much lower than those measured by Membrane Works on the full elements. Their test gave a flux of \qty{71.9}{LMH} at about \qty{10}{bar}, or roughly \qty{7}{LMH.bar^{-1}}, with a rejection of \qty{97.3}{\percent} \citep{MembraneWorks2025Desal}. The coupon permeability is about 35 times lower, and the rejection about 23 percentage points lower. The permeability measured in this experiment is almost 20 times lower than the rated value for a new ESPA2-MAX element (about \qty{4.4}{LMH.bar^{-1}}). 
+
+For 4297B membranes, no testing was done on the RO element, and the reported drop to around \qty{85}{\percent} was measured for the whole RO train \citep{MembraneWorks2026Mine}, so there are no element values to compare with. 
+
+\subsection{Why coupon results differ}
+Testing using the 8-inch RO module from Membrane Works revealed a much higher permeability and rejection, at \qty{71.9}{LMH} flux, 97.3\% rejection at 10 bar and \qty{1500}{mg/L}. That experiment used a second-pass ESPA2-MAX element which was reported to be underperforming for desalination purposes. The flux measured on site of that element was double the expected \qty{37.3}{LMH}, ane below the expected 99.46\%, likely due to pinhole damage in the active layer. Laboratory flat-sheet dye-cell test also gave a rejection of only 61\%, compared with 91-92\% for other coupons tested. A 74\% rejection measured here would consistent with the laboratory's small-area result. Additionally, smaller samples are more sensitive to local defects \flag{Mitrouli et al found large distributions of flux and rejection }. Moreover, when considering the solution diffusion model of RO membranes, the observed rejection falls as water flux falls, at constant salt permeability. Considering the massive difference in membrane flux between element and coupon, 
+
+
+
+%-------------------––––Next Section-----------------%
 \section{Cleaning outcomes}
 \label{sec:res-cleaning}
-Shows what the extensive clean actually removed, establishing the two substrate conditions that IP was performed on.
+This section reports what the cleaning steps removed from each membrane. The uncleaned EoL were compared with the extensive clean, as described in Section~\ref{sec:cleaning}. The effect of cleaning on regeneration is covered in \flag{Where}.
 
-\begin{itemize}
-  \item Visual and observational effects of the clean, against the uncleaned control.
-  \item Where available, post-clean FTIR/SEM-EDS versus the as-received baseline in Section~\ref{sec:res-fouling}.
-  \item Assess whether the extensive clean visibly removed the fouling layer, or left the residuals predicted in Section~\ref{sec:fouling-ip}.
-\end{itemize}
+\subsection{Fouling profiles and expected cleaning response}
+The autopsies give a clear idea of what cleaning could remove.
 
+For 4238C, there was little deposit across the membrane. The membrane was visually clean, and SEM-EDS found scattered iron and aluminium oxide, biological particles and salt crystals. Cleaning was therefore not expected to produce a large visible change. The main issues found with 4238C were the holes in the active layer and changes in surface chemistry and charge, which cleaning cannot repair.
 
-\section{Pure water permeability}
-\label{sec:res-pwp}
-Presents PWP across arms and membranes, before and after IP, to show the densification the new polyamide layer produces.
+For 4297B, the deposit comprised of different elements and compounds, all expected to react to cleaning differently.
+\paragraph{Calcium, magnesium and sulfate.} These made up most of the extractable foulant and were recovered by acid and caustic extraction in the fouling extraction test conducted by Membrane Works. They were expected to be removed in a similar fashion by acid clean. EDTA, which binds metal ions such as calcium and magnesium, was expected to help as its chelating ability increases at alkaline pH where more of its carboxylic groups are deprotonated \citep{elimelech2005chemical}.
+\paragraph{Organic and biological materials.} The extractable carbon and biofilm seen with Astra Blue staining were expected to be removed mainly by the caustic clean. However, where organic foulants are cross-linked by calcium, NaOH alone has been shown to give poor flux recovery, while EDTA was considerably more effective by breaking the calcium bridges \cite{elimelech2005chemical}.
+\paragraph{Iron oxide.} Almost no iron was recovered by acid and caustic extraction, even though iron oxide was clearly visible in SEM-EDS. The iron oxide was therefore not expected to be fully removed by HCl and NaOH cleaning.
+\paragraph{Silica particles.} These were identified by Membrane Works as sand rather than scale, and were not expected to dissolve in either solution.
 
-\begin{itemize}
-  \item Figure --- $x$ = membrane/condition (e.g.\ 4238A no clean, clean); two bars each (IP versus no IP); $y$ = average permeability (LMH/bar) with error bars from trial spread.
-  \item Expected trend --- IP densifies the surface and reduces permeability.
-  \item Observed example --- 4238C falls from 0.92 to 0.52\,LMH/bar after IP.
-  \item Compare against new-membrane and EoL baselines.
-\end{itemize}
+Additionally, Membrane Works conducted a cleaning study supporting a lot of the points above. A high pH biological and clay cleaner showed some improvements to the fouling profile with the advanced iron cleaning and specialty silica cleaning showing similar results. Increasing the advanced iron cleaner from \qty{2}{\percent} to \qty{4}{\percent} removed more of the fouling, but some remained. Since specialist iron cleaners did not fully remove the iron, the HCl and NaOH cleans here were expected to leave iron oxide on 4297B.
 
+% ---------------------------------------------------------------------
+\subsection{Expected effect of extended cleaning on membrane performance}
+Cleaning chemicals can remove foulants in membrane but can also alter the polyamide layer itself. Change in PWP or salt rejection can be cause by the cleaning itself, rather than simply foulant removal. \cite{tu2015chemical} evaluated this effect by soaking virgin ESPA2 low pressure RO membranes in cleaning solutions for \qty{25}{\hour} at \qty{30}{\celsius} 
 
-\section{Salt rejection}
-\label{sec:res-rejection}
-Presents NaCl rejection across arms and membranes, which is the direct test of whether selectivity was restored.
+\paragraph{Water permeability.} 
 
-\begin{itemize}
-  \item Figure --- $y$ = average rejection (\%), same grouping as Section~\ref{sec:res-pwp}.
-  \item Expected trend --- IP recovers rejection on degraded membranes.
-  \item Treat replicate scatter as data, not noise: high variance is a predicted signature of defect-driven films (Section~\ref{sec:fouling-ip}).
-\end{itemize}
+\paragraph{Salt rejection.} 
+
+\paragraph{Implications for this study.} 
 
 
-\section{Permeability--rejection trade-off}
+
+\subsection{Visual observations}
+\paragraph{Desal-site membrane 4238C. } 
+Cleaning caused no visible change to 4238C. Before cleaning, the polyamide (feed side) was a shiney, light yellow colour, and the polyester (permeate side) was a dull, matte white. After both the acid and base cleans, the coupon looked exactly the same. The acid and base solutions also showed no colour change after use. This suggests that little foulant was dissolved into the solutions, which is expected according to the autopsy as only light deposits were seen.
+
+\paragraph{Mine-site membrane 4297B. }
+The colour of 4297B did not change noticeably after cleaning. The acid and base solutions also showed no colour change, which indicates that the iron oxide was not dissolved. This agrees with the autopsy, where acid and caustic extraction recovered almost no iron.
+
+The main observation for 4297B was the physical damage at the edges of the coupons (Figure~\flag{1}). In some areas, the polyamide layer had started to peel away from the polysulfone support and could be lifted off with very little force. This was first seen immediately after the base clean, and the damage appeared in repeated experiments too. No delamination was seen on 4238C under the same cleaning conditions, and the autopsy also found no delamination on the EoL 4297B elements. 
+
+The base clean reached pH of up to 11.5, which is slightly outside the manufacturer's limit for continous operation (2-11 pH) but within the short-term (30 min) cleaning range (1-13) \citep{MembraneWorks2026Mine}. The potential damage of membranes from intensive clean outside of recommended pH ranges is explored in depth in Section~\ref{sec:res-cleaning-effect}. One possible explanation is that the bond between the polyamide and support was already weaked during service. The autopsy found that foulants appeared to have penetrated into the support layers of 4297B, and indentations on the surface from past scale could contribute to this. The damage was also concentartion along the edges of the coupon, suggesting the cut may have exposed the gap between the layers to the cleaning solution, allowing it to penetrate through. 
+
+Delaminated areas have no polyamide layer present, so they would expect to have UF/MF like performance (high permeability and low rejection) if included in the test. Instead, the damaged edges of the coupon were trimmed and discarded.
+
+\flag{add image here}
+
+\subsection{Performance after cleaning}
+\label{sec:res-cleaning-perf}
+%PWP and rejection after extensive clean, compared with Section~\ref{sec-baseline} for both membranes
+  \begin{table}[htbp]
+  \centering
+  \caption{Performance of membranes after extensive cleaning (clean, no IP).
+  Mean $\pm$ SD.}
+  \label{tab:clean-results}
+    \begin{tabular}{lcccc}
+    \toprule
+    Membrane & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) & NaCl rejection (\%) & $n$ \\
+    \midrule
+    4297B (mine)  & $5.60 \pm 1.41$ & $0.36 \pm 0.07$ & $80.5 \pm 11.5$ & 6 / 6 \\
+    4238C (desal) & $4.55 \pm 4.42$ & $0.29 \pm 0.28$ & $85.4 \pm 5.9$ & 7 / 7 \\
+    \bottomrule
+  \end{tabular}
+  \par\smallskip
+  \footnotesize $n$ = number of cell measurements for Flux \& PWP / Rejection.
+  Flux and PWP at \qtyrange{14}{16}{bar}; rejection with $\sim$\qty{2000}{mg.L^{-1}} NaCl
+  (\qtyrange{3800}{4000}{\micro S.cm^{-1}}).
+  \end{table}
+
+  Change vs as recieved: 
+  Mine site- flux +6.7\%, PWP +8,9\%, rejection -1.4pp 
+  Desal site- flux + 41.8\%, PWP + 37.9\%, rejection +8.8pp
+
+
+
+\subsection{Surface analysis after cleaning}
+\label{sec:res-cleaning-surface}
+post-clean FTIR/SEM-EDS versus the as-received baseline in Section~\ref{sec:res-fouling}.
+
+% The 2nd pass EPA2-MAX membranes were more typical of what we would expect. The zeta- potential of the new membrane is quite negative and then became less negative in the used membrane. Literature reports that repeated caustic CIP cycles reduces the negative zeta potential (Figure 33) of used membranes in a chemical aging phenomenon. While these membranes have not been repeatedly cleaned, exposure to the high pH 2nd pass could have the same effect1
+
+%1 Phenomenological Interpretations of Membrane Properties, Following Repeated Chemical Cleaning of an End-of-Life Potable Reuse Reverse Osmosis Element Dominated by Inorganic Fouling. Bilal Abada, Jana Safarik, Kenneth P. Ishida, and Shankararaman Chellam*, ACS EST Engg. 2025, 5, 167−178.
+
+
+%-------------------––––Next Section-----------------%
+\section{Regeneration by IP}
+\label{sec:res-ip}
+%PWP and rejection for no clean and extensive clean + IP compared with same coupons before
+
+
+\subsection{Performance after IP}
 \label{sec:res-tradeoff}
-Places the regenerated coupons on the permeability--rejection plane against commercial RO, which is the headline result of the thesis.
+% Scatter plot: EoLm cleaned and regenerated coupons against new commercial RO and literature NF/UF. 
 
-\begin{itemize}
-  \item Figure --- $x$ = permeability (LMH/bar), $y$ = rejection (\%).
-  \item Overlay reference points: new commercial RO, the EoL membranes before treatment, transformed NF/UF from the literature.
-  \item State plainly whether regenerated coupons land in the commercial RO region.
-\end{itemize}
+  \begin{table}[htbp]
+  \centering
+  \caption{Performance of membranes after IP (clean, IP).
+  Mean $\pm$ SD.}
+  \label{tab:ip-results}
+    \begin{tabular}{lcccc}
+    \toprule
+    Membrane & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) & NaCl rejection (\%) & $n$ \\
+    \midrule
+    4297B (mine)  & $0.69 \pm 0.19$ & $0.046 \pm 0.011$ & $80.5 \pm 11.2$ & 2 / 2 \\
+    4238C (desal) & $0.35 \pm 0.20$ & $0.023 \pm 0.013$ & $76.2 \pm 7.9$ & 4 / 4 \\
+    \bottomrule
+  \end{tabular}
+  \par\smallskip
+  \footnotesize $n$ = number of cell measurements for Flux \& PWP / Rejection.
+  Flux and PWP at \qtyrange{14}{16}{bar}; rejection with $\sim$\qty{2000}{mg.L^{-1}} NaCl
+  (\qtyrange{3800}{4000}{\micro S.cm^{-1}}).
+  \end{table}
+
+\subsection{Permeability--rejection tradeoff}
+\label{sec:res-tradeoff}
+% Scatter plot: EoL, cleaned and regenerated coupons against new commercial RO and literature NF/UF.
+
+\subsection{Surface characterisation of regenerated coupons}
+\label{sec:res-ip-surface}
+% Post IP sem and FTIR
 
 
+
+%---------Discussion---------------%
 \section{Effect of cleaning on regeneration}
 \label{sec:res-cleaning-effect}
-Answers the central question of the thesis: whether the substrate must be cleaned before IP for regeneration to work at all.
+Answers: whether the substrate must be cleaned before IP for regeneration to work at all.
 
 \begin{itemize}
-  \item Arm 1 (no clean) versus Arm 2 (extensive clean), for both membranes.
-  \item Test the necessity argument from Section~\ref{sec:substrate-prep}: an uncleaned substrate should yield a defective film --- high permeability, low rejection, wide replicate scatter.
-  \item Test the sufficiency question separately: does the cleaned arm reach commercial RO territory, or only improve on the uncleaned one? These are different claims and the distinction matters.
-  \item Distinguish a real effect from replicate scatter; state the limits of what this replicate count can support.
-  \item If the cleaned arm does \emph{not} deliver the expected permeability drop and rejection gain, that is a reportable result --- interpret it against the five mechanisms in Section~\ref{sec:fouling-ip} rather than treating it as a failed experiment.
+  \item no clean versus extensive clean, for both membranes.
+  \item an uncleaned substrate should yield a defective film --- high permeability, low rejection, wide replicate scatter.
+  \item does the cleaned arm reach commercial RO territory, or only improve on the uncleaned one? 
+  \item Distinguish a real effect from replicate scatter; state  limits of what replicate can support.
+  \item If the cleaned arm does not deliver the expected permeability drop and rejection gain, interpret  against the five mechanisms in Section~\ref{sec:fouling-ip}
 \end{itemize}
 
 
-\section{Membrane A versus membrane C}
+\section{Mine site versus Desal site}
 \label{sec:res-a-vs-c}
-Attributes the differences between the two membranes to their fouling profiles and service history rather than to the regeneration protocol.
+Attributes the differences between the two membranes to their fouling profiles and service history.
 
 \begin{itemize}
-  \item Differences in response attributable to first- versus second-pass origin.
-  \item Link back to the fouling profiles in Section~\ref{sec:res-fouling}: does fouling type predict regeneration outcome better than cleaning does?
-\end{itemize}
-
-
-\section{Autopsy findings}
-\label{sec:res-autopsy}
-Presents the surface chemistry and morphology of regenerated coupons as physical evidence for the performance story above.
-
-\begin{itemize}
-  \item FTIR/XPS confirmation that a polyamide layer formed; amide band recovery.
-  \item SEM morphology --- ridge-and-valley structure, coverage, visible defects or delamination.
-  \item Pair a high-performing and a low-performing coupon and explain the difference mechanistically.
+  \item Differences in response attributable to feed and operation condition .
+  \item Link back to the fouling profiles in Section~\ref{sec:res-fouling}: does fouling type predict regeneration outcome?
 \end{itemize}
 
 
@@ -99,9 +307,9 @@ Reconciles the results with Chapter~\ref{ch:literature_review}, stating what wor
 
 \begin{itemize}
   \item Which of the fouling-interference mechanisms in Section~\ref{sec:fouling-ip} the data supports, and which it rules out.
-  \item Position the results against reported regeneration performance (Section~\ref{sec:uplifting}).
-  \item Answer each research gap from Section~\ref{sec:research-gap} explicitly.
-  \item Note anything genuinely unexpected and resist over-explaining it.
+  \item review results against reported regeneration performance (Section~\ref{sec:uplifting}).
+  \item Answer research gap from Section~\ref{sec:research-gap} explicitly.
+  \item Note anything unexpected
 \end{itemize}
 
 
@@ -112,15 +320,15 @@ States the constraints on how far these results can be generalised, and where th
 \begin{itemize}
   \item Replicate count, coupon cutting, rig variability, measurement uncertainty.
   \item IP variability and cleaning variability between runs.
-  \item Compaction duration; single feed chemistry; coupon rather than module scale.
+  \item coupon rather than module scale.
 \end{itemize}
 
 
 \section{Summary tables}
 \label{sec:res-tables}
-Consolidates the numerical results into a single reference table, with the raw data deferred to the appendix.
+Consolidates the numerical results into a  reference table, raw data deferred to the appendix.
 
 \begin{itemize}
-  \item Summary performance table --- rows: each membrane/condition; columns: average flux, average PWP (with/without IP), change in permeability, average rejection (with/without IP), change in rejection.
+  \item Summary performance table --- rows: each condition; columns: average flux, average PWP (with/without IP), change in permeability, average rejection (with/without IP), change in rejection.
   \item Raw trial data (every trial's volume, time, flux, conductivity) in Appendix~A.
 \end{itemize}

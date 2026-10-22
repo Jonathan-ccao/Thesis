@@ -1,15 +1,6 @@
 \chapter{Literature Review}
 \label{ch:literature_review}
 
-% =====================================================================
-%   2.1 EoL problem .................  350   (1.0 pp)
-%   2.2 TFC membranes ...............  650   (1.9 pp)
-%   2.3 Ageing and fouling ..........  550   (1.6 pp)
-%   2.4 Fouling vs regeneration ..... 1150   (3.3 pp)  <- protected
-%   2.5 EoL management routes .......  450   (1.3 pp)
-%   2.6 Polyamide regeneration ......  750   (2.1 pp)  <- protected
-%   2.7 Research gaps ...............  250   (0.7 pp)
-% =====================================================================
 
 This chapter establishes why end-of-life (EoL) reverse osmosis (RO) membranes are worth recovering rather than discarding, then narrows to the two things that determine whether polyamide regeneration can work in practice: the condition of the polysulfone substrate it is built on, and the fouling layer that must be removed before a new film can form.
 % Write LAST. Max 100 words.
@@ -28,14 +19,15 @@ Both routes discard the element completely while it still holds recoverable valu
 % =====================================================================
 \section{Thin-film composite RO membranes}
 \label{sec:tfc-anatomy}
-\flag{
-Thin-film composite (TFC) RO membranes represent over 95\% of installed RO capacity globally \citep{Geise2010}. They comprise of three layers (Figure- \flag{Find TFC cross section})
+
+Thin-film composite (TFC) polyamide membranes account for the vast majority of installed RO capacity \citep{Geise2010}. They consist of three layers, each with a distinct function (Figure~\ref{fig:tfc-cross-section}):
 \begin{itemize}
-    \item \textbf{PET non-woven backing} (\textasciitilde120--150\,$\mu$m) \citep{LejarazuLarranaga2022}: provides tensile strength and withstands hydraulic pressure; the most porous, lowest resistance layer, and the largest mass fraction of the sheet \citep{Lawler2015}. It contributes to strength only.
-    \item \textbf{Polysulfone (PSf) layer} (\textasciitilde40--150\,$\mu$m) \citep{LejarazuLarranaga2022}:  Supports the PA layer without adding excess hydraulic resistance \citep{Petersen1993} and is the surface of which PA is formed on.
-    \item \textbf{Polyamide (PA) selective layer} (\textasciitilde0.2\,$\mu$m) \citep{LejarazuLarranaga2022}: Assembled via interfacial polymerisation of organic diamines and carboxylic acid monomers, typically using water as non-organic solvent and hexane as immiscible organic solvent. PA is responsible for the membrane's salt rejection and selectivity. 
+    \item \textbf{PET non-woven backing} ($\sim$120--150\,$\mu$m) \citep{LejarazuLarranaga2022}: provides mechanical strength to withstand operating pressures. It is the most porous and least hydraulically resistant layer, and makes up the largest mass fraction of the sheet, but contributes nothing to separation \citep{Lawler2015}.
+    \item \textbf{Polysulfone (PSf) support} ($\sim$40--60\,$\mu$m) \citep{LejarazuLarranaga2022}: an asymmetric layer formed by non-solvent induced phase separation, with a finely porous skin ($\sim$10--20\,nm pores). It provides a smooth surface on which the PA layer is formed. It does not significantly increase hydraulic resistance \citep{Petersen1993}.
+    \item \textbf{Polyamide (PA) selective layer} ($\sim$0.1--0.2\,$\mu$m) \citep{LejarazuLarranaga2022}: a highly cross-linked aromatic polyamide formed by interfacial polymerisation of m-phenylenediamine (MPD) in the aqueous phase and trimesoyl chloride (TMC) in an immiscible organic solvent such as hexane. The PA layer is solely responsible for salt rejection.
 \end{itemize}
-}
+Because the PA layer is only nanometres thick and susceptible to chlorine attack and irreversible fouling, it is typically were most damage is found in EoL membranes. The PSf and PET layers of an end-of-life membrane often remain structurally intact, which is what makes regenerating the selective layer on the existing support feasible.
+
 
 \begin{figure}[htbp]
   \centering
@@ -52,7 +44,7 @@ Because the selectivity is largly concentrated at the PA layer and PA layer is t
 
 The PA layer is formed by interfacial polymerisation (IP) \citep{Petersen1993, Nunes2020}. An aqueous solution of m-phenylenediamine (MPD) is passed over the PSf support, then reacted with trimesoyl chloride (TMC), an immiscible organic solvent. The two monomers form a crosslinked aromatic PA network on the PSf surface \citep{Petersen1993}. As reaction time increase,
 
-\begin{comment}
+\iffalse
 The PA layer is formed by interfacial polymerisation (IP)
 \citep{Petersen1993, Nunes2020}. The PSf support is loaded with an
 aqueous solution of m-phenylenediamine (MPD) and then contacted with
@@ -85,182 +77,113 @@ What matters for the rest of this chapter is where the reaction takes
 place. The MPD reservoir sits in the PSf, and the film forms at the PSf
 surface \citep{Petersen1993, Singh2006}. Any change to that surface
 therefore changes the film that forms on it.
-\end{comment}
+\fi
 
 \subsection{The Polysulfone Substrate and Effect on Film Formation}
 \label{sec:substrate}
 
+IP happens on the PSf surface, and PSf plays an active role in film formation. The pore size, distribution, porosity and surface chemistry of the PSf strongly affect the resulting PA structure \citep{Singh2006}.
 
-
+\textbf{Pore size and surface porositiy.} 
+\textbf{Wetting and MPD retention.} 
+\textbf{Surface Chemistry.} 
+\textbf{Roughness and adhesion/}
 % =====================================================================
 \section{Ageing and fouling of RO membranes}
 \label{sec:degradation}
-% BUDGET: 550 words (~1.6 pp), split ~275 / 275.
 
 \subsection{Chemical and mechanical degradation}
-Covers oxidative attack and physical ageing together, distinguishing what regeneration can undo from what it cannot.
+The PA layer is very vulnerable to oxidation by sodium hypochlorite (NaOCl), mainly present during chemical cleaning. Chlorine binds to the amide nitrogen and at the adjacent aromatic ring, with bound chlorine increasing with concentration and decreasing pH \citep{Kwon2006a}. Continued attack cleaves the amide bonds, and produces chain scission that break down the crosslinked network \citep{Kwon2006a} so permeability rises and rejection falls. The state of PA in EoL elements is therefore heavily effected by its cleaning history. 
 
+Mechanical ageing acts on the support, where in brackish and seawater RO operation, pressure is usually operated at 15--70 \, bar \citep{Greenlee2009}, and sustained pressure compacts the asymmetric PSf. This loweres the permeability and raises the hydrolic resistance \citep{Molinaa2018}. Improper storage aand exposure to UV can also cause further physical and chemical changes to membranes \citep{Ogbe2025}. Regeneration or uplifting only replaces the PA layer, and damage to the PSf and PET cannot be undone. This sets a limit on the performance that can be recovered via IP. 
 
-% ~275 words. Merged from three former subsections - keep it tight:
-%   - N-chlorination, Orton rearrangement, amide hydrolysis; loss of
-%     crosslinking -> rising permeability, falling rejection; ppm.h as
-%     the controlling variable \citep{GarciaPacheco2015}
-%   - compaction, delamination, support collapse: irreversible, and
-%     therefore a ceiling on recoverable performance
-%   - flag the duality once, briefly: the chemistry that destroys a
-%     working membrane is the tool used to strip PA in Section 2.6.2
-% The EoL performance signature (PWP, rejection, LRV, TMP) belongs in
-% the Chapter 4 baseline table, NOT in prose here.
+The chemistry that degrades a membrane is the same chemistry used to strip the existing PA layer for IP in Section-\ref{sec:pa-removal}
 
 \subsection{Fouling classes and the fouling--cleaning cycle}
-Identifies what accumulates on an RO membrane in service and why repeated cleaning accelerates its retirement.
+Fouling is one of the key reasons that RO membranes are retired \citep{GarciaPacheco2015}. There are four main classes of fouling types: \textbf{Organic} fouling by natural organic matter, proteins and polysacccharides; \textbf{Inorganic scaling} by CaCO$_3$, CaSO$_4$, silicates and metal oxides; \textbf{particulate} fouling; and \textbf{biofouling} in which microbial biofilms alter surface hydrophobicity and chemical composition \citep{MohiuddinAhmed2010}. \flag{humics specifically, clays, and Fe/Al/Mn oxides as colloidal
+foulants, autopsy report}.
 
-% ~275 words. Compress the four foulant classes to roughly a sentence
-% each - organic (humics, proteins, polysaccharides), inorganic scaling
-% (CaCO3, CaSO4, silica), biofouling (cells + EPS), colloidal (clays,
-% Fe/Al/Mn oxides). Note that real EoL elements carry composite,
-% stratified, spatially heterogeneous fouling \citep{Molinaa2018}.
-% Then the cycle: fouling raises TMP -> triggers cleaning -> cleaning
-% damages PA -> damaged surface fouls faster.
-% SIGNPOST: this subsection explains RETIREMENT; Section 2.4 addresses
-% what the fouling layer does to REGENERATION.
+As performance declines, plants raise applied pressure and chemical concentration to maintain the same output, further shortening membrane lifespan. Oxidative damage and chlorination-induced scission increases the surface hydrophilicity and alters pore geometry, changing the fouling behaviour of the membrane \citep{Molinaa2018,Kwon2006a}. 
 
 
 % =====================================================================
-\section{Fouling as a constraint on regeneration}
+\section{The Effects of Fouling on Uplifting}
 \label{sec:fouling-ip}
-% BUDGET: 1,150 words (~3.3 pp) - the largest section in the chapter.
-% Split ~300 / 400 / 250 / 200. This carries the novelty; protect it
-% if the chapter needs further cutting elsewhere.
 Establishes what survives cleaning and why residual foulants are expected to disrupt interfacial polymerisation, which is the central mechanistic argument of this thesis.
 
-\subsection{What chemical cleaning removes, and what it leaves behind}
-Reviews the effectiveness limits of caustic, chelant and acid cleaning so that the sufficiency of a standard clean as substrate preparation can be assessed rather than assumed.
+\subsection{Chemical Cleaning}
+Reviews the limits of caustic, chelant and acid cleaning
+- Caustic + chelant cleaning (Hydrolysis of organics, chelation of divalent bridging cations)
+- acid (HCl): Carbonate and metal oxide dissolution
+- irreducible residuals: silica, mature biofilm EPS, embedded colloid
+- Over cleaning can cause oxidative and damage to PA and PSF underneath during extended exposure. 
 
 % ~300 words.
-%   - caustic + chelant (NaOH, EDTA): hydrolysis and saponification of
-%     organics, chelation of divalent bridging cations
-%   - acid (citric, HCl): carbonate and metal-oxide scale dissolution
-%   - irreducible residuals: silica, mature biofilm EPS, embedded
-%     colloids; the plateau in cleaning efficiency with time
-%   - cost of over-cleaning: oxidative and hydrolytic damage to PA and
-%     to the PSF beneath at extended exposure \citep{Molinaa2018}
-% This subsection is the direct justification for the two-arm design
-% (no clean vs extensive clean) in Section~\ref{sec:experimental-design}.
+
 
 \subsection{Residual foulants as a barrier to interfacial polymerisation}
-States the mechanism this thesis tests: how material left on the substrate is expected to disrupt PA film formation.
+how material left on the substrate is expected to disrupt PA film formation.
+1. Physical masking- foulant blocks reaction interface
+2. altered wetting- hydrophobic residue can reduce MPD contact, hydrophillic retains water and dilutes surface
+3. pore blockage- blocked PSf pores remove local MPD, prevents film growth
+4. chemical interference
+5. adhesion failure- PA formed on foulant rather tahn PSF or old PA. is unsupported and delaminates under compaction. 
 
+- Defects can drive low rejections, high permeability and high replicate variance from varying fouling profiles.
+- After foulants are removed, substrate may still not behave like new PSf
 % ~400 words - the single most important block in the chapter.
-% Five mechanisms, roughly 60 words each, then a closing paragraph:
-%   1. physical masking - foulant excludes the reaction interface;
-%      coverage translates directly to defect area
-%   2. altered wetting - hydrophobic residue reduces MPD uptake;
-%      hydrophilic gel over-retains water and dilutes the interface
-%   3. pore blockage - blocked PSF pores remove the local MPD
-%      reservoir, thinning or preventing film growth
-%   4. chemical interference - amine-consuming or acyl-chloride-
-%      quenching residues; divalent cations altering partitioning
-%   5. adhesion failure - PA formed on foulant rather than on PSF is
-%      unsupported and delaminates under compaction
-% CLOSE by converting these into expected experimental signatures:
-% defect-driven low rejection, anomalously high permeability, and high
-% replicate variance from spatially heterogeneous fouling.
-% Also fold in here (~50 words): even after foulants are removed, the
-% substrate may not behave like clean PSF - persistent charge and
-% wettability shifts, pore constriction, oxidative modification.
 
-\subsection{Substrate preparation as a precondition for regeneration}
+
+\subsection{Membrane Pre-treatment for Uplifting}
 \label{sec:substrate-prep}
-Argues that cleaning before IP is an untested necessity rather than a routine pre-treatment, which is the specific question this thesis addresses.
+Currently, IP is only done on clean or stripped RO membranes where the PA is almost entirely removed from the surface of the membrane. This thesis addresses whether this is necessary to prepare an EoL substrate for IP. On one hand, if residual foulants distrupt IP by the mechanism mentioned above, an unclean substrate should produce a defective film. Fouling alters how EoL membranes respond to chemical treatment \citep{GarciaPacheco2015,Molinaa2018} and fouling conditions also alter widely across different sites and applications \citep{Molinaa2018}.
 
-% ~250 words. REFRAMED: the question is now binary - is cleaning
-% necessary and sufficient to prepare an EoL substrate for IP? - not
-% where an optimum sits along a continuum.
-%   - the case that cleaning is NECESSARY: residual foulants disrupt IP
-%     by the five mechanisms immediately above, so an uncleaned
-%     substrate should produce a defective film
-%   - the case that cleaning may not be SUFFICIENT: standard CIP
-%     protocols are designed to restore flux in service, not to prepare
-%     a surface for polymerisation; the irreducible residuals in
-%     Section 2.4.1 persist through them
-%   - the countervailing cost: extended chemical exposure damages the
-%     PSF \citep{Molinaa2018}, so "clean harder" is not free
-%   - state plainly what is not known: whether any cleaning protocol
-%     leaves a substrate genuinely equivalent to pristine PSF
-% NOTE: whether the response is non-monotonic across cleaning intensity
-% is a real question, but this thesis's two-level design cannot answer
-% it. Mention in one sentence, and route it to Chapter 5 future work.
+Uplifting via IP on NaOCl treated TFC membranes have shown promise in restoring EoL membrane performance \citep{Ogbe2025,Ogbe2026}, but it is not known whether removing the initial PA layer is necessary to produce a pristine PSf layer or even if cleaning protocols achieve this. Pre-treatment of EoL RO membrane with NaOCl introduces an extra step that membrane operation sites have to conduct in order to uplift EoL membranes, which deters the method from truely gaining widespread adoption. 
+
 
 \subsection{Characterising fouling profiles}
-Reviews the analytical methods used to identify and quantify fouling, justifying the techniques adopted in Section~\ref{sec:fouling-characterisation}.
+Reviews the analytical methods used to identify and quantify fouling, justifying the techniques in Section~\ref{sec:fouling-characterisation}.
+- ATR-FTIR (organic groups, amide bands, PSf)
+- SEM-EDS (Morphology + Ca Si Fe S mapping)
+- XPS surface composition (confirm PA formation)
+LCOCD and SMS (fouling characterisation)
 
 % ~200 words, or ~120 words plus a small table.
-% ATR-FTIR (organic groups, amide bands, PSF signature); SEM-EDS
-% (morphology + Ca/Si/Fe/S mapping); XPS (near-surface composition,
-% confirming PA removal and re-formation); TGA/ICP/bacterial counts
-% for foulant partitioning \citep{Molinaa2018}.
-% LCOCD and SMS
-% State what each can and cannot resolve, and which are used here.
 
 
 % =====================================================================
 \section{End-of-life management routes}
 \label{sec:eol-routes}
-% BUDGET: 450 words (~1.3 pp). Was 3-4 pp - the largest single cut.
-% Most of the content moves into a comparison TABLE.
-Reviews the recovery options currently practised or demonstrated, and shows that each either recovers little value or permanently discards the membrane's selectivity.
+Reviews the recovery options currently practised or demonstrated, and shows little value or permanently discards the membrane's selectivity.
 
-% TABLE (replaces ~600 words of prose): rows = direct reuse,
-% mechanical recycling, solvent recovery, chemical downcycling.
-% Columns = principle, product, reported performance, key limitation,
-% reference. Then ~250 words of prose doing only what the table cannot.
+
 
 \subsection{Reuse and material recovery}
 Covers redeployment and dismantling routes in brief, since neither restores membrane function.
 
-% ~120 words for BOTH. Direct reuse: second-pass or brackish duty,
-% short remaining life, no restoration of function \citep{Lawler2015}.
-% Mechanical/solvent recycling: PET and PSF recovery \citep{Guclu2022};
-% mixed-material composites, solvent hazard, low-value output.
+Direct reuse moves an EoL membrane element to operating conditions with milder salinity and pressure (usually an earlier stage within the same plant) \citep{Lawler2015}. It is the most environmentally favourable option reviewed, offsetting byabout 33\% of the impact of a new module \citep{Lawler2015}, but restores no function and only defers disposal by one cycle. 
+\flag{Solvent-based recovery of polysulfone and polyester from EoL membrane }
 
 \subsection{Chemical downcycling to NF and UF}
-Reviews the RO$\rightarrow$NF$\rightarrow$UF transformation as a competing endpoint, assessed on the product it delivers rather than on its chemistry.
-
-% ~200 words. Controlled oxidative degradation of PA (NaOCl, KMnO4);
-% NF-like at short exposure, UF-like at extended exposure; sensitivity
-% to pH and storage \citep{GarciaPacheco2015}; demonstrated at pilot
-% scale \citep{imdea2018transfomem}; product quality versus commercial
-% NF/UF \citep{Molinaa2018}.
-% ONE sentence noting that the same chemistry returns in Section
-% \ref{sec:pa-removal} as a process step. Do not develop it here.
+The most studied recycling route for EoL RO membranes uses the PA's susceptibility to oxidation, while PSf retains integrity \citep{GarciaPacheco2015,Molinaa2018}. With controlled NaOCl exposure at alkaline pH, EoL membranes can reach NF-range permeability within 50\,h at 12,500\,ppm free chlorne and pH 10.5, and UF-range performance within 242\,h \citep{GarciaPacheco2015}. 
+UF membranes made from brackish water elements showed a higher permeability than those from seawater elements, and suggest brackish water membranes as a better candidate for conversion \citep{GarciaPacheco2015}. KMnO$_4$ has also been investigated, although NaOCl gave better permeability at the same salt rejection \cite{Ambrosi2013}. This method however is also sensitive to membrane fouling. Heavily biofouled membranes tend to resist NaOCl, and higher doses damage the PSf \citep{Molinaa2018}.
 
 \subsection{Why current routes are insufficient}
-Draws the routes together into the statement of what is missing, which pivots into the rest of the chapter.
-
-% ~130 words. Downcycling is one-way and discards the rejection
-% capability that distinguishes an RO element; recycling economics are
-% weak; reuse defers rather than solves. Therefore the unaddressed
-% option is RESTORING RO-grade separation on the recovered substrate.
-
+None of the existing routes restore the membrane's separation ability or treats the PA layer as recoverable. Landfill and incineration destroy the element entirely; direct reuse defers rather than solves the disposal; material recovery returns only the thermoplastic components and chemical conversion removes the PA layer completely. Conversion is also one-way, where once the membrane is downgraded, the element can only serve as UF or NF. The new proposed method aims to restore RO-grade separation on recovered substrate \citep{Ogbe2026,Ogbe2025}. 
 
 % =====================================================================
 \section{Polyamide regeneration}
 \label{sec:uplifting}
-% BUDGET: 750 words (~2.1 pp), split ~250 / 250 / 250.
-% Merged from the former Sections 2.6 and 2.7 (was 9-12 pp).
-Introduces regeneration as the alternative to downcycling, reviews what has been achieved, and examines the two process steps in the depth needed to justify Chapter~\ref{ch:methods}.
+Introduces regeneration as the alternative to downcycling, reviews what has been achieved
 
 \subsection{Concept and prior work}
-Defines uplifting as rebuilding rather than degrading the selective layer, and positions this thesis against the small existing body of work.
+Defines uplifting
 
 Chemical modification for recycling membranes is a recent alternative to downcycling, and builds on the low chlorine tolerance of the polyamide layer.
-
+- Usually two step, strip PA then reform with IP
+- Target RO grade rejection at fraction of cost of new element
 % ~200 more words plus a TABLE.
-% Prose: two-step logic (strip spent PA, re-form by IP on recovered
-% PSF); target outcome is RO-grade rejection at a fraction of the
-% embodied cost of a new element; same first step as downcycling,
-% opposite intent.
+
 % TABLE (replaces ~500 words): rows = Garcia-Pacheco \citep{GarciaPacheco2015},
 % Molina \citep{Molinaa2018}, Ogbe et al., others. Columns = substrate
 % condition (FOULED or PRISTINE - this column is the point), removal
@@ -270,42 +193,28 @@ Chemical modification for recycling membranes is a recent alternative to downcyc
 \subsection{Stripping the polyamide without destroying the substrate}
 \label{sec:pa-removal}
 Revisits the transformation chemistry of Section~\ref{sec:eol-routes} as a controlled removal step, where the goal is an intact PSF surface rather than a UF membrane.
+- NaOCl dose control (Incomplete PA removal vs PSf damage)
+- pH dependency 
+- PSf damage at high dose, pore enlargement at 300,000 ppmh
+- Why other chemicals arnt used (KMNo4, enzymes)
 
 % ~250 words.
-%   - dose control: NaOCl ppm.h; the window between incomplete PA
-%     removal and PSF attack \citep{GarciaPacheco2015}
-%   - pH dependence via hypochlorite speciation \citep{GarciaPacheco2015}
-%   - evidence of PSF damage at high dose: pore enlargement at
-%     300,000 ppm.h \citep{Molinaa2018}
-%   - membrane-to-membrane variability: some models resist
-%     transformation, so dose does not transfer between elements
-%   - ONE sentence on alternatives (solvent selectivity - DMF dissolves
-%     PSF \citep{Guclu2022}; enzymatic routes) and why not used here
-% The reframe in one line: the downcycling literature's PRODUCT is this
-% thesis's STARTING SUBSTRATE, and its process window is the constraint.
+
 
 \subsection{Re-forming polyamide on a recovered substrate}
-Covers how IP is executed in situ and how substrate properties propagate into the regenerated film, closing the loop opened in Section~\ref{sec:tfc-anatomy}.
-
+how IP is executed in situ and how substrate properties propagate into the regenerated film
+- In situ vs ex situ, flow through dosing, contact time
+- Parameters: monomer concentration, contact time, cure, 
+- Defects causes rejection variation
+- Most IP studies uses new PSf not recovered substrates. 
 % ~250 words.
-%   - in-situ versus bench-scale IP: flow-through dosing, contact time,
-%     drainage and excess removal
-%   - parameters: monomer concentrations, contact times, cure
-%   - defects as the dominant failure mode, showing up in rejection
-%     rather than permeability
-%   - substrate propagation: pore size -> thickness and permeability;
-%     hydrophilicity and roughness -> uniformity and adhesion; prior
-%     oxidative damage -> defect density
-%   - the gap in one sentence: most IP studies use pristine,
-%     purpose-cast PSF, not recovered substrate
-% CUT ENTIRELY: the sustainability / techno-economic outlook. It is out
-% of experimental scope. One line in Chapter 5 future work instead.
+
 
 
 % =====================================================================
 \section{Membrane Performance Characterisation}
 \label{sec:Performance-Characterisation}
-Water and salt transport through the PA layer is commonly described by the solution-diffusion model **Site** (Lonsdale 1965?). In this model, each species dissolves into the membrane and diffuses across under its own chemical potential gradiant, and as such water and salt crosses the membrane by independant mechanisms. This underpins the performance metrics used in this thesis. 
+Water and salt transport through the PA layer is commonly described by the solution-diffusion model \flag{ (Lonsdale 1965?)}. In this model, each species dissolves into the membrane and diffuses across under its own chemical potential gradiant, and as such water and salt crosses the membrane by independant mechanisms. This underpins the performance metrics used in this thesis. 
 
 \subsection{Water flux and Water Permeability}
 The water flux, $J_w$ is the volumetric permeate flow per unit membrane area and is proportional to the effective pressure driving force:
@@ -329,16 +238,13 @@ The solute flux is driven by the concentration difference across barrier layer (
 \section{Research gaps and how this thesis responds}
 \label{sec:research-gap}
 % BUDGET: 250 words (~0.7 pp). No new literature.
-Converts the review into three unanswered questions and maps each onto an objective from Section~\ref{sec:objectives}.
+Gaps:
+1- regeneration is demonstrated on mainly pristine substrates. Effects of real EoL fouling on IP in not explored
+2. Cleaning before regeneration isnt explored as whether necessary or not, or whether these protocols allow polymerisation
+3. Fouling profile and regeneration outcomes are rarely measured on the same membrnae. 
 
 % ~250 words, three short paragraphs plus a closing sentence:
-%   Gap 1 - regeneration is demonstrated almost exclusively on pristine
-%     or lightly conditioned substrates; the effect of real,
-%     heterogeneous EoL fouling on IP is uncharacterised (Section 2.4)
-%   Gap 2 - cleaning before regeneration is reported as a fixed
-%     pre-treatment; whether it is necessary at all, and whether
-%     standard protocols leave a substrate fit for polymerisation,
-%     has not been established (Section~\ref{sec:substrate-prep})
+
 %   Gap 3 - fouling profile and regeneration outcome are rarely
 %     measured on the same membrane, so the two cannot be linked
 %   Response - characterise the fouling profiles of membranes A and C,
