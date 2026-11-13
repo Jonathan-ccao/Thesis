@@ -1,0 +1,90 @@
+This chapter sets the context for the thesis Membraneee. Cite sources like
+this~\citep{example2021}, or in-text like \citet{example2021}. Cross-reference
+chapters with \texttt{\textbackslash autoref}: see
+Chapter~\ref{ch:methods}.
+
+
+\section{Background}
+
+Reverse osmosis (RO) is the dominant desalination technology worldwide.
+
+\section{Aims and objectives}
+
+\begin{enumerate}
+  \item Regenerate a polyamide active layer on end-of-life RO membranes.
+  \item Characterise pure water permeability (PWP) and salt rejection.
+\end{enumerate}
+
+
+
+\section{Interfacial polymerisation}
+
+The polyamide layer is formed by reacting \emph{m}-phenylenediamine (MPD) with
+trimesoyl chloride (TMC). The condensation reaction releases hydrogen chloride
+(\ce{HCl}):
+
+\begin{equation}
+  \ce{R-NH2 + ClOC-R2 -> R-NH-CO-R2 + HCl}
+  \label{eq:ip}
+\end{equation}
+
+where R and R2 denote the aromatic backbones of MPD and TMC respectively.
+Chemical formulae use \texttt{mhchem}, e.g.\ sodium chloride \ce{NaCl} and
+the sulfate ion \ce{SO4^2-}.
+
+\section{Performance metrics}
+
+Pure water permeability is calculated as
+
+\begin{equation}
+  A = \frac{J_w}{\Delta P} = \frac{V}{A_m \, t \, \Delta P},
+  \label{eq:pwp}
+\end{equation}
+
+\noindent where $J_w$ is the water flux, $\Delta P$ the applied pressure,
+$V$ the permeate volume, $A_m$ the membrane area and $t$ time. Observed salt
+rejection is
+
+\begin{equation}
+  R = \left(1 - \frac{C_p}{C_f}\right) \times 100\%,
+  \label{eq:rejection}
+\end{equation}
+
+\noindent with $C_p$ and $C_f$ the permeate and feed concentrations.
+
+Units are typeset with \texttt{siunitx}: a feed pressure of
+\SI{15}{\bar} and a conductivity of \SI{2000}{\micro\siemens\per\centi\metre}.
+
+\section{Example table}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Example membrane performance data.}
+  \label{tab:performance}
+  \begin{tabular}{lcc}
+    \toprule
+    Sample & PWP (\si{\litre\per\square\metre\per\hour\per\bar}) & Rejection (\si{\percent}) \\
+    \midrule
+    Virgin       & 3.8 & 98.7 \\
+    End-of-life   & 9.1 & 41.2 \\
+    Regenerated  & 4.2 & 96.5 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Refer to tables and equations by number: Table~\ref{tab:performance} and Equation~\eqref{eq:rejection}.
+
+
+\label{ch:results}
+
+Present and interpret your findings here. A figure is included with
+\texttt{\textbackslash includegraphics}; place image files in \texttt{figures/}.
+
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=0.7\textwidth]{figures/your_plot.pdf}
+%   \caption{Caption describing the figure.}
+%   \label{fig:example}
+% \end{figure}
+
+See Equation~\eqref{eq:pwp} for how permeability was computed.

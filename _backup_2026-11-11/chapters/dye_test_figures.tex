@@ -1,0 +1,73 @@
+% =====================================================================
+% Dye testing figures — adapted from the Membrane Works desalination
+% autopsy report. Requires in preamble:
+%   \usepackage{graphicx}
+%   \usepackage{array}
+%   \usepackage{booktabs}
+% Images: figures/dye_test/
+% =====================================================================
+
+% ---------------------------------------------------------------------
+% Figure 1: Whole coupons, feed vs permeate (2nd-pass elements)
+% ---------------------------------------------------------------------
+\begin{figure}[htbp]
+  \centering
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabular}{>{\centering\arraybackslash}m{0.16\linewidth}
+                  >{\centering\arraybackslash}m{0.38\linewidth}
+                  >{\centering\arraybackslash}m{0.38\linewidth}}
+    \toprule
+    \textbf{Membrane} & \textbf{Feed side} & \textbf{Permeate side} \\
+    \midrule
+    Used 2\textsuperscript{nd} pass \newline (4238C) &
+      \includegraphics[width=\linewidth]{figures/dye_test/full_4238C_feed} &
+      \includegraphics[width=\linewidth]{figures/dye_test/full_4238C_permeate} \\[2pt]
+    New 2\textsuperscript{nd} pass \newline (4238D) &
+      \includegraphics[width=\linewidth]{figures/dye_test/full_4238D_feed} &
+      \includegraphics[width=\linewidth]{figures/dye_test/full_4238D_permeate} \\
+    \bottomrule
+  \end{tabular}
+  \caption{Dye integrity test of desalination site membrane coupons, showing the feed side (left) and permeate side (right). Dye on the permeate side indicates passage through defects in the polyamide layer. Adapted from \cite{MembraneWorks2025Desal}.}
+  \label{fig:dye_test_full}
+\end{figure}
+
+% ---------------------------------------------------------------------
+% Figure 2: Magnified images, all four elements
+% ---------------------------------------------------------------------
+\newlength{\dyeh}\setlength{\dyeh}{3.6cm}  % one knob for row height
+\begin{figure}[htbp]
+  \centering
+  \setlength{\tabcolsep}{2pt}
+  \renewcommand{\arraystretch}{1.0}
+  \begin{tabular}{>{\centering\arraybackslash}m{0.13\linewidth}
+                  >{\centering\arraybackslash}m{0.18\linewidth}
+                  >{\centering\arraybackslash}m{0.18\linewidth}
+                  >{\centering\arraybackslash}m{0.40\linewidth}}
+    \toprule
+    \textbf{Membrane} & \textbf{Feed side} & \textbf{Permeate side} & \textbf{Damaged areas} \\
+    \midrule
+    Used 1\textsuperscript{st} pass \newline (4238A) &
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238A_feed} &
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238A_permeate} &
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238A_damage1} \\[2pt]
+    New 1\textsuperscript{st} pass \newline (4238B) &
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238B_feed} &
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238B_permeate} &
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238B_damage1}\hspace{2pt}%
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238B_damage2} \\[2pt]
+    Used 2\textsuperscript{nd} pass \newline (4238C) &
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238C_feed} &
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238C_permeate} &
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238C_damage1}\hspace{2pt}%
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238C_damage2} \\[2pt]
+    New 2\textsuperscript{nd} pass \newline (4238D) &
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238D_feed} &
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238D_permeate} &
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238D_damage1}\hspace{2pt}%
+      \includegraphics[height=\dyeh]{figures/dye_test/mag_4238D_damage2} \\
+    \bottomrule
+  \end{tabular}
+  \caption{Magnified views of the dye integrity test for all four elements, with close-ups of localised damage. Adapted from \cite{MembraneWorks2025Desal}.}
+  \label{fig:dye_test_magnified}
+\end{figure}

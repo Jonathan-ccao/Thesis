@@ -28,22 +28,34 @@
 % ---------- Core technical packages ------------------------------------------
 \usepackage{graphicx}                 % figures
 \usepackage{booktabs}                 % professional tables
-\usepackage{caption}                  % caption control
+\usepackage{caption}                  % caption control                 % caption control
+\captionsetup{
+  font=small,          % smaller than body text
+  labelfont=bf,        % bold "Figure 3.2"
+  labelsep=period,     % "Figure 3.2." instead of "Figure 3.2:"
+  margin=10pt,         % indent the caption slightly from the text block
+  justification=justified,
+  singlelinecheck=true % centre short one-line captions
+}
+\captionsetup[table]{position=top, skip=6pt}  % table captions sit above the table
 \usepackage[version=4]{mhchem}        % chemical formulae:  \ce{NaCl}
 \usepackage{siunitx}                  % units:  \SI{15}{\bar}
 \usepackage{amsmath,amssymb}          % maths
 \usepackage{lipsum}                   % dummy text for testing
 \usepackage{gensymb}
 \usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{longtable} 
+\usepackage{array}\usepackage[numbers,square,sort&compress]{natbib}
 
 % ---------- Citations --------------------------------------------------------
 % This template uses natbib + BibTeX, which works on every TeX install
 % (including this one) and switches style by changing ONE line below.
 %   Author-date (APA / Harvard family):  plainnat, apalike
 %   Numbered (IEEE):                      load IEEEtran + \bibliographystyle{IEEEtran}
-\usepackage[round,authoryear]{natbib} % author-date in-text: (Lin, 2021)
+%\usepackage[round,authoryear]{natbib} % author-date in-text: (Lin, 2021)
 % For IEEE numbered style instead, comment the line above and use:
-%   \usepackage[numbers,square]{natbib}
+\usepackage[numbers,square]{natbib}
 
 % ---------- Hyperlinks (load late) -------------------------------------------
 \usepackage[hidelinks,plainpages=false]{hyperref}
@@ -94,7 +106,7 @@
 \input{chapters/05_conclusion_and_future_work}
 
 % ---------- Bibliography -----------------------------------------------------
-\bibliographystyle{plainnat}
+\bibliographystyle{unsrtnat}
 \bibliography{references}
 
 % ---------- Appendices (optional) --------------------------------------------
