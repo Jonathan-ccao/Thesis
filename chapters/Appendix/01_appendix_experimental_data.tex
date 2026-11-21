@@ -1,611 +1,370 @@
-\section{Full Experimental Data}
-\label{app:exp-data}
+\chapter{Experimental data}
+\label{app:data}
 
-This section reports every pure water permeability (PWP) and salt rejection measurement. Each condition used fresh coupons (Section~\ref{sec:experimental-design}). Coupons were tested in pairs in the two-cell rig and are numbered in the order they were tested within each condition.
+This appendix lists the measurements behind the results in Chapter~\ref{ch:results}. Table~\ref{tab:app-coupons} gives the mean for each coupon and each condition. Tables~\ref{tab:app-pwp-4238A}--\ref{tab:app-pwp-4297B} give every pure water permeability (PWP) trial, and Table~\ref{tab:app-rejection} gives every salt rejection test.
 
-Two cleaning protocols were used. Campaign~1 coupons (4238A and 4238C) were given a commercial clean (Section~\ref{sec:com-cleaning}): a \qty{1}{\hour} alkaline soak with NaOH and EDTA, then a \qty{1}{\hour} soak in HCl. 
-Campaign~2 coupons (4238C and 4297B) were given the extensive clean described in Section~\ref{sec:ext-cleaning}, a similar protocal as the commercial clean with longer soak times and more extreme pH.
+\paragraph{Calculations.} Flux is $J_w = V/(A\,t)$ with $A = \qty{0.0139}{m^2}$, and PWP is $J_w/\Delta P$. Salt rejection is $R = (1-\kappa_p/\kappa_f)\times 100$, where $\kappa_f$ is the mean of 3--4 feed-tank readings and $\kappa_p$ the mean of three permeate readings.
 
-Flux was calculated as $J_w = V/(A_m\,t)$ with $A_m = \qty{0.0139}{\square\metre}$, and PWP as $J_w/\Delta P$, using the transmembrane pressure recorded for each trial. Observed salt rejection is $R = (1-\bar{\kappa}_p/\kappa_f)\times 100$, where $\kappa_f$ is the mean feed-tank conductivity and $\bar{\kappa}_p$ the mean of three permeate readings.
+\paragraph{Statistics.} Readings on each coupon are averaged first. The condition mean $\pm$ sample SD is then taken across coupons, so $n$ is the number of coupons. Values are rounded for display only.
 
-Repeat readings on each coupon are first averaged to give a coupon mean. The within-coupon SD (SD$_\mathrm{w}$) is the sample SD of those repeat readings. The condition mean and sample SD (the Mean $\pm$ SD rows) are then taken across coupon means, with $n$ the number of coupons. Where only one value exists, the SD is not available and is shown as ---. All statistics are calculated from unrounded values.
+\paragraph{Excluded and omitted data.}
+\begin{itemize}[noitemsep]
+  \item 4238C extensive clean, C5 and C6: listed but excluded from the means.
+  \item Campaign~1 4238C as received and commercial clean: not reported. Only the 4238C no clean + IP condition from Campaign~1 is used.
+\end{itemize}
 
-\subsection{Mine site, Campaign~2 (element 4297B)}
-\label{app:exp-c2-mine}
+{\footnotesize
+\begin{longtable}{lllccc}
+  \caption{Coupon means and condition mean $\pm$ SD.}
+  \label{tab:app-coupons}\\
+  \toprule
+  Element & Condition & Coupon & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) & $R$ (\%) \\
+  \midrule
+  \endfirsthead
+  \toprule
+  Element & Condition & Coupon & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) & $R$ (\%) \\
+  \midrule
+  \endhead
+  \bottomrule
+  \endfoot
+  4238A & As received & C1 & 1.04 & 0.069 & 80.1 \\
+   &  & C2 & 1.41 & 0.095 & 76.1 \\
+   & & \textbf{Mean} ($n=2$) & $1.23 \pm 0.27$ & $0.082 \pm 0.018$ & $78.1 \pm 2.8$ \\
+  \addlinespace
+   & Commercial clean & C1 & 2.09 & 0.147 & 93.4 \\
+   &  & C2 & 3.53 & 0.249 & 80.4 \\
+   & & \textbf{Mean} ($n=2$) & $2.81 \pm 1.02$ & $0.198 \pm 0.072$ & $86.9 \pm 9.2$ \\
+  \addlinespace
+   & No clean + IP & C1 & 2.31 & 0.159 & 86.2 \\
+   &  & C2 & 1.68 & 0.116 & 85.0 \\
+   & & \textbf{Mean} ($n=2$) & $2.00 \pm 0.44$ & $0.138 \pm 0.030$ & $85.6 \pm 0.8$ \\
+  \addlinespace
+   & Commercial clean + IP & C1 & 1.44 & 0.102 & 87.6 \\
+   &  & C2 & 1.19 & 0.085 & 86.7 \\
+   & & \textbf{Mean} ($n=2$) & $1.32 \pm 0.17$ & $0.093 \pm 0.012$ & $87.1 \pm 0.7$ \\
+  \midrule
+  4238C & As received & C1 & 2.82 & 0.192 & 75.8 \\
+   &  & C2 & 3.08 & 0.210 & 72.5 \\
+   &  & C3 & 3.49 & 0.217 & 78.7 \\
+   &  & C4 & 3.43 & 0.213 & 79.5 \\
+   & & \textbf{Mean} ($n=4$) & $3.21 \pm 0.32$ & $0.208 \pm 0.011$ & $76.6 \pm 3.1$ \\
+  \addlinespace
+   & Extensive clean & C1 & 1.91 & 0.120 & 77.5 \\
+   &  & C2 & 2.11 & 0.133 & 78.7 \\
+   &  & C3 & 1.65 & 0.105 & 93.2 \\
+   &  & C4 & 0.67 & 0.042 & 89.9 \\
+   &  & C5 & 9.86 & 0.644 & 69.2 \\
+   &  & C6 & 11.76 & 0.768 & 67.1 \\
+   &  & C7 & 3.86 & 0.253 & 82.4 \\
+   & & \textbf{Mean} ($n=5$) & $2.04 \pm 1.16$ & $0.130 \pm 0.077$ & $84.3 \pm 6.9$ \\
+  \addlinespace
+   & Extensive clean + IP & C1 & 0.31 & 0.020 & 74.3 \\
+   &  & C2 & 0.26 & 0.017 & 86.2 \\
+   &  & C3 & 0.64 & 0.042 & 77.2 \\
+   &  & C4 & 0.20 & 0.013 & 67.0 \\
+   & & \textbf{Mean} ($n=4$) & $0.35 \pm 0.20$ & $0.023 \pm 0.013$ & $76.2 \pm 7.9$ \\
+  \addlinespace
+   & No clean + IP (Campaign~1) & C1 & 1.06 & 0.069 & 86.5 \\
+   &  & C2 & 0.84 & 0.054 & 87.3 \\
+   & & \textbf{Mean} ($n=2$) & $0.95 \pm 0.16$ & $0.061 \pm 0.010$ & $86.9 \pm 0.5$ \\
+  \midrule
+  4297B & As received & C1 & 5.32 & 0.341 & 83.3 \\
+   &  & C2 & 4.96 & 0.319 & 83.4 \\
+   &  & C3 & 6.52 & 0.405 & 70.2 \\
+   &  & C4 & 4.09 & 0.254 & 90.7 \\
+   & & \textbf{Mean} ($n=4$) & $5.22 \pm 1.00$ & $0.330 \pm 0.062$ & $81.9 \pm 8.6$ \\
+  \addlinespace
+   & Extensive clean & C1 & 4.45 & 0.315 & 89.2 \\
+   &  & C2 & 3.79 & 0.268 & 91.2 \\
+   &  & C3 & 5.11 & 0.318 & 89.6 \\
+   &  & C4 & 7.22 & 0.449 & 69.3 \\
+   &  & C5 & 7.13 & 0.441 & 64.2 \\
+   &  & C6 & 5.88 & 0.364 & 79.3 \\
+   & & \textbf{Mean} ($n=6$) & $5.60 \pm 1.41$ & $0.359 \pm 0.073$ & $80.5 \pm 11.6$ \\
+  \addlinespace
+   & Extensive clean + IP & C1 & 0.56 & 0.037 & 88.4 \\
+   &  & C2 & 0.82 & 0.055 & 72.6 \\
+   & & \textbf{Mean} ($n=2$) & $0.69 \pm 0.19$ & $0.046 \pm 0.012$ & $80.5 \pm 11.1$ \\
+\end{longtable}}
 
-\begin{table}[htbp]
-  \centering
-  \footnotesize
-  \setlength{\tabcolsep}{3pt}
-  \caption{Coupon means and condition statistics, Mine site, Campaign~2 (element 4297B). $n_{\mathrm{PWP}}$, $n_R$ = number of PWP and rejection readings per coupon.}
-  \label{tab:app-c2-mine-coupons}
-  \resizebox{\linewidth}{!}{%
-  \begin{tabular}{llcccccccc}
-    \toprule
-    Condition & Coupon & $n_{\mathrm{PWP}}$ & $\bar{\Delta P}$ (\unit{bar}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) & SD$_\mathrm{w}$ & $n_R$ & $R$ (\%) & SD$_\mathrm{w}$ \\
-    \midrule
-    As-received & C1 & 3 & 15.60 & 5.32 & 0.3414 & 0.0139 & 1 & 83.3 & --- \\
-     & C2 & 3 & 15.60 & 4.96 & 0.3188 & 0.0144 & 1 & 83.4 & --- \\
-     & C3 & 2 & 16.10 & 6.52 & 0.4048 & 0.0114 & 1 & 70.2 & --- \\
-     & C4 & 2 & 16.10 & 4.09 & 0.2543 & 0.0188 & 1 & 90.7 & --- \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=4$ & & $\boldsymbol{5.22 \pm 1.00}$ & \multicolumn{2}{c}{$\boldsymbol{0.3298 \pm 0.0622}$} & $n=4$ & \multicolumn{2}{c}{$\boldsymbol{81.9 \pm 8.6}$} \\
-    \midrule
-    Extensive clean & C1 & 3 & 14.14 & 4.45 & 0.3152 & 0.0139 & 1 & 89.2 & --- \\
-     & C2 & 3 & 14.14 & 3.79 & 0.2680 & 0.0025 & 1 & 91.2 & --- \\
-     & C3 & 2 & 16.07 & 5.11 & 0.3181 & 0.0092 & 2 & 89.6 & 0.8 \\
-     & C4 & 2 & 16.07 & 7.22 & 0.4495 & 0.0317 & 2 & 69.3 & 1.1 \\
-     & C5 & 2 & 16.16 & 7.13 & 0.4411 & 0.0184 & 2 & 64.2 & 0.5 \\
-     & C6 & 2 & 16.16 & 5.88 & 0.3641 & 0.0172 & 2 & 79.3 & 1.1 \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=6$ & & $\boldsymbol{5.60 \pm 1.41}$ & \multicolumn{2}{c}{$\boldsymbol{0.3593 \pm 0.0733}$} & $n=6$ & \multicolumn{2}{c}{$\boldsymbol{80.5 \pm 11.6}$} \\
-    \midrule
-    Extensive clean + IP & C1 & 3 & 14.97 & 0.56 & 0.0375 & 0.0006 & 1 & 88.4 & --- \\
-     & C2 & 3 & 14.97 & 0.82 & 0.0550 & 0.0012 & 1 & 72.6 & --- \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=2$ & & $\boldsymbol{0.69 \pm 0.19}$ & \multicolumn{2}{c}{$\boldsymbol{0.0463 \pm 0.0124}$} & $n=2$ & \multicolumn{2}{c}{$\boldsymbol{80.5 \pm 11.1}$} \\
-    \bottomrule
-  \end{tabular}}
-\end{table}
-
-{\footnotesize\setlength{\tabcolsep}{4pt}
+{\footnotesize
 \begin{longtable}{llcccccc}
-  \caption{Pure water permeability data, Mine site, Campaign~2 (element 4297B). $V$ = permeate volume collected over time $t$.}
-  \label{tab:app-c2-mine-pwp}\\
+  \caption{Pure water permeability trials, 4238A (desal site, Campaign~1, commercial clean). $V$ = permeate collected in time $t$.}
+  \label{tab:app-pwp-4238A}\\
   \toprule
-  Condition & Coupon & Trial & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
+  Condition & Coupon & Run & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
   \midrule
   \endfirsthead
   \toprule
-  Condition & Coupon & Trial & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
+  Condition & Coupon & Run & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
   \midrule
   \endhead
-    As-received & C1 & 1 & 16.27 & 31.24 & 24.0 & 5.62 & 0.3453 \\
-     &  & 2 & 16.27 & 9.83 & 8.0 & 5.30 & 0.3260 \\
-     &  & 3 & 14.25 & 6.99 & 6.0 & 5.03 & 0.3529 \\
-    \addlinespace[2pt]
-     & C2 & 1 & 16.27 & 28.48 & 24.0 & 5.12 & 0.3148 \\
-     &  & 2 & 16.27 & 9.25 & 8.0 & 4.99 & 0.3068 \\
-     &  & 3 & 14.25 & 6.63 & 6.0 & 4.77 & 0.3347 \\
-    \addlinespace[2pt]
-     & C3 & 1 & 16.10 & 7.40 & 5.0 & 6.39 & 0.3968 \\
-     &  & 2 & 16.10 & 15.40 & 10.0 & 6.65 & 0.4129 \\
-    \addlinespace[2pt]
-     & C4 & 1 & 16.10 & 4.99 & 5.0 & 4.31 & 0.2676 \\
-     &  & 2 & 16.10 & 8.99 & 10.0 & 3.88 & 0.2410 \\
-    \midrule
-    Extensive clean & C1 & 1 & 14.02 & 11.73 & 11.0 & 4.60 & 0.3283 \\
-     &  & 2 & 13.65 & 8.01 & 8.0 & 4.32 & 0.3166 \\
-     &  & 3 & 14.74 & 15.40 & 15.0 & 4.43 & 0.3007 \\
-    \addlinespace[2pt]
-     & C2 & 1 & 14.02 & 9.47 & 11.0 & 3.72 & 0.2651 \\
-     &  & 2 & 13.65 & 6.81 & 8.0 & 3.67 & 0.2692 \\
-     &  & 3 & 14.74 & 13.81 & 15.0 & 3.97 & 0.2696 \\
-    \addlinespace[2pt]
-     & C3 & 1 & 16.07 & 7.25 & 6.0 & 5.22 & 0.3246 \\
-     &  & 2 & 16.07 & 3.48 & 3.0 & 5.01 & 0.3116 \\
-    \addlinespace[2pt]
-     & C4 & 1 & 16.07 & 10.54 & 6.0 & 7.58 & 0.4719 \\
-     &  & 2 & 16.07 & 4.77 & 3.0 & 6.86 & 0.4271 \\
-    \addlinespace[2pt]
-     & C5 & 1 & 16.16 & 10.20 & 6.0 & 7.34 & 0.4541 \\
-     &  & 2 & 16.16 & 6.41 & 4.0 & 6.92 & 0.4280 \\
-    \addlinespace[2pt]
-     & C6 & 1 & 16.16 & 8.45 & 6.0 & 6.08 & 0.3762 \\
-     &  & 2 & 16.16 & 5.27 & 4.0 & 5.69 & 0.3519 \\
-    \midrule
-    Extensive clean + IP & C1 & 1 & 14.97 & 3.35 & 25.3 & 0.57 & 0.0381 \\
-     &  & 2 & 14.97 & 4.77 & 37.0 & 0.56 & 0.0372 \\
-     &  & 3 & 14.97 & 1.93 & 15.0 & 0.56 & 0.0371 \\
-    \addlinespace[2pt]
-     & C2 & 1 & 14.97 & 4.81 & 25.3 & 0.82 & 0.0547 \\
-     &  & 2 & 14.97 & 7.23 & 37.0 & 0.84 & 0.0563 \\
-     &  & 3 & 14.97 & 2.81 & 15.0 & 0.81 & 0.0540 \\
   \bottomrule
+  \endfoot
+  As received & C1 & 1 & 14.89 & 3.78 & 15.0 & 1.09 & 0.073 \\
+   &  & 1 & 14.89 & 5.20 & 20.0 & 1.12 & 0.075 \\
+   &  & 2 & 14.66 & 3.40 & 17.0 & 0.86 & 0.059 \\
+   &  & 2 & 14.66 & 5.33 & 26.0 & 0.88 & 0.060 \\
+   &  & 3 & 15.26 & 2.84 & 11.0 & 1.11 & 0.073 \\
+   &  & 3 & 15.26 & 5.30 & 20.0 & 1.14 & 0.075 \\
+  \addlinespace[2pt]
+   & C2 & 1 & 14.89 & 4.87 & 15.0 & 1.40 & 0.094 \\
+   &  & 1 & 14.89 & 6.46 & 20.0 & 1.39 & 0.094 \\
+   &  & 2 & 14.66 & 4.79 & 17.0 & 1.22 & 0.083 \\
+   &  & 2 & 14.66 & 7.38 & 26.0 & 1.23 & 0.084 \\
+   &  & 3 & 15.26 & 4.09 & 11.0 & 1.60 & 0.105 \\
+   &  & 3 & 15.26 & 7.62 & 20.0 & 1.64 & 0.108 \\
+  \midrule
+  Commercial clean & C1 & 1 & 14.20 & 7.74 & 16.0 & 2.09 & 0.147 \\
+   &  & 1 & 14.20 & 10.15 & 21.0 & 2.09 & 0.147 \\
+  \addlinespace[2pt]
+   & C2 & 1 & 14.20 & 13.09 & 16.0 & 3.53 & 0.249 \\
+   &  & 1 & 14.20 & 17.18 & 21.0 & 3.53 & 0.249 \\
+  \midrule
+  No clean + IP & C1 & 1 & 14.50 & 18.61 & 36.0 & 2.23 & 0.154 \\
+   &  & 1 & 14.50 & 21.94 & 42.0 & 2.25 & 0.156 \\
+   &  & 1 & 14.50 & 24.71 & 47.0 & 2.27 & 0.157 \\
+   &  & 2 & 14.50 & 6.31 & 10.5 & 2.59 & 0.179 \\
+   &  & 2 & 14.50 & 15.31 & 26.0 & 2.54 & 0.175 \\
+   &  & 2 & 14.50 & 17.64 & 30.0 & 2.54 & 0.175 \\
+   &  & 3 & 14.50 & 5.10 & 10.17 & 2.17 & 0.149 \\
+   &  & 3 & 14.50 & 9.61 & 20.0 & 2.07 & 0.143 \\
+   &  & 3 & 14.50 & 14.61 & 30.0 & 2.10 & 0.145 \\
+  \addlinespace[2pt]
+   & C2 & 1 & 14.50 & 13.15 & 36.0 & 1.58 & 0.109 \\
+   &  & 1 & 14.50 & 15.42 & 42.0 & 1.58 & 0.109 \\
+   &  & 1 & 14.50 & 17.36 & 47.0 & 1.59 & 0.110 \\
+   &  & 2 & 14.50 & 4.57 & 10.5 & 1.88 & 0.130 \\
+   &  & 2 & 14.50 & 11.39 & 26.0 & 1.89 & 0.130 \\
+   &  & 2 & 14.50 & 13.35 & 30.0 & 1.92 & 0.132 \\
+   &  & 3 & 14.50 & 3.71 & 10.17 & 1.58 & 0.109 \\
+   &  & 3 & 14.50 & 7.08 & 20.0 & 1.53 & 0.105 \\
+   &  & 3 & 14.50 & 11.08 & 30.0 & 1.59 & 0.110 \\
+  \midrule
+  Commercial clean + IP & C1 & 1 & 14.10 & 5.09 & 15.0 & 1.46 & 0.104 \\
+   &  & 1 & 14.10 & 7.79 & 23.55 & 1.43 & 0.101 \\
+   &  & 1 & 14.10 & 9.95 & 30.3 & 1.42 & 0.101 \\
+  \addlinespace[2pt]
+   & C2 & 1 & 14.10 & 4.14 & 15.0 & 1.19 & 0.084 \\
+   &  & 1 & 14.10 & 6.51 & 23.55 & 1.19 & 0.085 \\
+   &  & 1 & 14.10 & 8.41 & 30.3 & 1.20 & 0.085 \\
 \end{longtable}}
 
-\begin{table}[htbp]
-  \centering
-  \footnotesize
-  \caption{Salt rejection data, Mine site, Campaign~2 (element 4297B). Conductivities in \unit{\micro\siemens\per\centi\metre}; $\kappa_f$ = mean of 3--4 feed-tank readings (shown once per test).}
-  \label{tab:app-c2-mine-rejection}
-  \resizebox{\linewidth}{!}{%
-  \begin{tabular}{llccccccc}
-    \toprule
-    Condition & Coupon & Sample & $\kappa_f$ & $\kappa_{p,1}$ & $\kappa_{p,2}$ & $\kappa_{p,3}$ & $\bar{\kappa}_p$ & $R$ (\%) \\
-    \midrule
-    As-received & C1 & 1 & 3913 & 651 & 654 & 653 & 652.7 & 83.3 \\
-    \addlinespace[2pt]
-     & C2 & 1 &  & 649 & 651 & 654 & 651.3 & 83.4 \\
-    \addlinespace[2pt]
-     & C3 & 1 & 3967 & 1180 & 1180 & 1190 & 1183.3 & 70.2 \\
-    \addlinespace[2pt]
-     & C4 & 1 &  & 356 & 375 & 373 & 368.0 & 90.7 \\
-    \midrule
-    Extensive clean & C1 & 1 & 3977 & 425 & 433 & 433 & 430.3 & 89.2 \\
-    \addlinespace[2pt]
-     & C2 & 1 &  & 349 & 347 & 348 & 348.0 & 91.2 \\
-    \addlinespace[2pt]
-     & C3 & 1 & 4000 & 383 & 398 & 390 & 390.3 & 90.2 \\
-     &  & 2 &  & 450 & 430 & 434 & 438.0 & 89.0 \\
-    \addlinespace[2pt]
-     & C4 & 1 &  & 1191 & 1198 & 1200 & 1196.3 & 70.1 \\
-     &  & 2 &  & 1270 & 1250 & 1255 & 1258.3 & 68.5 \\
-    \addlinespace[2pt]
-     & C5 & 1 & 3983 & 1440 & 1450 & 1350 & 1413.3 & 64.5 \\
-     &  & 2 &  & 1440 & 1438 & 1440 & 1439.3 & 63.9 \\
-    \addlinespace[2pt]
-     & C6 & 1 &  & 856 & 860 & 855 & 857.0 & 78.5 \\
-     &  & 2 &  & 785 & 790 & 811 & 795.3 & 80.0 \\
-    \midrule
-    Extensive clean + IP & C1 & 1 & 3789 & 440 & 439 & 445 & 441.3 & 88.4 \\
-    \addlinespace[2pt]
-     & C2 & 1 &  & 1037 & 1044 & 1029 & 1036.7 & 72.6 \\
-    \bottomrule
-  \end{tabular}}
-\end{table}
 
-\subsection{Desal site, Campaign~2 (element 4238C)}
-\label{app:exp-c2-desal}
-
-\begin{table}[htbp]
-  \centering
-  \footnotesize
-  \setlength{\tabcolsep}{3pt}
-  \caption{Coupon means and condition statistics, Desal site, Campaign~2 (element 4238C). $n_{\mathrm{PWP}}$, $n_R$ = number of PWP and rejection readings per coupon.}
-  \label{tab:app-c2-desal-coupons}
-  \resizebox{\linewidth}{!}{%
-  \begin{tabular}{llcccccccc}
-    \toprule
-    Condition & Coupon & $n_{\mathrm{PWP}}$ & $\bar{\Delta P}$ (\unit{bar}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) & SD$_\mathrm{w}$ & $n_R$ & $R$ (\%) & SD$_\mathrm{w}$ \\
-    \midrule
-    As-received & C1 & 2 & 14.66 & 2.82 & 0.1925 & 0.0016 & 1 & 75.8 & --- \\
-     & C2 & 2 & 14.66 & 3.08 & 0.2098 & 0.0073 & 1 & 72.5 & --- \\
-     & C3 & 2 & 16.10 & 3.49 & 0.2169 & 0.0174 & 1 & 78.7 & --- \\
-     & C4 & 2 & 16.10 & 3.43 & 0.2133 & 0.0235 & 1 & 79.5 & --- \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=4$ & & $\boldsymbol{3.21 \pm 0.32}$ & \multicolumn{2}{c}{$\boldsymbol{0.2081 \pm 0.0108}$} & $n=4$ & \multicolumn{2}{c}{$\boldsymbol{76.6 \pm 3.1}$} \\
-    \midrule
-    Extensive clean & C1 & 3 & 15.89 & 1.91 & 0.1200 & 0.0094 & 1 & 77.5 & --- \\
-     & C2 & 3 & 15.89 & 2.11 & 0.1327 & 0.0024 & 1 & 78.7 & --- \\
-     & C3 & 2 & 15.77 & 1.65 & 0.1048 & 0.0017 & 1 & 93.2 & --- \\
-     & C4 & 2 & 15.77 & 0.67 & 0.0423 & 0.0023 & 1 & 89.9 & --- \\
-     & C5 & 2 & 15.30 & 9.86 & 0.6443 & 0.0224 & 2 & 69.2 & 0.6 \\
-     & C6 & 2 & 15.30 & 11.76 & 0.7684 & 0.0045 & 2 & 67.1 & 0.4 \\
-     & C7 & 2 & 15.30 & 3.86 & 0.2526 & 0.0035 & 1 & 82.4 & --- \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=7$ & & $\boldsymbol{4.55 \pm 4.42}$ & \multicolumn{2}{c}{$\boldsymbol{0.2950 \pm 0.2901}$} & $n=7$ & \multicolumn{2}{c}{$\boldsymbol{79.7 \pm 9.7}$} \\
-    \midrule
-    IP (no clean) & P1 & 3 & 14.60 & 6.88 & 0.4714 & 0.0047 & 1 & 74.3 & --- \\
-     & P2 & 3 & 14.60 & 2.96 & 0.2027 & 0.0020 & 1 & 87.4 & --- \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=2$ & & $\boldsymbol{4.92 \pm 2.77}$ & \multicolumn{2}{c}{$\boldsymbol{0.3371 \pm 0.1900}$} & $n=2$ & \multicolumn{2}{c}{$\boldsymbol{80.9 \pm 9.2}$} \\
-    \midrule
-    Extensive clean + IP & C1 & 2 & 15.21 & 0.31 & 0.0205 & 0.0003 & 1 & 74.3 & --- \\
-     & C2 & 2 & 15.21 & 0.26 & 0.0171 & 0.0010 & 1 & 86.2 & --- \\
-     & C3 & 2 & 15.15 & 0.64 & 0.0423 & 0.0006 & 1 & 77.2 & --- \\
-     & C4 & 2 & 15.15 & 0.20 & 0.0131 & 0.0000 & 1 & 67.0 & --- \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=4$ & & $\boldsymbol{0.35 \pm 0.20}$ & \multicolumn{2}{c}{$\boldsymbol{0.0232 \pm 0.0131}$} & $n=4$ & \multicolumn{2}{c}{$\boldsymbol{76.2 \pm 7.9}$} \\
-    \bottomrule
-  \end{tabular}}
-  \par\smallskip
-  \parbox{\linewidth}{\footnotesize IP (no clean) is the preliminary test (Section~\ref{sec:experimental-design}); its PWP was measured on one coupon pair with three trials each.}
-\end{table}
-
-{\footnotesize\setlength{\tabcolsep}{4pt}
+{\footnotesize
 \begin{longtable}{llcccccc}
-  \caption{Pure water permeability data, Desal site, Campaign~2 (element 4238C). $V$ = permeate volume collected over time $t$.}
-  \label{tab:app-c2-desal-pwp}\\
+  \caption{Pure water permeability trials, 4238C (desal site, Campaign~2 extensive clean; no clean + IP from Campaign~1). $V$ = permeate collected in time $t$.}
+  \label{tab:app-pwp-4238C}\\
   \toprule
-  Condition & Coupon & Trial & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
+  Condition & Coupon & Run & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
   \midrule
   \endfirsthead
   \toprule
-  Condition & Coupon & Trial & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
+  Condition & Coupon & Run & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
   \midrule
   \endhead
-    As-received & C1 & 1 & 14.66 & 7.89 & 12.0 & 2.84 & 0.1936 \\
-     &  & 2 & 14.66 & 2.60 & 4.0 & 2.81 & 0.1914 \\
-    \addlinespace[2pt]
-     & C2 & 1 & 14.66 & 8.76 & 12.0 & 3.15 & 0.2149 \\
-     &  & 2 & 14.66 & 2.78 & 4.0 & 3.00 & 0.2046 \\
-    \addlinespace[2pt]
-     & C3 & 1 & 16.10 & 3.42 & 4.0 & 3.69 & 0.2292 \\
-     &  & 2 & 16.10 & 2.29 & 3.0 & 3.29 & 0.2047 \\
-    \addlinespace[2pt]
-     & C4 & 1 & 16.10 & 3.43 & 4.0 & 3.70 & 0.2299 \\
-     &  & 2 & 16.10 & 2.20 & 3.0 & 3.17 & 0.1966 \\
-    \midrule
-    Extensive clean & C1 & 1 & 15.89 & 6.22 & 13.0 & 2.07 & 0.1300 \\
-     &  & 2 & 15.89 & 2.84 & 6.5 & 1.89 & 0.1187 \\
-     &  & 3 & 15.89 & 6.15 & 15.0 & 1.77 & 0.1114 \\
-    \addlinespace[2pt]
-     & C2 & 1 & 15.89 & 6.38 & 13.0 & 2.12 & 0.1333 \\
-     &  & 2 & 15.89 & 3.11 & 6.5 & 2.07 & 0.1300 \\
-     &  & 3 & 15.89 & 7.44 & 15.0 & 2.14 & 0.1347 \\
-    \addlinespace[2pt]
-     & C3 & 1 & 15.77 & 6.60 & 17.4 & 1.63 & 0.1036 \\
-     &  & 2 & 15.77 & 2.71 & 7.0 & 1.67 & 0.1060 \\
-    \addlinespace[2pt]
-     & C4 & 1 & 15.77 & 2.80 & 17.4 & 0.69 & 0.0440 \\
-     &  & 2 & 15.77 & 1.04 & 7.0 & 0.64 & 0.0407 \\
-    \addlinespace[2pt]
-     & C5 & 1 & 15.30 & 8.91 & 4.0 & 9.62 & 0.6284 \\
-     &  & 2 & 15.30 & 4.68 & 2.0 & 10.10 & 0.6602 \\
-    \addlinespace[2pt]
-     & C6 & 1 & 15.30 & 10.85 & 4.0 & 11.71 & 0.7653 \\
-     &  & 2 & 15.30 & 5.47 & 2.0 & 11.81 & 0.7716 \\
-    \addlinespace[2pt]
-     & C7 & 1 & 15.30 & 5.32 & 6.0 & 3.83 & 0.2502 \\
-     &  & 2 & 15.30 & 9.04 & 10.0 & 3.90 & 0.2550 \\
-    \midrule
-    IP (no clean) & P1 & 1 & 14.60 & 47.30 & 30.0 & 6.81 & 0.4661 \\
-     &  & 2 & 14.60 & 80.00 & 50.0 & 6.91 & 0.4731 \\
-     &  & 3 & 14.60 & 96.40 & 60.0 & 6.94 & 0.4750 \\
-    \addlinespace[2pt]
-     & P2 & 1 & 14.60 & 20.80 & 30.0 & 2.99 & 0.2050 \\
-     &  & 2 & 14.60 & 34.10 & 50.0 & 2.94 & 0.2016 \\
-     &  & 3 & 14.60 & 40.90 & 60.0 & 2.94 & 0.2015 \\
-    \midrule
-    Extensive clean + IP & C1 & 1 & 15.21 & 2.14 & 30.0 & 0.31 & 0.0202 \\
-     &  & 2 & 15.21 & 4.38 & 60.0 & 0.32 & 0.0207 \\
-    \addlinespace[2pt]
-     & C2 & 1 & 15.21 & 1.88 & 30.0 & 0.27 & 0.0178 \\
-     &  & 2 & 15.21 & 3.47 & 60.0 & 0.25 & 0.0164 \\
-    \addlinespace[2pt]
-     & C3 & 1 & 15.15 & 3.97 & 27.0 & 0.63 & 0.0419 \\
-     &  & 2 & 15.15 & 1.50 & 10.0 & 0.65 & 0.0427 \\
-    \addlinespace[2pt]
-     & C4 & 1 & 15.15 & 1.24 & 27.0 & 0.20 & 0.0131 \\
-     &  & 2 & 15.15 & 0.46 & 10.0 & 0.20 & 0.0131 \\
   \bottomrule
+  \endfoot
+  As received & C1 & 1 & 14.66 & 7.89 & 12.0 & 2.84 & 0.194 \\
+   &  & 1 & 14.66 & 2.60 & 4.0 & 2.81 & 0.191 \\
+  \addlinespace[2pt]
+   & C2 & 1 & 14.66 & 8.76 & 12.0 & 3.15 & 0.215 \\
+   &  & 1 & 14.66 & 2.78 & 4.0 & 3.00 & 0.205 \\
+  \addlinespace[2pt]
+   & C3 & 2 & 16.10 & 3.42 & 4.0 & 3.69 & 0.229 \\
+   &  & 2 & 16.10 & 2.29 & 3.0 & 3.29 & 0.205 \\
+  \addlinespace[2pt]
+   & C4 & 2 & 16.10 & 3.43 & 4.0 & 3.70 & 0.230 \\
+   &  & 2 & 16.10 & 2.20 & 3.0 & 3.17 & 0.197 \\
+  \midrule
+  Extensive clean & C1 & 1 & 15.89 & 6.22 & 13.0 & 2.07 & 0.130 \\
+   &  & 1 & 15.89 & 2.84 & 6.5 & 1.89 & 0.119 \\
+   &  & 1 & 15.89 & 6.15 & 15.0 & 1.77 & 0.111 \\
+  \addlinespace[2pt]
+   & C2 & 1 & 15.89 & 6.38 & 13.0 & 2.12 & 0.133 \\
+   &  & 1 & 15.89 & 3.11 & 6.5 & 2.07 & 0.130 \\
+   &  & 1 & 15.89 & 7.44 & 15.0 & 2.14 & 0.135 \\
+  \addlinespace[2pt]
+   & C3 & 2 & 15.77 & 6.60 & 17.43 & 1.63 & 0.104 \\
+   &  & 2 & 15.77 & 2.71 & 7.0 & 1.67 & 0.106 \\
+  \addlinespace[2pt]
+   & C4 & 2 & 15.77 & 2.80 & 17.43 & 0.69 & 0.044 \\
+   &  & 2 & 15.77 & 1.04 & 7.0 & 0.64 & 0.041 \\
+  \addlinespace[2pt]
+   & C5 & 2 & 15.30 & 8.91 & 4.0 & 9.62 & 0.628 \\
+   &  & 2 & 15.30 & 4.68 & 2.0 & 10.10 & 0.660 \\
+  \addlinespace[2pt]
+   & C6 & 2 & 15.30 & 10.85 & 4.0 & 11.71 & 0.765 \\
+   &  & 2 & 15.30 & 5.47 & 2.0 & 11.81 & 0.772 \\
+  \addlinespace[2pt]
+   & C7 & 2 & 15.30 & 5.32 & 6.0 & 3.83 & 0.250 \\
+   &  & 2 & 15.30 & 9.04 & 10.0 & 3.90 & 0.255 \\
+  \midrule
+  Extensive clean + IP & C1 & 1 & 15.21 & 2.14 & 30.0 & 0.31 & 0.020 \\
+   &  & 1 & 15.21 & 4.38 & 60.0 & 0.32 & 0.021 \\
+  \addlinespace[2pt]
+   & C2 & 1 & 15.21 & 1.88 & 30.0 & 0.27 & 0.018 \\
+   &  & 1 & 15.21 & 3.47 & 60.0 & 0.25 & 0.016 \\
+  \addlinespace[2pt]
+   & C3 & 2 & 15.15 & 3.97 & 27.0 & 0.63 & 0.042 \\
+   &  & 2 & 15.15 & 1.50 & 10.0 & 0.65 & 0.043 \\
+  \addlinespace[2pt]
+   & C4 & 2 & 15.15 & 1.24 & 27.0 & 0.20 & 0.013 \\
+   &  & 2 & 15.15 & 0.46 & 10.0 & 0.20 & 0.013 \\
+  \midrule
+  No clean + IP (C1) & C1 & 1 & 15.15 & 4.45 & 19.0 & 1.01 & 0.067 \\
+   &  & 1 & 15.15 & 6.89 & 30.0 & 0.99 & 0.065 \\
+   &  & 1 & 15.15 & 10.49 & 50.0 & 0.91 & 0.060 \\
+   &  & 2 & 15.60 & 3.11 & 10.35 & 1.30 & 0.083 \\
+   &  & 2 & 15.60 & 4.35 & 13.85 & 1.36 & 0.087 \\
+   &  & 2 & 15.60 & 9.35 & 30.0 & 1.35 & 0.086 \\
+   &  & 3 & 15.77 & 4.05 & 20.0 & 0.87 & 0.055 \\
+   &  & 3 & 15.77 & 6.20 & 30.0 & 0.89 & 0.057 \\
+   &  & 3 & 15.77 & 8.90 & 43.17 & 0.89 & 0.056 \\
+  \addlinespace[2pt]
+   & C2 & 1 & 15.15 & 3.82 & 19.0 & 0.87 & 0.057 \\
+   &  & 1 & 15.15 & 6.33 & 30.0 & 0.91 & 0.060 \\
+   &  & 1 & 15.15 & 9.16 & 50.0 & 0.79 & 0.052 \\
+   &  & 2 & 15.60 & 1.89 & 10.35 & 0.79 & 0.051 \\
+   &  & 2 & 15.60 & 2.82 & 13.85 & 0.88 & 0.056 \\
+   &  & 2 & 15.60 & 5.82 & 30.0 & 0.84 & 0.054 \\
+   &  & 3 & 15.77 & 3.68 & 20.0 & 0.79 & 0.050 \\
+   &  & 3 & 15.77 & 5.66 & 30.0 & 0.81 & 0.052 \\
+   &  & 3 & 15.77 & 8.33 & 43.17 & 0.83 & 0.053 \\
 \end{longtable}}
 
-\begin{table}[htbp]
-  \centering
-  \footnotesize
-  \caption{Salt rejection data, Desal site, Campaign~2 (element 4238C). Conductivities in \unit{\micro\siemens\per\centi\metre}; $\kappa_f$ = mean of 3--4 feed-tank readings (shown once per test).}
-  \label{tab:app-c2-desal-rejection}
-  \resizebox{\linewidth}{!}{%
-  \begin{tabular}{llccccccc}
-    \toprule
-    Condition & Coupon & Sample & $\kappa_f$ & $\kappa_{p,1}$ & $\kappa_{p,2}$ & $\kappa_{p,3}$ & $\bar{\kappa}_p$ & $R$ (\%) \\
-    \midrule
-    As-received & C1 & 1 & 3802 & 920 & 924 & 921 & 921.7 & 75.8 \\
-    \addlinespace[2pt]
-     & C2 & 1 &  & 1042 & 1047 & 1044 & 1044.3 & 72.5 \\
-    \addlinespace[2pt]
-     & C3 & 1 & 3987 & 854 & 848 & 850 & 850.7 & 78.7 \\
-    \addlinespace[2pt]
-     & C4 & 1 &  & 820 & 819 & 817 & 818.7 & 79.5 \\
-    \midrule
-    Extensive clean & C1 & 1 & 3905 & 876 & 881 & 878 & 878.3 & 77.5 \\
-    \addlinespace[2pt]
-     & C2 & 1 &  & 838 & 838 & 825 & 833.7 & 78.7 \\
-    \addlinespace[2pt]
-     & C3 & 1 & 3987 & 271 & 273 & 271 & 271.7 & 93.2 \\
-    \addlinespace[2pt]
-     & C4 & 1 &  & 406 & 405 & 399 & 403.3 & 89.9 \\
-    \addlinespace[2pt]
-     & C5 & 1 & 4043 & 1220 & 1240 & 1220 & 1226.7 & 69.7 \\
-     &  & 2 &  & 1270 & 1250 & 1260 & 1260.0 & 68.8 \\
-    \addlinespace[2pt]
-     & C6 & 1 &  & 1340 & 1360 & 1330 & 1343.3 & 66.8 \\
-     &  & 2 &  & 1300 & 1330 & 1330 & 1320.0 & 67.4 \\
-    \addlinespace[2pt]
-     & C7 & 1 &  & 710 & 711 & 710 & 710.3 & 82.4 \\
-    \midrule
-    IP (no clean) & P1 & 1 & 3590 & 924 & 914 & 925 & 921.0 & 74.3 \\
-    \addlinespace[2pt]
-     & P2 & 1 &  & 460 & 446 & 454 & 453.3 & 87.4 \\
-    \midrule
-    Extensive clean + IP & C1 & 1 & 3748 & 966 & 957 & 970 & 964.3 & 74.3 \\
-    \addlinespace[2pt]
-     & C2 & 1 &  & 509 & 515 & 532 & 518.7 & 86.2 \\
-    \addlinespace[2pt]
-     & C3 & 1 & 4043 & 924 & 921 & 920 & 921.7 & 77.2 \\
-    \addlinespace[2pt]
-     & C4 & 1 &  & 1330 & 1340 & 1330 & 1333.3 & 67.0 \\
-    \bottomrule
-  \end{tabular}}
-\end{table}
-
-\subsection{Desal site, Campaign~1 (element 4238A)}
-\label{app:exp-c1-4238A}
-
-\begin{table}[htbp]
-  \centering
-  \footnotesize
-  \setlength{\tabcolsep}{3pt}
-  \caption{Coupon means and condition statistics, Desal site, Campaign~1 (element 4238A). $n_{\mathrm{PWP}}$, $n_R$ = number of PWP and rejection readings per coupon.}
-  \label{tab:app-c1-4238A-coupons}
-  \resizebox{\linewidth}{!}{%
-  \begin{tabular}{llcccccccc}
-    \toprule
-    Condition & Coupon & $n_{\mathrm{PWP}}$ & $\bar{\Delta P}$ (\unit{bar}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) & SD$_\mathrm{w}$ & $n_R$ & $R$ (\%) & SD$_\mathrm{w}$ \\
-    \midrule
-    As-received & C1 & 6 & 14.94 & 1.04 & 0.0693 & 0.0076 & 3 & 80.1 & 4.3 \\
-     & C2 & 6 & 14.94 & 1.41 & 0.0945 & 0.0104 & 3 & 76.1 & 3.0 \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=2$ & & $\boldsymbol{1.23 \pm 0.27}$ & \multicolumn{2}{c}{$\boldsymbol{0.0819 \pm 0.0179}$} & $n=2$ & \multicolumn{2}{c}{$\boldsymbol{78.1 \pm 2.8}$} \\
-    \midrule
-    Commercial clean & C1 & 2 & 14.20 & 2.09 & 0.1470 & 0.0001 & 1 & 93.4 & --- \\
-     & C2 & 2 & 14.20 & 3.53 & 0.2487 & 0.0000 & 1 & 80.4 & --- \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=2$ & & $\boldsymbol{2.81 \pm 1.02}$ & \multicolumn{2}{c}{$\boldsymbol{0.1978 \pm 0.0719}$} & $n=2$ & \multicolumn{2}{c}{$\boldsymbol{86.9 \pm 9.2}$} \\
-    \midrule
-    IP (no clean) & C1 & 9 & 14.50 & 2.31 & 0.1592 & 0.0137 & 3 & 86.2 & 2.3 \\
-     & C2 & 9 & 14.50 & 1.68 & 0.1160 & 0.0112 & 3 & 85.0 & 1.4 \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=2$ & & $\boldsymbol{2.00 \pm 0.44}$ & \multicolumn{2}{c}{$\boldsymbol{0.1376 \pm 0.0305}$} & $n=2$ & \multicolumn{2}{c}{$\boldsymbol{85.6 \pm 0.8}$} \\
-    \midrule
-    Commercial clean + IP & C1 & 3 & 14.10 & 1.44 & 0.1019 & 0.0018 & 1 & 87.6 & --- \\
-     & C2 & 3 & 14.10 & 1.19 & 0.0847 & 0.0002 & 1 & 86.7 & --- \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=2$ & & $\boldsymbol{1.32 \pm 0.17}$ & \multicolumn{2}{c}{$\boldsymbol{0.0933 \pm 0.0122}$} & $n=2$ & \multicolumn{2}{c}{$\boldsymbol{87.1 \pm 0.7}$} \\
-    \bottomrule
-  \end{tabular}}
-  \par\smallskip
-  \parbox{\linewidth}{\footnotesize Campaign~1 As-received and IP (no clean) conditions: three repeat runs on the same coupon pair, averaged per coupon. Commercial clean conditions: single run (membrane supply exhausted).}
-\end{table}
-
-{\footnotesize\setlength{\tabcolsep}{4pt}
-\begin{longtable}{>{\raggedright\arraybackslash}p{2.2cm}llcccccc}
-  \caption{Pure water permeability data, Desal site, Campaign~1 (element 4238A). $V$ = permeate volume collected over time $t$.}
-  \label{tab:app-c1-4238A-pwp}\\
+{\footnotesize
+\begin{longtable}{llcccccc}
+  \caption{Pure water permeability trials, 4297B (mine site, Campaign~2, extensive clean). $V$ = permeate collected in time $t$.}
+  \label{tab:app-pwp-4297B}\\
   \toprule
-  Condition & Run & Coupon & Trial & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
+  Condition & Coupon & Run & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
   \midrule
   \endfirsthead
   \toprule
-  Condition & Run & Coupon & Trial & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
+  Condition & Coupon & Run & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
   \midrule
   \endhead
-    As-received & 1 & C1 & 1 & 14.89 & 3.78 & 15.0 & 1.09 & 0.0731 \\
-     & 1 &  & 2 & 14.89 & 5.20 & 20.0 & 1.12 & 0.0754 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 & 14.89 & 4.87 & 15.0 & 1.40 & 0.0941 \\
-     & 1 &  & 2 & 14.89 & 6.46 & 20.0 & 1.39 & 0.0936 \\
-    \addlinespace[2pt]
-     & 2 & C1 & 1 & 14.66 & 3.40 & 17.0 & 0.86 & 0.0589 \\
-     & 2 &  & 2 & 14.66 & 5.33 & 26.0 & 0.88 & 0.0604 \\
-    \addlinespace[2pt]
-     & 2 & C2 & 1 & 14.66 & 4.79 & 17.0 & 1.22 & 0.0830 \\
-     & 2 &  & 2 & 14.66 & 7.38 & 26.0 & 1.23 & 0.0836 \\
-    \addlinespace[2pt]
-     & 3 & C1 & 1 & 15.26 & 2.84 & 11.0 & 1.11 & 0.0730 \\
-     & 3 &  & 2 & 15.26 & 5.30 & 20.0 & 1.14 & 0.0750 \\
-    \addlinespace[2pt]
-     & 3 & C2 & 1 & 15.26 & 4.09 & 11.0 & 1.60 & 0.1052 \\
-     & 3 &  & 2 & 15.26 & 7.62 & 20.0 & 1.64 & 0.1078 \\
-    \midrule
-    Commercial clean & 1 & C1 & 1 & 14.20 & 7.74 & 16.0 & 2.09 & 0.1471 \\
-     & 1 &  & 2 & 14.20 & 10.15 & 21.0 & 2.09 & 0.1469 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 & 14.20 & 13.09 & 16.0 & 3.53 & 0.2487 \\
-     & 1 &  & 2 & 14.20 & 17.18 & 21.0 & 3.53 & 0.2487 \\
-    \addlinespace[2pt]
-     & 2 & 1st pass\textsuperscript{a} & 1 & 15.00 & 5.00 & 8.5 & 2.54 & 0.1693 \\
-    \addlinespace[2pt]
-     & 2 & 1st pass\textsuperscript{a} & 2 & 15.00 & 5.00 & 9.5 & 2.27 & 0.1515 \\
-    \addlinespace[2pt]
-     & 2 & 2nd pass\textsuperscript{a} & 1 & 15.00 & 15.00 & 4.0 & 16.19 & 1.0791 \\
-    \midrule
-    IP (no clean) & 1 & C1 & 1 & 14.50 & 18.61 & 36.0 & 2.23 & 0.1539 \\
-     & 1 &  & 2 & 14.50 & 21.94 & 42.0 & 2.25 & 0.1555 \\
-     & 1 &  & 3 & 14.50 & 24.71 & 47.0 & 2.27 & 0.1565 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 & 14.50 & 13.15 & 36.0 & 1.58 & 0.1087 \\
-     & 1 &  & 2 & 14.50 & 15.42 & 42.0 & 1.58 & 0.1093 \\
-     & 1 &  & 3 & 14.50 & 17.36 & 47.0 & 1.59 & 0.1100 \\
-    \addlinespace[2pt]
-     & 2 & C1 & 1 & 14.50 & 6.31 & 10.5 & 2.59 & 0.1789 \\
-     & 2 &  & 2 & 14.50 & 15.31 & 26.0 & 2.54 & 0.1753 \\
-     & 2 &  & 3 & 14.50 & 17.64 & 30.0 & 2.54 & 0.1750 \\
-    \addlinespace[2pt]
-     & 2 & C2 & 1 & 14.50 & 4.57 & 10.5 & 1.88 & 0.1296 \\
-     & 2 &  & 2 & 14.50 & 11.39 & 26.0 & 1.89 & 0.1304 \\
-     & 2 &  & 3 & 14.50 & 13.35 & 30.0 & 1.92 & 0.1325 \\
-    \addlinespace[2pt]
-     & 3 & C1 & 1 & 14.50 & 5.10 & 10.2 & 2.17 & 0.1493 \\
-     & 3 &  & 2 & 14.50 & 9.61 & 20.0 & 2.07 & 0.1430 \\
-     & 3 &  & 3 & 14.50 & 14.61 & 30.0 & 2.10 & 0.1450 \\
-    \addlinespace[2pt]
-     & 3 & C2 & 1 & 14.50 & 3.71 & 10.2 & 1.58 & 0.1086 \\
-     & 3 &  & 2 & 14.50 & 7.08 & 20.0 & 1.53 & 0.1054 \\
-     & 3 &  & 3 & 14.50 & 11.08 & 30.0 & 1.59 & 0.1099 \\
-    \midrule
-    Commercial clean + IP & 1 & C1 & 1 & 14.10 & 5.09 & 15.0 & 1.46 & 0.1039 \\
-     & 1 &  & 2 & 14.10 & 7.79 & 23.6 & 1.43 & 0.1013 \\
-     & 1 &  & 3 & 14.10 & 9.95 & 30.3 & 1.42 & 0.1005 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 & 14.10 & 4.14 & 15.0 & 1.19 & 0.0845 \\
-     & 1 &  & 2 & 14.10 & 6.51 & 23.6 & 1.19 & 0.0846 \\
-     & 1 &  & 3 & 14.10 & 8.41 & 30.3 & 1.20 & 0.0850 \\
-    \addlinespace[2pt]
-     & 2 & 1st pass\textsuperscript{a} & 1 & 15.60 & 10.00 & 11.7 & 3.70 & 0.2372 \\
   \bottomrule
+  \endfoot
+  As received & C1 & 1 & 16.27 & 31.24 & 24.0 & 5.62 & 0.345 \\
+   &  & 1 & 16.27 & 9.83 & 8.0 & 5.30 & 0.326 \\
+   &  & 1 & 14.25 & 6.99 & 6.0 & 5.03 & 0.353 \\
+  \addlinespace[2pt]
+   & C2 & 1 & 16.27 & 28.48 & 24.0 & 5.12 & 0.315 \\
+   &  & 1 & 16.27 & 9.25 & 8.0 & 4.99 & 0.307 \\
+   &  & 1 & 14.25 & 6.63 & 6.0 & 4.77 & 0.335 \\
+  \addlinespace[2pt]
+   & C3 & 2 & 16.10 & 7.40 & 5.0 & 6.39 & 0.397 \\
+   &  & 2 & 16.10 & 15.40 & 10.0 & 6.65 & 0.413 \\
+  \addlinespace[2pt]
+   & C4 & 2 & 16.10 & 4.99 & 5.0 & 4.31 & 0.268 \\
+   &  & 2 & 16.10 & 8.99 & 10.0 & 3.88 & 0.241 \\
+  \midrule
+  Extensive clean & C1 & 1 & 14.02 & 11.73 & 11.0 & 4.60 & 0.328 \\
+   &  & 1 & 13.65 & 8.01 & 8.0 & 4.32 & 0.317 \\
+   &  & 1 & 14.74 & 15.40 & 15.0 & 4.43 & 0.301 \\
+  \addlinespace[2pt]
+   & C2 & 1 & 14.02 & 9.47 & 11.0 & 3.72 & 0.265 \\
+   &  & 1 & 13.65 & 6.81 & 8.0 & 3.67 & 0.269 \\
+   &  & 1 & 14.74 & 13.81 & 15.0 & 3.97 & 0.270 \\
+  \addlinespace[2pt]
+   & C3 & 2 & 16.07 & 7.25 & 6.0 & 5.22 & 0.325 \\
+   &  & 2 & 16.07 & 3.48 & 3.0 & 5.01 & 0.312 \\
+  \addlinespace[2pt]
+   & C4 & 2 & 16.07 & 10.54 & 6.0 & 7.58 & 0.472 \\
+   &  & 2 & 16.07 & 4.77 & 3.0 & 6.86 & 0.427 \\
+  \addlinespace[2pt]
+   & C5 & 2 & 16.16 & 10.20 & 6.0 & 7.34 & 0.454 \\
+   &  & 2 & 16.16 & 6.41 & 4.0 & 6.92 & 0.428 \\
+  \addlinespace[2pt]
+   & C6 & 2 & 16.16 & 8.45 & 6.0 & 6.08 & 0.376 \\
+   &  & 2 & 16.16 & 5.27 & 4.0 & 5.69 & 0.352 \\
+  \midrule
+  Extensive clean + IP & C1 & 1 & 14.97 & 3.35 & 25.33 & 0.57 & 0.038 \\
+   &  & 1 & 14.97 & 4.77 & 37.0 & 0.56 & 0.037 \\
+   &  & 1 & 14.97 & 1.93 & 15.0 & 0.56 & 0.037 \\
+  \addlinespace[2pt]
+   & C2 & 1 & 14.97 & 4.81 & 25.33 & 0.82 & 0.055 \\
+   &  & 1 & 14.97 & 7.23 & 37.0 & 0.84 & 0.056 \\
+   &  & 1 & 14.97 & 2.81 & 15.0 & 0.81 & 0.054 \\
 \end{longtable}}
-\noindent{\footnotesize \textsuperscript{a}Two-pass series configuration (4238A first pass, 4238C second pass), recorded for completeness and excluded from all statistics.}
-
-\begin{table}[htbp]
-  \centering
-  \footnotesize
-  \caption{Salt rejection data, Desal site, Campaign~1 (element 4238A). Conductivities in \unit{\micro\siemens\per\centi\metre}; $\kappa_f$ = mean of 3--4 feed-tank readings (shown once per test).}
-  \label{tab:app-c1-4238A-rejection}
-  \resizebox{\linewidth}{!}{%
-  \begin{tabular}{lllccccccc}
-    \toprule
-    Condition & Run & Coupon & Sample & $\kappa_f$ & $\kappa_{p,1}$ & $\kappa_{p,2}$ & $\kappa_{p,3}$ & $\bar{\kappa}_p$ & $R$ (\%) \\
-    \midrule
-    As-received & 1 & C1 & 1 & 3973 & 873 & 873 & 870 & 872.0 & 78.1 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 &  & 1042 & 1044 & 1032 & 1039.3 & 73.8 \\
-    \addlinespace[2pt]
-     & 2 & C1 & 1 & 4115 & 945 & 939 & 944 & 942.7 & 77.1 \\
-    \addlinespace[2pt]
-     & 2 & C2 & 1 &  & 1027 & 1015 & 1037 & 1026.3 & 75.1 \\
-    \addlinespace[2pt]
-     & 3 & C1 & 1 & 3750 & 565 & 560 & 559 & 561.3 & 85.0 \\
-    \addlinespace[2pt]
-     & 3 & C2 & 1 &  & 808 & 798 & 704 & 770.0 & 79.5 \\
-    \midrule
-    Commercial clean & 1 & C1 & 1 & 3818 & 252 & 251 & 250 & 251.0 & 93.4 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 &  & 753 & 742 & 745 & 746.7 & 80.4 \\
-    \midrule
-    IP (no clean) & 1 & C1 & 1 & 4297 & 486 & 485 & 488 & 486.3 & 88.7 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 &  & 592 & 597 & 594 & 594.3 & 86.2 \\
-    \addlinespace[2pt]
-     & 2 & C1 & 1 & 3638 & 563 & 514 & 509 & 528.7 & 85.5 \\
-    \addlinespace[2pt]
-     & 2 & C2 & 1 &  & 598 & 599 & 603 & 600.0 & 83.5 \\
-    \addlinespace[2pt]
-     & 3 & C1 & 1 & 3963 & 620 & 624 & 622 & 622.0 & 84.3 \\
-    \addlinespace[2pt]
-     & 3 & C2 & 1 &  & 579 & 584 & 577 & 580.0 & 85.4 \\
-    \midrule
-    Commercial clean + IP & 1 & C1 & 1 & 3772 & 472 & 463 & 465 & 466.7 & 87.6 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 &  & 506 & 502 & 502 & 503.3 & 86.7 \\
-    \bottomrule
-  \end{tabular}}
-\end{table}
-
-\subsection{Desal site, Campaign~1 (element 4238C)}
-\label{app:exp-c1-4238C}
-
-\begin{table}[htbp]
-  \centering
-  \footnotesize
-  \setlength{\tabcolsep}{3pt}
-  \caption{Coupon means and condition statistics, Desal site, Campaign~1 (element 4238C). $n_{\mathrm{PWP}}$, $n_R$ = number of PWP and rejection readings per coupon.}
-  \label{tab:app-c1-4238C-coupons}
-  \resizebox{\linewidth}{!}{%
-  \begin{tabular}{llcccccccc}
-    \toprule
-    Condition & Coupon & $n_{\mathrm{PWP}}$ & $\bar{\Delta P}$ (\unit{bar}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) & SD$_\mathrm{w}$ & $n_R$ & $R$ (\%) & SD$_\mathrm{w}$ \\
-    \midrule
-    As-received & C1 & 6 & 14.83 & 0.50 & 0.0341 & 0.0050 & 0 & --- & --- \\
-     & C2 & 6 & 14.83 & 0.62 & 0.0422 & 0.0074 & 0 & --- & --- \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=2$ & & $\boldsymbol{0.56 \pm 0.08}$ & \multicolumn{2}{c}{$\boldsymbol{0.0382 \pm 0.0057}$} & $n=0$ & \multicolumn{2}{c}{---} \\
-    \midrule
-    Commercial clean & C1 & 2 & 14.20 & 12.85 & 0.9048 & 0.0056 & 1 & 95.5 & --- \\
-     & C2 & 2 & 14.20 & 13.34 & 0.9397 & 0.0238 & 1 & 96.9 & --- \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=2$ & & $\boldsymbol{13.10 \pm 0.35}$ & \multicolumn{2}{c}{$\boldsymbol{0.9222 \pm 0.0247}$} & $n=2$ & \multicolumn{2}{c}{$\boldsymbol{96.2 \pm 1.1}$} \\
-    \midrule
-    IP (no clean) & C1 & 9 & 15.51 & 1.06 & 0.0685 & 0.0133 & 1 & 86.5 & --- \\
-     & C2 & 9 & 15.51 & 0.84 & 0.0539 & 0.0033 & 1 & 87.3 & --- \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=2$ & & $\boldsymbol{0.95 \pm 0.16}$ & \multicolumn{2}{c}{$\boldsymbol{0.0612 \pm 0.0103}$} & $n=2$ & \multicolumn{2}{c}{$\boldsymbol{86.9 \pm 0.5}$} \\
-    \midrule
-    Commercial clean + IP & C1 & 3 & 14.60 & 9.13 & 0.6253 & 0.0212 & 1 & 93.7 & --- \\
-     & C2 & 3 & 14.60 & 5.88 & 0.4029 & 0.0297 & 1 & 88.6 & --- \\
-    \addlinespace[1pt]
-    & \textbf{Mean $\pm$ SD} & $n=2$ & & $\boldsymbol{7.51 \pm 2.30}$ & \multicolumn{2}{c}{$\boldsymbol{0.5141 \pm 0.1573}$} & $n=2$ & \multicolumn{2}{c}{$\boldsymbol{91.1 \pm 3.6}$} \\
-    \bottomrule
-  \end{tabular}}
-  \par\smallskip
-  \parbox{\linewidth}{\footnotesize Campaign~1 As-received and IP (no clean) conditions: three repeat runs on the same coupon pair, averaged per coupon. Commercial clean conditions: single run (membrane supply exhausted). As-received rejection was not measured. For IP (no clean), rejection was measured in run~1 only.}
-\end{table}
-
-{\footnotesize\setlength{\tabcolsep}{4pt}
-\begin{longtable}{>{\raggedright\arraybackslash}p{2.2cm}llcccccc}
-  \caption{Pure water permeability data, Desal site, Campaign~1 (element 4238C). $V$ = permeate volume collected over time $t$.}
-  \label{tab:app-c1-4238C-pwp}\\
+{\footnotesize
+\begin{longtable}{lllcccc}
+  \caption{Salt rejection tests. Conductivities in \unit{\micro S.cm^{-1}}; $\kappa_p$ is the mean of three permeate readings. A coupon listed twice in the same run had two permeate samples taken.}
+  \label{tab:app-rejection}\\
   \toprule
-  Condition & Run & Coupon & Trial & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
+  Element & Condition & Coupon & Run & $\kappa_f$ & $\kappa_p$ & $R$ (\%) \\
   \midrule
   \endfirsthead
   \toprule
-  Condition & Run & Coupon & Trial & $\Delta P$ (\unit{bar}) & $V$ (\unit{mL}) & $t$ (\unit{min}) & Flux (\unit{LMH}) & PWP (\unit{LMH.bar^{-1}}) \\
+  Element & Condition & Coupon & Run & $\kappa_f$ & $\kappa_p$ & $R$ (\%) \\
   \midrule
   \endhead
-    As-received & 1 & C1 & 1 & 15.20 & 2.07 & 20.0 & 0.45 & 0.0294 \\
-     & 1 &  & 2 & 15.20 & 3.35 & 32.0 & 0.45 & 0.0297 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 & 15.20 & 2.30 & 20.0 & 0.50 & 0.0327 \\
-     & 1 &  & 2 & 15.20 & 3.68 & 32.0 & 0.50 & 0.0327 \\
-    \addlinespace[2pt]
-     & 2 & C1 & 1 & 14.95 & 2.24 & 20.0 & 0.48 & 0.0323 \\
-     & 2 &  & 2 & 14.95 & 3.40 & 30.0 & 0.49 & 0.0327 \\
-    \addlinespace[2pt]
-     & 2 & C2 & 1 & 14.95 & 3.24 & 20.0 & 0.70 & 0.0468 \\
-     & 2 &  & 2 & 14.95 & 4.86 & 30.0 & 0.70 & 0.0468 \\
-    \addlinespace[2pt]
-     & 3 & C1 & 1 & 14.33 & 1.97 & 15.0 & 0.57 & 0.0396 \\
-     & 3 &  & 2 & 14.33 & 2.72 & 20.0 & 0.59 & 0.0410 \\
-    \addlinespace[2pt]
-     & 3 & C2 & 1 & 14.33 & 2.35 & 15.0 & 0.68 & 0.0472 \\
-     & 3 &  & 2 & 14.33 & 3.14 & 20.0 & 0.68 & 0.0473 \\
-    \midrule
-    Commercial clean & 1 & C1 & 1 & 14.20 & 26.67 & 9.0 & 12.79 & 0.9008 \\
-     & 1 &  & 2 & 14.20 & 44.84 & 15.0 & 12.90 & 0.9087 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 & 14.20 & 28.32 & 9.0 & 13.58 & 0.9565 \\
-     & 1 &  & 2 & 14.20 & 45.54 & 15.0 & 13.11 & 0.9229 \\
-    \midrule
-    IP (no clean) & 1 & C1 & 1 & 15.15 & 4.45 & 19.0 & 1.01 & 0.0667 \\
-     & 1 &  & 2 & 15.15 & 6.89 & 30.0 & 0.99 & 0.0654 \\
-     & 1 &  & 3 & 15.15 & 10.49 & 50.0 & 0.91 & 0.0598 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 & 15.15 & 3.82 & 19.0 & 0.87 & 0.0573 \\
-     & 1 &  & 2 & 15.15 & 6.33 & 30.0 & 0.91 & 0.0601 \\
-     & 1 &  & 3 & 15.15 & 9.16 & 50.0 & 0.79 & 0.0522 \\
-    \addlinespace[2pt]
-     & 2 & C1 & 1 & 15.60 & 3.11 & 10.3 & 1.30 & 0.0831 \\
-     & 2 &  & 2 & 15.60 & 4.35 & 13.8 & 1.36 & 0.0869 \\
-     & 2 &  & 3 & 15.60 & 9.35 & 30.0 & 1.35 & 0.0862 \\
-    \addlinespace[2pt]
-     & 2 & C2 & 1 & 15.60 & 1.89 & 10.3 & 0.79 & 0.0505 \\
-     & 2 &  & 2 & 15.60 & 2.82 & 13.8 & 0.88 & 0.0563 \\
-     & 2 &  & 3 & 15.60 & 5.82 & 30.0 & 0.84 & 0.0537 \\
-    \addlinespace[2pt]
-     & 3 & C1 & 1 & 15.77 & 4.05 & 20.0 & 0.87 & 0.0554 \\
-     & 3 &  & 2 & 15.77 & 6.20 & 30.0 & 0.89 & 0.0566 \\
-     & 3 &  & 3 & 15.77 & 8.90 & 43.2 & 0.89 & 0.0564 \\
-    \addlinespace[2pt]
-     & 3 & C2 & 1 & 15.77 & 3.68 & 20.0 & 0.79 & 0.0504 \\
-     & 3 &  & 2 & 15.77 & 5.66 & 30.0 & 0.81 & 0.0516 \\
-     & 3 &  & 3 & 15.77 & 8.33 & 43.2 & 0.83 & 0.0528 \\
-    \midrule
-    Commercial clean + IP & 1 & C1 & 1 & 14.60 & 13.50 & 6.5 & 8.97 & 0.6141 \\
-     & 1 &  & 2 & 14.60 & 26.52 & 12.1 & 9.49 & 0.6498 \\
-     & 1 &  & 3 & 14.60 & 38.64 & 18.7 & 8.94 & 0.6120 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 & 14.60 & 9.53 & 6.5 & 6.33 & 0.4335 \\
-     & 1 &  & 2 & 14.60 & 16.37 & 12.1 & 5.86 & 0.4011 \\
-     & 1 &  & 3 & 14.60 & 23.62 & 18.7 & 5.46 & 0.3741 \\
   \bottomrule
+  \endfoot
+  4238A & As received & C1 & 1 & 3973 & 872.0 & 78.1 \\
+   &  & C1 & 2 & 4115 & 942.7 & 77.1 \\
+   &  & C1 & 3 & 3750 & 561.3 & 85.0 \\
+   &  & C2 & 1 & 3973 & 1039.3 & 73.8 \\
+   &  & C2 & 2 & 4115 & 1026.3 & 75.1 \\
+   &  & C2 & 3 & 3750 & 770.0 & 79.5 \\
+  \addlinespace
+   & Commercial clean & C1 & 1 & 3818 & 251.0 & 93.4 \\
+   &  & C2 & 1 & 3818 & 746.7 & 80.4 \\
+  \addlinespace
+   & No clean + IP & C1 & 1 & 4297 & 486.3 & 88.7 \\
+   &  & C1 & 2 & 3638 & 528.7 & 85.5 \\
+   &  & C1 & 3 & 3963 & 622.0 & 84.3 \\
+   &  & C2 & 1 & 4297 & 594.3 & 86.2 \\
+   &  & C2 & 2 & 3638 & 600.0 & 83.5 \\
+   &  & C2 & 3 & 3963 & 580.0 & 85.4 \\
+  \addlinespace
+   & Commercial clean + IP & C1 & 1 & 3772 & 466.7 & 87.6 \\
+   &  & C2 & 1 & 3772 & 503.3 & 86.7 \\
+  \midrule
+  4238C & As received & C1 & 1 & 3802 & 921.7 & 75.8 \\
+   &  & C2 & 1 & 3802 & 1044.3 & 72.5 \\
+   &  & C3 & 2 & 3987 & 850.7 & 78.7 \\
+   &  & C4 & 2 & 3987 & 818.7 & 79.5 \\
+  \addlinespace
+   & Extensive clean & C1 & 1 & 3905 & 878.3 & 77.5 \\
+   &  & C2 & 1 & 3905 & 833.7 & 78.7 \\
+   &  & C3 & 2 & 3987 & 271.7 & 93.2 \\
+   &  & C4 & 2 & 3987 & 403.3 & 89.9 \\
+   &  & C5 & 2 & 4043 & 1226.7 & 69.7 \\
+   &  & C5 & 2 & 4043 & 1260.0 & 68.8 \\
+   &  & C6 & 2 & 4043 & 1343.3 & 66.8 \\
+   &  & C6 & 2 & 4043 & 1320.0 & 67.4 \\
+   &  & C7 & 2 & 4043 & 710.3 & 82.4 \\
+  \addlinespace
+   & Extensive clean + IP & C1 & 1 & 3748 & 964.3 & 74.3 \\
+   &  & C2 & 1 & 3748 & 518.7 & 86.2 \\
+   &  & C3 & 2 & 4043 & 921.7 & 77.2 \\
+   &  & C4 & 2 & 4043 & 1333.3 & 67.0 \\
+  \addlinespace
+   & No clean + IP (C1) & C1 & 1 & 3567 & 481.3 & 86.5 \\
+   &  & C2 & 1 & 3567 & 454.0 & 87.3 \\
+  \midrule
+  4297B & As received & C1 & 1 & 3913 & 652.7 & 83.3 \\
+   &  & C2 & 1 & 3913 & 651.3 & 83.4 \\
+   &  & C3 & 2 & 3967 & 1183.3 & 70.2 \\
+   &  & C4 & 2 & 3967 & 368.0 & 90.7 \\
+  \addlinespace
+   & Extensive clean & C1 & 1 & 3977 & 430.3 & 89.2 \\
+   &  & C2 & 1 & 3977 & 348.0 & 91.2 \\
+   &  & C3 & 2 & 4000 & 390.3 & 90.2 \\
+   &  & C3 & 2 & 4000 & 438.0 & 89.0 \\
+   &  & C4 & 2 & 4000 & 1196.3 & 70.1 \\
+   &  & C4 & 2 & 4000 & 1258.3 & 68.5 \\
+   &  & C5 & 2 & 3983 & 1413.3 & 64.5 \\
+   &  & C5 & 2 & 3983 & 1439.3 & 63.9 \\
+   &  & C6 & 2 & 3983 & 857.0 & 78.5 \\
+   &  & C6 & 2 & 3983 & 795.3 & 80.0 \\
+  \addlinespace
+   & Extensive clean + IP & C1 & 1 & 3789 & 441.3 & 88.4 \\
+   &  & C2 & 1 & 3789 & 1036.7 & 72.6 \\
 \end{longtable}}
 
-\begin{table}[htbp]
-  \centering
-  \footnotesize
-  \caption{Salt rejection data, Desal site, Campaign~1 (element 4238C). Conductivities in \unit{\micro\siemens\per\centi\metre}; $\kappa_f$ = mean of 3--4 feed-tank readings (shown once per test).}
-  \label{tab:app-c1-4238C-rejection}
-  \resizebox{\linewidth}{!}{%
-  \begin{tabular}{lllccccccc}
-    \toprule
-    Condition & Run & Coupon & Sample & $\kappa_f$ & $\kappa_{p,1}$ & $\kappa_{p,2}$ & $\kappa_{p,3}$ & $\bar{\kappa}_p$ & $R$ (\%) \\
-    \midrule
-    Commercial clean & 1 & C1 & 1 & 3745 & 172 & 169 & 170 & 170.3 & 95.5 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 &  & 113.4 & 115 & 115 & 114.5 & 96.9 \\
-    \midrule
-    IP (no clean) & 1 & C1 & 1 & 3567 & 483 & 481 & 480 & 481.3 & 86.5 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 &  & 456 & 453 & 453 & 454.0 & 87.3 \\
-    \midrule
-    Commercial clean + IP & 1 & C1 & 1 & 3972 & 246 & 254 & 252 & 250.7 & 93.7 \\
-    \addlinespace[2pt]
-     & 1 & C2 & 1 &  & 459 & 450 & 452 & 453.7 & 88.6 \\
-    \bottomrule
-  \end{tabular}}
-\end{table}
 
 \clearpage

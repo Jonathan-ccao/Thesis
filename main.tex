@@ -28,6 +28,7 @@
 % ---------- Core technical packages ------------------------------------------
 \usepackage{graphicx}                 % figures
 \usepackage{booktabs}                 % professional tables
+
 \usepackage{caption}                  % caption control                 % caption control
 \captionsetup{
   font=small,          % smaller than body text
@@ -47,6 +48,7 @@
 \usepackage{xcolor}
 \usepackage{longtable} 
 \usepackage{array}\usepackage[numbers,square,sort&compress]{natbib}
+\usepackage{tabularx, array}
 
 % ---------- Citations --------------------------------------------------------
 % This template uses natbib + BibTeX, which works on every TeX install
@@ -68,6 +70,8 @@
 \newcommand{\flag}[1]{\textcolor{red}{\textbf{[FLAG:} #1\textbf{]}}}
 % Set range units globally to print only at the end
 \sisetup{range-units=single} 
+
+\newcommand{\chg}[1]{{\bfseries\boldmath #1}}
 
 % =====================================================================
 % =====================================================================

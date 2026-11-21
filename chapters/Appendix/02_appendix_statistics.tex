@@ -1,0 +1,66 @@
+\chapter{Statistical analysis}
+\label{app:stats}
+
+\section{Comparison between conditions}
+\label{app:welch}
+Each condition used its own fresh coupons, so conditions were compared as independent groups. Welch's two-sample $t$-test \citep{Welch1947} was used rather than Student's $t$-test because it does not assume the two groups have equal variances or equal sizes. The number of coupons ranged from two to six, and the spread between coupons differed widely between conditions, so these assumptions do not hold (Appendix~\ref{app:data}).\\
+
+Each comparison used the coupon means (Table~\ref{tab:app-coupons}), so $n$ is the number of coupons. For two conditions with means $\bar{x}_1$ and $\bar{x}_2$, sample standard deviations $s_1$ and $s_2$, and $n_1$ and $n_2$ coupons, the calculation was:
+
+\begin{enumerate}
+  \item \textbf{Standard error of the difference:}
+  \begin{equation}
+    SE = \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}
+  \end{equation}
+  \item \textbf{Test statistic:}
+  \begin{equation}
+    t = \frac{\bar{x}_2 - \bar{x}_1}{SE}
+  \end{equation}
+  \item \textbf{Degrees of freedom} (Welch--Satterthwaite):
+  \begin{equation}
+    \nu = \frac{SE^4}{\dfrac{(s_1^2/n_1)^2}{n_1 - 1} + \dfrac{(s_2^2/n_2)^2}{n_2 - 1}}
+  \end{equation}
+  \item \textbf{$p$-value:} two-sided, from the $t$ distribution with $\nu$ degrees of freedom. A difference was called significant if $p < 0.05$.
+  \item \textbf{95\,\% confidence interval} for the difference:
+  \begin{equation}
+    (\bar{x}_2 - \bar{x}_1) \pm t_{0.975,\,\nu}\,SE
+  \end{equation}
+\end{enumerate}
+
+Changes in flux and PWP are reported as a percentage of the starting condition, $(\bar{x}_2 - \bar{x}_1)/\bar{x}_1 \times 100$, and changes in rejection as percentage points. Data were compiled in Excel, and the tests were run in Python using pandas and SciPy (\texttt{scipy.stats.ttest\_ind} with \texttt{equal\_var=False}). Scripts were generated using Anthropic's Claude AI, but were checked by author to ensure correctness. 
+
+With only two coupons in some conditions, $\nu$ is small and only very large differences reach $p < 0.05$. A non-significant result would means the data cannot confirm a difference, but not that there is no difference between data.
+
+\section{Outlier testing of coupons}
+\label{app:outliers}
+Two groups of cleaned coupons each had two coupons with higher permeability and lower rejection than the rest: C5 and C6 of 4238C, and C4 and C5 of 4297B. This section tests whether these coupons are outliers.
+
+The generalised extreme studentized deviate (ESD) test \citep{Rosner1983} detects one or more outliers without knowing in advance how many there are. In each round, the value furthest from the mean is found and its distance is expressed in standard deviations:
+\begin{equation}
+R_i = \frac{\lvert x_i - \bar{x} \rvert}{s}
+\end{equation}
+$R_i$ is compared with a critical value $\lambda_i$, which depends on the number of points remaining and the significance level ($\alpha = 0.05$). The point is then removed and the process is repeated. The number of outliers is the last round in which $R_i > \lambda_i$.
+
+\begin{table}[htbp]
+\centering
+\caption{Generalised ESD test on extensive clean coupons ($\alpha = 0.05$, up to three outliers).}
+\label{tab:esd}
+\begin{tabular}{cccccc}
+\toprule
+Membrane & Round & Point removed & Value & $R_i$ & $\lambda_i$ \\
+\midrule
+4238C (flux, \unit{LMH}) & 1 & C6 & 11.76 & 1.63 & 2.02 \\
+ & 2 & C5 & 9.86 & 1.94 & 1.89 \\
+ & 3 & C7 & 3.86 & 1.57 & 1.72 \\
+\midrule
+4297B (PWP, \unit{LMH.bar^{-1}}) & 1 & C2 & 0.268 & 1.25 & 1.89 \\
+ & 2 & C4 & 0.449 & 1.11 & 1.72 \\
+ & 3 & C5 & 0.441 & 1.39 & 1.48 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For 4238C, $R_i$ exceeded $\lambda_i$ in round~2 but not in round~3, so the test identified two outliers: C6 and C5. These were excluded. These were also tested as a pair in the same rig run. For 4297B, no round exceeded its critical value, so no outliers were found. The most extreme coupon was C2, which had the lowest PWP. C4 and C5 lie within normal coupon variation and were kept. 
+
+\paragraph{Limitations}
+With low repeats, this test is more of an indication. The main reason for excluding 4238C C5 and C6 was physical, where PA damage was found, and these two coupons show the high flux and low rejection expected when feed leaks through defects. Results including all seven coupons are given in Table~\ref{tab:clean-compare}.

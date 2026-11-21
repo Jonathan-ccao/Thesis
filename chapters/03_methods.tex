@@ -7,9 +7,6 @@ Three spiral-wound EoL RO elements were recovered from two full-scale Australian
 
 The third, 4297B, was a FilmTec SW30XLE-440 seawater element from a mine-site water treatment plant (mine site). The plant treats a mixed-source, high-sulphate feed through \ce{KMnO4} oxidation, ultrafiltration, sodium metabisulfite dechlorination and cartridge filtration ahead of a single-stage RO system. The element was retired after \qty{2.75}{years} of service, when the salt rejection fell from approximately \qty{97}{\percent} to \qty{85}{\percent} over five weeks in early 2026.  \\
 
-
-\textit{n}-Hexane was purchased from chem-supply, along with the monomers \textit{m}-phenylenediamine (MPD, \ce{C6H4-1,3-(NH2)2}, 99\% purity) and trimesoyl chloride (TMC, \ce{C9H3Cl3O3}, $\le98\%$ purity), purchased from Sigma-Aldrich. HCl, NaOH, and disodium EDTA (\ce{Na2EDTA}) were purchased for use as cleaning agents. Sodium chloride (NaCl) solutions at \qty{2000}{\milli\gram\per\litre} were prepared for salt rejection tests. Milli-Q water was used throughout, and all chemicals were of analytical grade.
-
 \begin{table}[htbp]
   \centering
   \caption{EoL RO elements used in this work.}
@@ -25,40 +22,54 @@ The third, 4297B, was a FilmTec SW30XLE-440 seawater element from a mine-site wa
   \end{tabular}
 \end{table}
 
+\textit{n}-Hexane was purchased from chem-supply, along with the monomers \textit{m}-phenylenediamine (MPD, \ce{C6H4-1,3-(NH2)2}, 99\% purity) and trimesoyl chloride (TMC, \ce{C9H3Cl3O3}, $\ge98\%$ purity), purchased from Sigma-Aldrich. HCl, NaOH, and disodium EDTA (\ce{Na2EDTA}) were purchased for use as cleaning agents. Sodium chloride (NaCl) solutions at \qty{2000}{\milli\gram\per\litre} were prepared for salt rejection tests. Milli-Q water was used throughout, and all chemicals were of analytical grade.
+
+
 \section{Experimental design}
 \label{sec:experimental-design}
-The experiments were carried out in two parts/campaigns (Table~\ref{tab:campaigns}). Four main conditions were defined: As-received (no clean, no IP), commercial or extensive clean (Section~\ref{sec:cleaning}), IP (no clean), and commercial or extensive clean + IP (Section~\ref{sec:ip-method}). A fresh coupon was cut from the membrane sheet for every condition, and as such coupons were tested once across difference conditions. Coupons were tested in paids in the two-cell rig.
+The experiments were carried out in two parts/campaigns (Table~\ref{tab:campaigns}). Four main conditions were defined: As-received (no clean, no IP), commercial or extensive clean (Section~\ref{sec:cleaning}), IP (no clean), and commercial or extensive clean + IP (Section~\ref{sec:ip-method}). A fresh coupon was cut from the membrane sheet for every condition, and as such coupons were tested once across different conditions. Coupons were tested in pairs in the two-cell rig.
 
-Campaign~1 used the two desal site membranes, 4238A and 4238C, and covered all conditions. The As-received and IP (no clean) conditions were run three times on the same coupon paid, but the commercial clean conditions were ran only once as the supply of membrane sheet ran out. Campaign~2 then used 4238C and the mine-site element 4297B. It covered the As-received, extensive clean and extensive clean + IP conditions with more replicates per condition. Earlier, preliminary IP (no clean) test on 4238C is also reported. The IP protocal was identical in both campigns, however Campaign~1 opted for a less intensive clean, more in-line with commercial conditions. Campaign~2 shifted to an extensive \qty{24}{\hour} base + acid clean. All measurements are reported, including single-run conditions. Where only one value exists for a quantity, the standard deviation is not available and is reported as such. 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/workflow.pdf}
+  \caption{Experimental workflow. }
+  \label{fig:workflow}
+\end{figure}
+
+As-received coupons were cut directly from the EoL membrane sheet and tested. For cleaned conditions, large rectangles were cut from the sheet, cleaned (Section~\ref{sec:cleaning}), and then cut into rig coupons. Coupons were taken from same sheet locations rather than randomising. For IP, rectangles were cut, cleaned where required, and a new PA layer formed via IP (Section~\ref{sec:ip-method}) before being cut into coupons. All coupons were stored in Milli-Q water in transparent airtight bags in a refrigerator until testing or analysis.\\
+
+Campaign 1 was a preliminary campaign using commercial clean. It tests 4238A under four conditions: as received, commercial clean, no clean + IP and commercial clean + IP. The As-received and IP (no clean) conditions were run three times on the same coupon pair, but the commercial clean conditions were run only once as the supply of membrane sheet ran out. Some preliminary testing was also done on the 4238C as received, commercially cleaned and no clean + IP coupons. PWP for as-received was five times lower than in Campaign~2, and the commercial clean PWP was more than four times higher than any other cleaned coupon, so neither gave a reliable baseline. These differences were attributed to early rig familiarisation. Regardless, 4238C no clean + IP results from Campaign~1 are presented in Section~\ref{ch:results} and compared against Campaign~2 references as indicative. \\
+
+Campaign 2 then used 4238C and the mine-site element 4297B, covering the as-received, extensive clean and extensive clean + IP conditions with more replicates per condition. The IP protocol was identical in both campaigns, however Campaign~1 used a less intensive clean, closer to commercial practice, while Campaign~2 moved to an extensive clean. Campaign~2 also handled coupons with more care, and the method was adjusted slightly to suit repeated trials. Membranes stayed in the cell after testing instead of being removed, and they were not left exposed for long periods (as \citet{Ogbe2025} warns, could lead to membrane damage or altering). \\
+
+As such, Campaign 1 should be interpreted as methods development and indications, and Campaign 2 as results.  
+
+
+
 
 \begin{table}[htbp]
   \centering
   \caption{Experimental campaigns and number of coupons per condition.}
   \label{tab:campaigns}
-  \begin{tabular}{llcccc}
+  \small
+  \begin{tabular}{llccccc}
     \toprule
-    Campaign & Element & As received & Cleaned & IP (no clean) & Cleaned + IP \\
+    Campaign & Element & Clean protocol & As received & Cleaned & No clean + IP & Cleaned + IP \\
     \midrule
-    1 & 4238A (desal, 1st pass) & 2 (3 runs) & 2 (1 run) & 2 (3 runs) & 2 (1 run) \\
-    1 & 4238C (desal, 2nd pass) & 2 (3 runs) & 2 (1 run) & 2 (3 runs) & 2 (1 run) \\
-    2 & 4238C (desal, 2nd pass) & 4 & 7 & 2\textsuperscript{a} & 4 \\
-    2 & 4297B (mine)            & 4 & 6 & --- & 2 \\
+    1 & 4238A (desal) & Commercial & 2 & 2 & 2 & 2 \\
+    1 & 4238C (desal) & ---  & --- & --- & 2 & --- \\
+    2 & 4238C (desal) & Extensive  & 4 & 5& --- & 4 \\
+    2 & 4297B (mine)            & Extensive  & 4 & 6 & --- & 2 \\
     \bottomrule
   \end{tabular}
   \par\smallskip
-  \footnotesize \textsuperscript{a}Preliminary test, PWP and rejection only.
 \end{table}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{figures/IP_Setup_Diagram.jpg}
-  \caption{Schematic of the interfacial polymerisation setup.}
-  \label{fig:ip-setup}
-\end{figure}
+
 
 \section{Fouling characterisation of the as-received membranes}
 \label{sec:fouling-characterisation}
-The condition of each element before cleaning was established by autopsy at Membrane Works Pty Ltd. The two desal site elements (4238A and 4238C) were autopsied together, alongside unused elements of the same models (4238B and 4238D) \citep{MembraneWorks2025Desal}. The mine-site element was autopsied separately \citep{MembraneWorks2026Mine}. The techniques applied are listed in Table~\ref{tab:autopsy-coverage}.
+The condition of each element before cleaning was established by autopsy at Membrane Works Pty Ltd. The two desal-site elements (4238A and 4238C) were autopsied alongside unused elements of the same models (4238B aand 4238D) \citep{MembraneWorks2025Desal}. The mine-site element was autopsied separately \citep{MembraneWorks2026Mine}. The techniques applied to each element are listed in Table~\ref{tab:autopsy-coverage}. Element performance was tested under the site conditions (\qty{1500}{\milli\gram\per\litre} NaCl, \qty{10.3}{bar}, \qty{25}{\degreeCelsius}, \qty{15}{\percent} recovery, pH~7), which differ from the coupon tests in this work (Section~\ref{sec:res-baseline}). EDS has a penetration depth of about \qty{10}{\micro\metre}, so its signal mainly reflects the PSf support rather than the PA layer.
 
 \begin{table}[htbp]
   \centering
@@ -69,8 +80,8 @@ The condition of each element before cleaning was established by autopsy at Memb
     Technique                                  &4238A & 4238C      & 4297B      \\
     \midrule
     Vacuum decay integrity test                & ---       & ---        & \checkmark \\
-    External and internal visual inspection    & \checkmark & \checkmark & \checkmark \\
-    Standardised flux and salt rejection       & \checkmark & \checkmark & ---        \\
+    Visual inspection                          & \checkmark & \checkmark & \checkmark \\
+    Flux and salt rejection       & \checkmark & \checkmark & ---        \\
     Dye penetration test                       & \checkmark & \checkmark & ---        \\
     Optical microscopy and Astra Blue staining & ---        & ---        & \checkmark \\
     SEM-EDS                                    & \checkmark & \checkmark & \checkmark \\
@@ -78,183 +89,116 @@ The condition of each element before cleaning was established by autopsy at Memb
     Zeta potential and isoelectric point       & \checkmark & \checkmark & ---        \\
     Water contact angle                        & \checkmark & \checkmark & ---        \\
     Acid/caustic extractable analysis          & ---        & ---        & \checkmark \\
-    Total viable count                         & ---        & ---        & \checkmark \\
     Fujiwara test                              & ---        & ---        & \checkmark \\
     XPS                                        & ---        & ---        & \checkmark \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-\paragraph{Visual inspection.}
-All elements were inspected externally including the end caps, brine seals and permeate tubes which was swabbed for deposits as an indicator of integrity breach. Each element was cut open and unrolled, and the feed side, spacer and permeate were examined for colour, texture and odour, as well as delamination, compaction and physical damage. 
-
-\paragraph{Performance and dye penetration.}
-The performance of the 4238A and 4238C was measured on in-situ test rig using the manufacturer's conditions of (\qty{1500}{\milli\gram\per\litre} NaCl, \qty{10.3}{bar}, \qty{25}{\degreeCelsius}, \qty{15}{\percent} recovery, pH~7). Flux and rejection were calculated (from conductivity) and compared against the unused membrane element. The membrane coupon were then subjected to dye-testing with \qty{10}{\milli\gram\per\litre} methyl violet under pressure in a static flat-sheet cell. The permeate side was inspected for dye passage through PA defects. 
-
-\paragraph{Surface characterisation.}
-Surface characterisation of the as-received elements was carried out by Membrane Works as part of the autopsie. SEM-EDS and ATR-FTIR were the main techniques used for this characterisation. 
-
-\flag{SEM-EDS}
-
-ATR-FTIR was used to detect chemical change in the membrane surface. Spectra of 4238A and 4238C were compared against the unused reference element 4238B and 4238D respectively. The sampling depth allows both the PA and PSf to be captured. The state of PA layer was judged by the amide carbonyl (C=O) strengthing band near \qty{1663}{cm^{-1}}, the dominant PA signiture. Additionally, the support-layer bands \qty{1585}{} and \qty{1243}{cm^{-1}}, and the broad O--H/N--H stretching band centred near \qty{3336}{cm^{-1}} reflects carboxylic acid and amide groups \citep{Ogbe2025}. These bands can indicate the loss or degradatino of the PA layer. 
-
 
 \section{Chemical cleaning protocol}
 \label{sec:cleaning}
 The EoL membranes were chemically cleaned before IP so that the new PA layer would form on the existing PA layer rather than on deposited foulant, allowing cleaned and uncleaned coupons to be compared. The autopsies showed mixed fouling of organic and biological material, calcium and magnesium salts, and metal oxides (Section~\ref{sec:res-fouling}), so a two-step clean was used: an alkaline clean with EDTA to remove organic and biological foulants and chelate divalent cations, followed by an acid clean to dissolve the remaining inorganic scale (Section~\ref{sec:lit-cleaning}).
 
-Two cleaning protocols were used. For the first campaign, coupons 4238A and C received a commercial clean, which involves a \qty{1}{\hour} soak used for routine cleaning of fouled elements in industry \citep{DuPont2026, Lenntech2011}. Campaign~2 coupons (4238C and 4297B) received an extensive clean with the same alkaline-acid sequence but with higher chemical doses, continuous stirring and \qty{24}{\hour} soaks. The aim was to remove stubborn fouling on the EoL elements. Apart from the parameters in Table~\ref{tab:cleaning-protocols}, both protocols followed the same procedure (Section~\ref{sec:cleaning-procedure}).
+Two protocols were used (Table~\ref{tab:cleaning-protocols}). Campaign~1 (4238A) used a commercial clean, a \qty{1}{\hour} static soak per chemical that follows industrial cleaning practices \citep{DuPont2026}. Campaign~2 (4238C and 4297B) used an extensive clean with the same alkaline-acid sequence but higher dose, stirring and at \qty{24}{\hour} chunks, aiming to remove any consolidated fouling on EoL elements. All cleaning was done ex situ at room temperature (about \qty{22}{\degreeCelsius}), above the minimum effective cleaning temperature of \qty{20}{\degreeCelsius} \citep{Lenntech2011}, on sheets of about \qty{300}{\square\centi\metre} in Milli-Q solutions, with pH measured after each solution was prepared. The full procedure is given in Appendix~\ref{sec:cleaning-procedure}.
 
 \begin{table}[htbp]
   \centering
-  \caption{Commercial (Campaign~1) and extensive (Campaign~2) cleaning parameters. All other steps were identical (Section~\ref{sec:cleaning-procedure}).}
+  \caption{Commercial and extensive cleaning parameters. The full procedure is given in Appendix~\ref{sec:cleaning-procedure}.}
   \label{tab:cleaning-protocols}
-  \begin{tabular}{lll}
+  \small
+  \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+  \newcommand{\spantwo}[1]{\multicolumn{2}{L{\dimexpr0.34\textwidth+2\tabcolsep\relax}}{#1}}
+  \begin{tabularx}{\textwidth}{@{}L{0.18\textwidth}L{0.17\textwidth}L{0.17\textwidth}>{\raggedright\arraybackslash}X@{}}
     \toprule
-    Parameter & Commercial clean & Extensive clean \\
+    Parameter & Commercial clean & Extensive clean & Reasoning for extensive clean \\
     \midrule
-    Solution volume per sheet & 1~L & 1.5~L \\
-    Agitation & None (static soak) & Magnetic stirrer, 100~rpm \\
+    Volume per sheet & 1~L & 1.5~L & -- \\
+    Agitation & None (static soak) & Magnetic stirrer, 100~rpm & Industrial cleaning recirculates solution; stirring improves mass transfer over a static soak \\
+    \addlinespace
     \midrule
-    \multicolumn{3}{l}{\textit{Alkaline clean}} \\
-    NaOH & 0.1\% w/v (2.0~g per 2~L) & 0.23\% w/v (3.50~g per 1.5~L) \\
-    EDTA & 0.5\% w/v (10~g per 2~L) & 1.0\% w/v (15~g per 1.5~L) \\
-    Measured pH & 10.6 & 11.14--11.58 \\
-    Soak time & \qty{1}{\hour} & \qty{24}{\hour} \\
+    \multicolumn{4}{@{}l}{\textbf{Alkaline clean}} \\
+    NaOH & 0.1\% w/v (2.0~g per 2~L) & 0.23\% w/v (3.50~g per 1.5~L) & \ce{Na2EDTA} consumes caustic; 0.1\% reached only pH~10.6 \\
+    EDTA & 0.5\% w/v (10~g per 2~L) & 1.0\% w/v (15~g per 1.5~L) & 1\% \citep{DuPont2026}; 0.8\% \citep{Lenntech2011} \\
+    Measured pH & 10.6 & 11.14--11.58 & Commercial matches industrial pH~$\approx$~10.5 \citep{zwaneveld2026personal}; extensive near pH~11 optimum \citep{Ang2006}, within pH~10--11.5 \citep{Lenntech2011} and PA tolerance of pH~1--13 at $\leq$\ \citep{DuPont2026} \\
+    Soak time & \qty{1}{\hour} & \qty{24}{\hour} & \qtyrange{10}{15}{\hour} recommended for difficult fouling \citep{DuPont2026}; \qty{24}{\hour} so contact time does not limit removal \\
+    \addlinespace
+    Intermediate rinse & \spantwo{10~min, continuous RO water} & -- \\
+    \addlinespace
     \midrule
-    Intermediate rinse & \multicolumn{2}{l}{10~min, continuous RO water} \\
-    \midrule
-    \multicolumn{3}{l}{\textit{Acid clean}} \\
-    HCl (32\% w/w) & 7~mL per 2~L ($\approx$0.13\% w/v) & 15~mL per 1.5~L ($\approx$0.37\% w/v) \\
-    Measured pH & 1.6 & 1.4 \\
-    Soak time & \qty{1}{\hour} & \qty{24}{\hour} \\
-    \midrule
-    Final rinse & \multicolumn{2}{l}{Continuous RO water until free of cleaning agents} \\
+    \multicolumn{4}{@{}l}{\textbf{Acid clean}} \\
+    HCl (32\% w/w) & 7~mL per 2~L ($\approx$0.13\% w/v) & 15~mL per 1.5~L ($\approx$0.37\% w/v) & -- \\
+    Measured pH & 1.6 & 1.4 & Within pH~1--2 \citep{DuPont2026} \\
+    Soak time & \qty{1}{\hour} & \qty{24}{\hour} & As for alkaline clean \\
+    \addlinespace
+    Final rinse & \spantwo{Continuous RO water until free of cleaning agents} & -- \\
     \bottomrule
-  \end{tabular}
+  \end{tabularx}
 \end{table}
 
-All cleaning was performed ex-situ by soaking at room temperature (approximately \qty{22}{\degreeCelsius}), above the minimum effective cleaning temperature of \qty{20}{\degreeCelsius} \citep{Lenntech2011}. Membrane sheets were cleaned separately, cut into rectangles of around \qty{300}{\square\centi\metre} and solutions were prepared with Milli-Q water. Solution pH was measured with a calibrated pH meter after each solution was prepared. 
-
-\subsection{Commercial clean}
-\label{sec:com-cleaning}
-The commercial cleaning followed routine industrial practice. Membrane sheets were laid flat in clear dishes and soaked statically in 1L of solution for \qty{1}{\hour} per chemical \citep{DuPont2026}. The alkaline solution contained \qty{0.1}{\percent} w/v NaOH and \qty{0.5}{\percent} w/v EDTA, giving pH 10.6. This matches the pH $\approx$10.5 used industrially for a \qty{0.1}{\percent} NaOH clean \citep{zwaneveld2026personal}, but is below the pH 11 reported to optimise the deprotonation of foulant group carboxylic groups \citep{Ang2006}. The acid solution (7 mL of \qty{32}{\percent} w/w HCl in 2L) gave pH 1.6, within the pH 1-2 range specified by \citet{DuPont2026}. 
-
-\subsection{Extensive clean}
-\label{sec:ext-cleaning}
-Because the membrane tested are EoL elements with consolidated fouling layers, the commercial protocol was modified:
-\begin{itemize}
-\item Extended contact time: each chemical step was run for \qty{24}{\hour} rather than \qty{1}{\hour}. \citet{DuPont2026} recommends an overnight soak of \qtyrange{10}{15}{\hour} for difficult fouling; extending to \qty{24}{\hour} ensures that contact time does not limit foulant removal.
-\item Continuous agitation: solutions were stirred with a magnetic stirrer at 100 rpm throughout each soak. Industrial cleaning recirculates solution through the element, and low-speed stirring gives better mass transfer than a static soak.
-\item Higher chemical doses: EDTA was raised to \qty{1.0}{\percent} w/v, consistent with the \qty{1}{\percent} specified by \citet{DuPont2026} and the \qty{0.8}{\percent} given by \citet{Lenntech2011}. NaOH was raised to \qty{0.23}{\percent} w/v because \ce{Na2EDTA} consumes part of the caustic, as shown by the commercial clean, which reached only pH 10.6 at \qty{0.1}{\percent} NaOH. The resulting pH of 11.14–11.58 across batches sits around the pH 11 optimum of \citet{Ang2006}, within the pH 10–11.5 window of \citet{Lenntech2011} and within the pH 1–13 tolerance of polyamide membranes at $\le$ \qty{25}{\degreeCelsius} \citep{DuPont2026}. The acid dose was raised to 15 mL of \qty{32}{\percent} HCl per 1.5 L, giving pH 1.4, still within the pH 1–2 range of \citet{DuPont2026}.
-\end{itemize}
-
-\subsection{Cleaning Procedure}
-\label{sec:cleaning-procedure}
-\subsubsection*{Alkaline (caustic) clean with chelant}
-
-\begin{enumerate}
-
-\item The membrane sheet was cut to size (\qty{30}{\centi\metre} × \qty{10}{\centi\metre} for the extensive clean).
-
-\item The required volume of Milli-Q water was measured out. NaOH pellets were weighed and dissolved in a portion of this water with manual stirring until fully dissolved.
-
-\item EDTA was weighed and dissolved into the same solution.
-
-\item The pH of the combined solution was measured and recorded.
-
-\item The membrane sheet was fully submerged in the alkaline solution and soaked at room temperature without heating for the specified time. In the extensive clean, the vessel was covered with aluminium foil and stirred at 100 rpm.
-
-\end{enumerate}
-
-\subsubsection*{Intermediate rinse}
-
-\begin{enumerate}[resume]
-
-\item Following the alkaline soak, the membrane was rinsed continuously with RO water for 10 min to remove residual alkaline solution, which would otherwise neutralise the acid solution on contact.
-
-\end{enumerate}
-
-\subsubsection*{Acid clean}
-
-\begin{enumerate}[resume]
-
-\item \qty{32}{\percent} w/w HCl was added to Milli-Q water and mixed.
-
-\item Solution pH was measured and recorded.
-
-\item The membrane sheet was fully submerged in the acid solution and soaked at room temperature without heating for the specified time, covered and stirred at 100 rpm in the extensive clean.
-
-\end{enumerate}
-
-\subsubsection*{Final rinse}
-
-\begin{enumerate}[resume]
-
-\item The membrane was rinsed continuously with RO water until free of cleaning agents.
-
-\end{enumerate}
 
 
-\section{In-situ interfacial polymerisation}
+\section{Ex-situ interfacial polymerisation}
 \label{sec:ip-method}
 
-In-situ IP was performed in a custom flat-sheet crossflow system using a dry acrylic membrane cell (\qtyproduct{280 x 125 x 50}{\milli\metre}) that exposed the active surface of the membrane sheet. A peristaltic pump circulated solution at \qty{1.5}{\litre\per\minute} to maintain consistent mass transfer, with the cell outlet returning liquid to the feed tank. For curing, the liquid feed was replaced with heated air: compressed air passed through a stainless steel coil submerged in a temperature-controlled water bath, and a downstream temperature sensor verified that air reached the cell at the target curing temperature. Regulating both air temperature and flow rate to the cell enabled controlled and uniform curing of the PA layer.
+Ex-situ IP was carried out in a custom flat-sheet crossflow cell (acrylic, \qtyproduct{280 x 125 x 50}{\milli\metre}). A peristaltic pump recirculated each solution from a feed tank at \qty{1.5}{\litre\per\minute}. For curing, the liquid feed was replaced with compressed air, that passes is passed through a temperature-controlled water bath.
 
-EoL RO membranes were mounted in the acrylic cell and an aqueous MPD phase (\qty{3.75}{\gram} in \qty{250}{\milli\litre}) was circulated at \qty{1.5}{\litre\per\minute} for \qty{3}{\minute}. The membrane was then removedfrom the cell and dried, before the organic TMC/\textit{n}-hexane phase(\qty{330}{\micro\litre} in \qty{250}{\milli\litre}) was circulated for \qty{1}{\minute}. Curing followed at \qty{60}{\degreeCelsius} and \qty{10}{\litre\per\minute} for \qty{5}{\minute}.
+The aqueous MPD phase (\qty{3.75}{\gram} in \qty{250}{\milli\litre}) was circulated over the EoL membrane for \qty{3}{\minute}. The membrane was then taken out of the cell, excess solution was removed with a roller and laboratory wipes, and the membrane was remounted. The organic phase (\qty{330}{\micro\litre} TMC in \qty{250}{\milli\litre} \textit{n}-hexane) was circulated for \qty{1}{\minute}, and the membrane was then cured with air at \qty{60}{\degreeCelsius} and \qty{10}{\litre\per\minute} for \qty{5}{\minute}. Cured membranes were cut into coupons. These conditions followed \citet{Ogbe2026} and were kept the same for every IP run in both campaigns.
 
-The same monomer concentrations, contact times and curing conditions were used for every IP run in both campaigns.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/IP_Setup_Diagram.jpg}
+  \caption{Schematic of the interfacial polymerisation setup.}
+  \label{fig:ip-setup}
+\end{figure}
 
 \section{Membrane Performance test using High-pressure crossflow rig and compaction}
 \label{sec:rig performance}
-Membrane performance was evaluated in terms of pure water permeability (PWP) and salt rejection, using a high-pressure crossflow rig that holds two flat-sheet membranes in parallel cells, each with an effective area of \qty{0.0139}{\square\metre}. Applied pressure was logged through CIMPLICITY software. Feed temperature was held at \qty{25}{\degreeCelsius}
+Membrane performance was evaluated in terms of pure water permeability (PWP) and salt rejection, using a high-pressure crossflow rig that holds two flat-sheet membranes in parallel cells, each with an effective area of \qty{0.0139}{\square\metre}. Applied pressure was logged through CIMPLICITY software. 
 
-Permeate was collected in a pre-weighted container over a timed interval and weighed on an analytical balance. Volume was then obtained from mass assuming a water density of \qty{0.997}{\gram\per\milli\litre} at \qty{25}{\degreeCelsius}. Collection began after \qty{10}{\minute} stabilisation period. 
+Permeate was collected in a pre-weighted container over a timed interval and weighed on an analytical balance. Volume was then obtained from mass assuming a water density of \qty{0.997}{\gram\per\milli\litre} at \qty{25}{\degreeCelsius}. 
 
-\subsection{Compaction}
-Before testing, each coupon was compacted with pure water at \qty{15}{bar} for at least \qty{30}{\minute}. This reduces the flux decline caused by compression of porous support so measurements taken reflect a stable membrane structure. After this period, flux was generally observed to be stable with $<5\%$ change over the experiment timeframe. 
+Collection began after a \qty{10}{\minute} stabilisation perios. For IP coupons, membranes were compacted with pure water at \qty{15}{bar} for at least \qty{30}{\minute}. This reduces the flux decline caused by compression of porous support. After this period, flux was generally observed to be stable with $<5\%$ change over the experiment timeframe. 
 
 \subsection{Pure Water Permeability}
-PWP was measured with deionised water so no osmotic pressure opposes the flow. Water flux was calculated as
+PWP was measured with deionised water so $\Delta \pi = 0$ and A follows from Equation~\ref{eq:water-flux}:
 \begin{equation}
-  J_w = \frac{V}{A_m\,t}
-  \label{eq:water-flux-methods}
-\end{equation}
-Here $V$ is the permeate volume collected over time $t$.  $A_m$ is the effective membrane area of $\qty{0.0139}{\square\metre}$. PWP is then obtained by normalising the flux by the transmembrane pressure $\Delta P$: 
-
-\begin{equation}
-  A = \frac{J_w}{\Delta P},
+  A = \frac{J_w}{\Delta P}, \qquad J_w = \frac{V}{A_m\cdot t}
   \label{eq:pwp-methods}
 \end{equation}
-
-Flux is reported in \unit{\litre\per\square\metre\per\hour} (\unit{LMH}) and PWP in \unit{LMH.bar^{-1}}. Each coupon had PWP measured in triplicate.
+where $V$ is the permeate volume collected over time $t$.  $A_m$ is the effective membrane area ($\qty{0.0139}{\square\metre}$) and $\Delta P$ is the transmembrane pressure. Each coupon had two or three timed collections. 
 
 
 \subsection{Salt Rejection}
-Salt rejection was measured with a \qty{2000}{\milli\gram\per\litre} NaCl feed at pH~$7.0 \pm 0.2$ and \qty{25}{\degreeCelsius}. This corresponds to a feed conductivity of approximately \qty{3.7}{} to \qty{4.0}{\milli\siemens\per\centi\metre}. Feed and permeate conductivities were measured with a TPS WP-81 conductivity/pH meter, fitted with a conductivity sensor with automatic temperature compensation. Feed conductivity was taken as the mean of three to four readings from feed tank. Observed rejection was calculated as
+Salt rejection was measured with a \qty{2000}{\milli\gram\per\litre} NaCl feed at pH~$7.0 \pm 0.2$ and \qty{25}{\degreeCelsius} (feed conductivity \qtyrange{3.57}{4.30}{\milli\siemens\per\centi\metre}). Conductivities were measured with a TPS WP-81 meter with automatic temperature compensation. Feed conductivity was taken as the mean of three to four readings from feed tank. Rejection was calculated from Equation~\ref{eq:R-def}, with conductivities in place of concentrations:
 
 \begin{equation}
-  R = \left(1 - \frac{\kappa_p}{\kappa_f}\right) \times 100\%,
+  R = 1 - \frac{\kappa_p}{\kappa_f}
   \label{eq:rejection-methods}
 \end{equation}
 
-Here $\kappa_p$ and $\kappa_f$ are the permeate and bulk feed conductivities. Conductivity is assumed to be proportional to the NaCl concentration, so conductivities were used directly in place of concentrations. Permeate volume is small compared to feed tank (3L) so recovery is negligible and feed tank concentration was taken as the bulk feed concentration. Three repeated readings were taken from each permeate samples and the average was calculated. 
+where $\kappa_p$ and $\kappa_f$ are the permeate and bulk feed conductivities. The permeate volume was small compared to the \qty{3}{\litre} feed tank, so recovery was negligible and tank concentration taken as bulk feed. 
 
 \subsection{Salt Permeability Coefficient and Selectivity}
-Observed rejection depends on water flux as well as on the membrane (Section~\ref{sec:Performance-Characterisation}). The salt permeability coefficient, $B$, was then calculated for each coupon from the salt-test flux and rejection:
+B was calculated for each coupon by rearranging Equation~\ref{eq:R-sd}:
 \begin{equation}
   B = J_w\,\frac{1 - R}{R}
   \label{eq:b-methods}
 \end{equation}
-
+Selectivity waas calculated as A/B, using the PWP of the same coupon. Both were avereged across coupons, and two simplifications were made:
+\begin{itemize}
+  \item \textbf{Concentration polarisation:} polarisation was assumed negligible, and bulk feed concentration was used in place of $c_m$. This holds when $J_w \ll k$, where $k$ is the feed-side mass transfer coefficient \citep{Werber2016}. $k$ could not be determined for this rig as crossflow velocity was not measured with the existing set-up, and Sherwood correlations depend on the spacer geometry. The effect of this assumption is discussed in Section~\ref{sec:res-limitations}.
+  \item \textbf{Conductivity:} conductivity was assumed proportional to concentration, which slightly underestimates rejection.
+\end{itemize}
+Both overestimate $B$ by similar amounts across conditions, so errors are similar across conditions. The polarisation error grows with flux, so it is largest for coupons with higher flux (Section~\ref{sec:res-limitations}).
 
 
 \section{Post-regeneration membrane autopsy}
 \label{sec:autopsy}
-Coupons were characterised after cleaning and after interfacial polymerisation, following protocols of \citet{Ogbe2025}. Before analysis, coupons were dried at \qty{30}{\degreeCelsius} for \qty{1}{\hour} so that residual water would not interfere with the measurements
+Coupons were characterised after cleaning and after interfacial polymerisation. Before analysis, coupons were dried at \qty{30}{\degreeCelsius} for \qty{1}{\hour} so that residual water would not interfere with the measurements
 
 \paragraph{ATR-FTIR}
-Surface chemistry was analysed by ATR-FTIR on a Bruker Alpha~II spectrometer with OPUS softwar. Each spectrum was the average of 32 scans over \qtyrange{400}{4000}{cm^{-1}} at \qty{4}{cm^{-1}} resolution \citep{Ogbe2025}. Spectra was compared against the EoL baseline.  
+Surface chemistry was analysed by ATR-FTIR on a Bruker Alpha~II spectrometer with OPUS software. Each spectrum was the average of 32 scans over \qtyrange{400}{4000}{cm^{-1}} at \qty{4}{cm^{-1}} resolution \citep{Ogbe2025}. Spectra were compared against the EoL baseline. Because ATR-FTIR also samples the polysulfone support \citep{Singh2006}, PA bands (amide~I at \qtyrange{1661}{1668}{cm^{-1}}, amide~II at \qtyrange{1538}{1543}{cm^{-1}}\citep{PrakashRao2003,Kwon2006a} and N--H/O--H at about \qty{3320}{cm^{-1}} \citep{Ogbe2025}) were expressed relative to the polysulfone band at \qty{1488}{cm^{-1}} \citep{Singh2006}. Absorbance was calculated from transmittance as \textit{A}~=~\textminus log\textsubscript{10}(\textit{T}), and band heights were measured from a flat baseline at \qty{1800}{cm^{-1}} (\qty{3800}{cm^{-1}} for the N--H/O--H band).
 
 \paragraph{SEM}
 Surface morphology was examined by SEM at the Mark Wainwrite Analytical Centre, UNSW. Micrographs were used as a qualitative record of the state of the PA layer. An intact RO PA layer would show in images as a ride and valley structure. The loss of PA layer would show a smoother surface in which the pores of the support layer would be visible. 
@@ -264,4 +208,6 @@ Surface morphology was examined by SEM at the Mark Wainwrite Analytical Centre, 
 \label{sec:stats}
 Repeat readings on coupons were first averaged to give coupon mean. For each element and condition, results are reported as the mean $\pm$ sample standard deviation (SD) of the coupon means, with $n$ the number of coupons. Where 95\,\% confidence intervals are given, they are $\bar{x}\pm t_{0.975, \, n-1}\,s/\sqrt{n}$. 
 
-Because fresh coupons were used for every condition rather than the same coupon tested, altered then tested again, they were treated as independent groups using Welch's two-sample $t$-test, which does not assume equal variance. Each comparison reports difference in means with its 95\,\% confidence interval and the $p$-value. Differences are described as significant at $\alpha = 0.05$. Campaign~1 and Campaign~2 were analysed separately. Data were compiled in Excel, and the statistics were calculated in Python (pandas, SciPy).
+Because fresh coupons were used for every condition, they were treated as independent groups using Welch's two-sample $t$-test, which does not assume equal variance. Each comparison reports difference in means with its 95\,\% confidence interval and the $p$-value. Differences are described as significant at $p = 0.05$. Data were compiled in Excel, and the statistics were calculated in Python (pandas, SciPy).
+
+With $n = 2$ per group, only very large differences can reach $p < 0.05$. These comparisons are only treated as indicative. 
