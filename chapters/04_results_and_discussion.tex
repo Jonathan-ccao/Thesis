@@ -17,7 +17,7 @@ The main problem with 4238C was damaged to the PA layer, not fouling. Deposits w
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=\textwidth]{figures/Analysis/SEM/Fig_4238C_EoL_SEM.png}
+    \includegraphics[width=\textwidth]{figures/Analysis/SEM/Fig_4238C_EoL_SEM_circled.png}
     \caption{SEM micrographs of the end-of-life (as received) 4238C membrane
     surface at (a) 6,479$\times$, (b) 24,307$\times$ and (c) 49,660$\times$,
     showing damage to the polyamide layer.}
@@ -449,29 +449,45 @@ Cleaning did not change the PA layer of either membrane significantly, and granu
 \section{Film formation on the cleaned EoL membrane}
 \label{sec:res-cleaning-effect}
 \label{sec:res-film}
-The two Campaign~2 membranes started from very different conditions. 4238C had a damaged PA layer with little fouling while 4297B had mostly intact PA layer with iron oxide and silica deposits. After the same extensive clean and IP, both gave the same result. PWP fell by \qty{82}{\percent} and \qty{87}{\percent} relative to the cleaned coupons, and rejection did not rise on either membrane (Table~\ref{tab:ip-results}). For 4238C, the 95\% confidence interval of the rejection change was \qtyrange{-20.5}{4.1}{pp}. For 4297B, the two IP coupons were too far apart (\qty{88.4}{\percent} and \qty{72.6}{\percent}) for the interval to rule anything out.
+The two Campaign~2 membranes started from very different conditions. 4238C had a damaged PA layer with little fouling while 4297B had mostly intact PA layer with iron oxide and silica deposits. After the same extensive clean and IP, both gave the same result. PWP fell by \qty{82}{\percent} and \qty{87}{\percent} relative to the cleaned coupons, and rejection did not rise on either membrane (Table~\ref{tab:ip-results}). 
 
-A PA film in series with the old membrane should have lowered B by more than PWP and raised rejection. Instead, PWP and B lowered by similar amounts. Comparing against cleaned coupons, B fell by \qty{75}{\percent} and \qty{89}{\percent} and PWP by \qty{82}{\percent} and \qty{87}{\percent} (Tables~\ref{tab:ip-results} and~\ref{tab:ip-B}). It added resistance to both, but no selectivity. Section~\ref{sec:substrate} gives us an idea of why this might have happened. The support controls where PA forms, rather than how much \citep{GhoshHoek2009}. The PA can form as a skin over the surface, or penetrate into the openings that supply the MPD, where it adds resistance but leaves gaps for salt \citep{Singh2006}.
+A PA film in series with the old membrane should have lowered B by more than PWP and raised rejection. Instead, PWP and B lowered by similar amounts. Comparing against cleaned coupons, B fell by \qty{75}{\percent} and \qty{89}{\percent} and PWP by \qty{82}{\percent} and \qty{87}{\percent} (Tables~\ref{tab:ip-results} and~\ref{tab:ip-B}). It added resistance to both, but no selectivity. Section~\ref{sec:substrate} gives us an idea of why this might have happened. The support controls where PA forms, rather than how much \citep{GhoshHoek2009}. The PA can form as a skin over the surface, or penetrate into the openings that supply the MPD, where it adds resistance but leaves gaps for salt \citep{Singh2006}. Thicker PA does not necessarily translate to a more selective memebrane. 
 
 \paragraph{4238C.}
-After IP, the FTIR analysis showed a new PA layer had formed (Section~\ref{sec:res-surface}). Since B fell no more than PWP, the new PA most likely did not form a continous skin. The visible pinholes in 4238C PA layer are much larger than the \qtyrange{10}{20}{\nano\metre} of a PSf skin (Figure~\ref{fig:app_sem_4238C_eol}). These would act as large pores during IP. \citet{Singh2006} found that PA formed inside \qty{0.15}{\micro\metre} pore only gave \qtyrange{60}{70}{\percent} NaCl rejection. The 4238C surface was also \flag{only hydrophilic before cleaning. what does cleaning do to hydrophilicity? tu2015chemical might say} hydrophilic (Table~\ref{tab:eol-summary}), holding onto MPD and releasing it slower, so TMC can diffuse into the openings and form PA deep inside \citep{GhoshHoek2009,Huang2022}. PA on 4238C is therefore likely to have filled or lined the holes and thickened the intact areas, rather than bridging or repairing the holes. This slows water through both, while salt can still pass through holes that were only partially filled. Rejection after IP ranged from \qtyrange{67.0}{86.2}{\percent} across coupons from a single IP run. This spread matches the uneven damage across the sheet (Figure~\ref{fig:dye_test_full}), so coverage of the holes probably varied with the local damage.
+FTIR confirmed that new PA formed (Section~\ref{sec:res-surface}). Since $B$ fell no more than PWP, it most likely did not form a continuous skin. The holes in the 4238C PA layer are much larger than the \qtyrange{10}{20}{\nano\metre} pores of a PSf skin (Figure~\ref{fig:app_sem_4238C_eol}), and would act as large pores during IP. \citet{Singh2006} found that PA formed inside \qty{0.15}{\micro\metre} pores gave only \qtyrange{60}{70}{\percent} NaCl rejection. The as-received 4238C surface was also more hydrophilic than a new element (\qty{34.5}{\degree} against \qty{58.5}{\degree}; Table~\ref{tab:eol-summary}). This could cause surface to hold onto MPD and release it slowly, reacting deep inside the pores.
 
-\flag{Finish}
-The cleaning chemistry is also unlikely to explain the result. The final rinse 
+The cleaning chemistry alone is also unlikely to explain the result. Cleaning did not significantly change PWP or rejection (Section~\ref{sec:res-cleaning-compare}), and the 4238C PA bands stayed close to the EoL values from FTIR. It could however affect the surface the film formed on. The only condition in which $B$ fell by more than PWP was 4238C with no clean before IP (Section~\ref{sec:res-IP-C1}). One explanation is that deposits left on the uncleaned surface partly plugged the holes, giving the new film a tighter base to bridge.
 
 \paragraph{4297B.}
-PWP and B both fell 87-89\%, rejeciton didnt change, FTIR showed no new PA and SEM showed deposits still there. Possibly due to thin or patchy layer over deposit interfering with PA formation \flag{Clean up this paragraph}\\
+4297B reached the same performance outcome through a different surface. Against the cleaned coupons, PWP fell by \qty{87}{\percent} and $B$ by \qty{89}{\percent}, with no change in rejection. Unlike 4238C, the PA bands did not increase after IP (Table~\ref{tab:ftir_ratios}), and the iron oxide and silica deposits remained (Figure~\ref{fig:sem_4297B}c). The residual deposits most likely caused this. They produce uneven films and can leave unsealed gaps. SEM agrees, showing a much less uniform layer on 4238C. 
 
-Cross membrane conclusion: for both membranes, the aged. membrane pathway dominates. \flag{name explanations and say which is favoured, eg PA lining defects, thin or patchy layer below FTIR detection, rig ceiling}.
+\paragraph{Why neither membrane gains selectivity.}
+On both membrane, salt passage remained controlled byu the aged membrane. Two explanations fit this data:
+\begin{enumerate}[nosep]
+  \item \textbf{PA lined defects and did not bridge them.} This fits 4238C best. No FTIR confirms new PA, and the spread in rejection follows the uneven damage.
+  \item \textbf{A thin or patchy film below FTIR detection.} This fits 4297B best. No FTIR change, deposits still present, and a less uniform layer in SEM.
+\end{enumerate}
 
 
 \section{Limitations and sources of error}
 \label{sec:res-limitations}
-States the constraints on how far these results can be generalised, and where the largest uncertainties sit.
+The main constraints are explained below, in order of likeliness. 
 
-\begin{itemize}
-  \item Rig ceiling: Intact elements measured at 99.65\% but 78\% as coupon, no blank cell or new membrane control. Small leak could mess with low-flux coupon results
-  \item Replication: coupons from one sheet replciate the sheet rather than treatment, n = 2 in several group conditions, Samples also taken from same locations in sheet rather than randomised across full module 24 h at pH 11.5 is outside normal practice and may alter PA 
-  \item cross-campaign comparison and for all Campaign 1 IP coupons falling between 85 and 88.7 %
-\end{itemize}
+\paragraph{Rig limitation.}
+Coupons rejected far less than their element counterparts. Without a new-membrane control or blank cell, we cannot ignore the possibility of leaks in the rig lowering coupon rejection or PWP. 
+
+\paragraph{Replication and sampling.}
+All coupons for a membrane came from one sheet of one element, so they repicate the sheet rather than the full module. Several conditions had $n = 2$, and each IP condition came from a single IP run. Coupons were also cut at similar places rather than randomised across module. 
+
+\paragraph{Cleaning protocol.}
+The base clean held pH~11.5 for \qty{24}{\hour}, well beyond the \qty{30}{\minute} short-term limit. It may have altered the PA or support, as the edge delamination of 4297B suggests. Results may not represent standard cleaning practices.
+
+\paragraph{Cross-campaign comparison.}
+Campaign~1 and Campaign~2 differed in coupon handling and testing, and Campaign~1 PWP was unreplicable for 4238C. All Campaign~1 IP coupons fell between \qty{85}{\percent} and \qty{88.7}{\percent} rejection, which may reflect a bias in the campaign rather than treatment and would warrent further investigation, 
+
+\paragraph{Characterisation.}
+ATR-FTIR samples mostly the support, so a thin or patchy film may go undetected. The no-clean + IP were also not characterised, and contact angle and zeta potential were not measured. Changes in surface chemistry that would affect film formation therefore were not quantified. 
+
+\paragraph{Generalisation.}
+Only three elements were tested. The results describe these particular membranes, and likely does not directly translate to other foulant types of damage mechanisms. 
 
